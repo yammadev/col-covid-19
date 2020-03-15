@@ -3,9 +3,6 @@ Yefferson Marí­n - yefferson.marin@gmail.com
 
 ## 2. Herramientas y Requerimientos / Tools and Requirements
 - [Git](https://git-scm.com/)
-- [PHP >= 7.2](http://www.php.net/)
-- [Composer](https://getcomposer.org/)
-- [XAMPP](https://www.apachefriends.org/index.html) - [MySql](https://www.mysql.com/)
 
 ## 3. Instrucciones / Instructions
 ### Preparar / Prepare
@@ -14,27 +11,13 @@ Yefferson Marí­n - yefferson.marin@gmail.com
   $ git clone https://github.com/yammadev/col-covid-19
 
   $ cd col-covid-19
-
-  # Instalar dependencias / Install dependencies
-  $ composer install
-
-  # Configurar .env y generar llave / Configure .env and generate key
-  $ cp .env.example .env
-  $ php artisan key:generate
-```
-
-### Ejecutar / Run
-```sh
-  $ php artisan serve
-
-  # Ir a / Go to -> 127.0.0.1:8000
 ```
 
 ## 4. ¿Cómo contribuír? / How to contribute?
 Cualquier ayuda es bien recibida / Any help will be good received.
 
 ### Lista de pendientes / To do list
-- Exportar todos los datos en una `API` pública / Export all data in a public `API`.
+- Integrar dominio propio / Integrate own domain.
 
 ## 5. Registro de Cambios / [EN] Changelog
 Todos los cambios notables a este proyecto están documentados en esta parte del archivo. El formato está basado en [Keep a Changelog](http://keepachangelog.com/) / All notable changes to this project are documented in this part of the file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
@@ -52,14 +35,18 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
 
-#### [0.2.1] - 2020-03-15
+### [0.3.0] - 2020-03-15
 #### Modificado / Modified
+- Reestructurado para una más simple y rápida solución / Restructuring for a simpler and faster solution.
 - `Readme` editado / `Readme` edited.
 
-#### [0.2.0] - 2020-03-15
+#### Removido / Removed
+- Framework `Laravel` / `Laravel` Framework.
+
+### [0.2.0] - 2020-03-15
 #### Agregado / Added
 - Aplicación mínima de `Laravel` / `Laravel` minimal app.
 
-#### [0.1.0] - 2020-03-15
+### [0.1.0] - 2020-03-15
 #### Agregado / Added
 - `Commit` inicial / Initial `commit`.
