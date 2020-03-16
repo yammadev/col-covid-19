@@ -1,0 +1,19 @@
+@charset "UTF-8";
+span.flag-icons, i.flag-icons {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+  height: 1em;
+  width: 1.3333333333em;
+}
+span.flag-icons:before, i.flag-icons:before {
+  content: " ";
+}
+span.flag-icons.CO, i.flag-icons.CO {
+  background-image: url("../imgs/CO.svg");
+}
+
+/*# sourceMappingURL=main.css.map */
