@@ -1,11 +1,11 @@
 {
   "name": "col-covid-19",
-  "version": "1.0.0",
-  "description": "Seguimiento (Mapa y Estadísticas) del COVID-19 en Colombia / Tracking (Map & Statistics) COVID-19 in Colombia",
+  "version": "1.1.0",
+  "description": "Seguimiento (Mapa y Estadísticas) del COVID-19 en Colombia",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "npm run clean-modules && npm run clean-debug && run clean build",
+    "clean": "npm run clean-build && npm run clean-modules && npm run clean-debug",
     "clean-modules": "rm -rf node_modules",
     "clean-build": "rm -rf docs",
     "clean-debug": "rm -rf npm-debug.log npm-debug.log.*"
@@ -17,9 +17,9 @@
   "keywords": [
     "colombia",
     "covid-19",
-    "map",
-    "statistics",
-    "tracker"
+    "mapa",
+    "estadisticas",
+    "seguimiento"
   ],
   "author": {
     "name": "Yefferson Marín",
@@ -32,12 +32,10 @@
   },
   "homepage": "https://github.com/yammadev/col-covid-19#readme",
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "grunt": "^1.0.4",
-    "grunt-babel": "^8.0.0",
+    "grunt": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-html-build": "^0.7.1"
   }

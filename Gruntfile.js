@@ -9,6 +9,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
+          // sourceMap: true,
           style: 'expanded'
         },
         files: {
@@ -17,16 +18,15 @@ module.exports = function(grunt) {
       }
     },
 
-    // Babel
-    babel: {
+    // uglify
+    uglify: {
       options: {
+        beautify: true,
         sourceMap: true,
-        presets: ['@babel/preset-env']
       },
-      dist: {
-        files: {
-          'docs/js/main.js': 'resources/js/main.js'   // dest : src
-        }
+      build: {
+        src: 'resources/js/main.js',    // src
+        dest: 'docs/js/main.js'         // dest
       }
     },
 
@@ -42,6 +42,9 @@ module.exports = function(grunt) {
           },
           scripts: {
             main: 'docs/js/main.js'
+          },
+          data: {
+            updated: '<%= grunt.template.today("dd-mm-yyyy HH:MM:ss TT Z") %>'
           }
         }
       }
@@ -74,15 +77,21 @@ module.exports = function(grunt) {
 
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-babel');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-html-build');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Register tasks
 
+  // $ grunt build-assets
+  grunt.registerTask('build-assets', ['sass', 'uglify', 'copy']);
+
+    // $ grunt build-html
+  grunt.registerTask('build-html', ['htmlbuild']);
+
   // $ grunt build
-  grunt.registerTask('build', ['sass', 'babel', 'htmlbuild', 'copy']);
+  grunt.registerTask('build', ['build-assets', 'build-html']);
 
   // $ grunt | $ grunt default
   grunt.registerTask('default', ['watch']);

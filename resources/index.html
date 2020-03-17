@@ -3,15 +3,103 @@
   <head>
     <meta charset="utf-8">
     <!-- build:process -->
-    <title><%= pkg.name %></title>
+      <title><%= pkg.name %> | <%= pkg.description %></title>
+      <meta name="description" content="<%= pkg.description %>">
+      <meta name="keywords" content="<%= pkg.keywords %>">
+      <meta name="author" content="<%= pkg.author.name %>">
     <!-- /build -->
-    <!-- build:style main --><!-- /build -->
+
+    <!--Import Materialize-css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Import lib -->
+    <!-- build:style main -->
+    <!-- /build -->
+
+    <!-- Import leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <!-- build:process -->
-    <h1><%= pkg.name %></h1>
+    <!-- Navigation -->
+    <div class="navbar-fixed" id="nav">
+      <nav role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo">
+            <i class="icon CO left"></i>
+            <!-- build:process -->
+              <%= pkg.name %>
+            <!-- /build -->
+          </a>
+
+          <!-- Right menu -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#map">Mapa</a></li>
+            <li><a href="#statistics">Estadísticas</a></li>
+            <li><a href="#">Acerca de</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Map -->
+    <div id="map" class="section scrollspy">
+    </div>
+
+    <!-- Statistics -->
+    <div id="statistics" class="container row center section scrollspy">
+      <div class="col s12 row stats z-depth-1">
+        <div class="col s3">
+          <h5 class="active">500</h5>
+          <p>Casos</p>
+          <span>+10</span>
+        </div>
+
+        <div class="col s3">
+          <h5 class="green-text">10</h5>
+          <p>Recuperados</p>
+          <span>+10</span>
+        </div>
+
+        <div class="col s3">
+          <h5 class="red-text">10</h5>
+          <p>Muertes</p>
+          <span>-1</span>
+        </div>
+
+        <div class="col s3">
+          <h5>0.5</h5>
+          <p>Casos / 1M Pob.</p>
+          <span>+0.4</span>
+        </div>
+      </div>
+
+      <div class="col s12 report">
+        <p>
+          Reporte
+          <!-- build:process -->
+            <span><%= updated %></span>
+          <!-- /build -->
+        </p>
+      </div>
+    </div>
+
+    <!-- Import JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Import  Materialize-css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Import lib -->
+    <!-- build:script main -->
     <!-- /build -->
-    <i class="flag-icons CO"></i>
-    <!-- build:script main --><!-- /build -->
   </body>
 </html>

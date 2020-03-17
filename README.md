@@ -1,4 +1,4 @@
-## 1. Acerca / About Col-Covid-19 ![CO](docs/assets/CO.png)
+## 1. Acerca / About Col-Covid-19 ![CO](resources/imgs/CO.png)
 Seguimiento (Mapa y Estadísticas) del **COVID-19** en **Colombia** / Tracking (Map & Statistics) **COVID-19** in **Colombia**
 
 ### Autor / Author
@@ -13,7 +13,6 @@ Yefferson Marí­n ([yammadev](https://github.com/yammadev)) - yefferson.marin@g
 - [NPM](https://www.npmjs.com/)
 - [Grunt](https://gruntjs.com/)
 - [Sass](https://sass-lang.com/)
-- [Babel](https://babeljs.io/)
 
 ### Construir / Build
 ```sh
@@ -67,6 +66,19 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [1.1.0] - 2020-03-17
+#### Agregado / Added
+- `Sourcemaps` en archivos generados / `Sourcemaps` in generated files.
+- Vistas mejoradas / Front-end improved.
+- Mapa `Leaflet` agregado / `Leaflet` map added.
+- Librerías `js` y `css` agregadas / `js` and `css` libraries added.
+
+#### Modificado / Modified
+- `Readme` editado / `Readme` edited.
+
+#### Removido / Removed
+- `Babel` para usar `js` simple / `Babel` to use simple `js`.
 
 ### [1.0.0] - 2020-03-16
 #### Agregado / Added
