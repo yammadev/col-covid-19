@@ -10,11 +10,11 @@ window.statistics = {
     "lat": 4.6097102,
     "lng": -74.081749
   },
-  
+
   "cities": [
     {
       "name": "Bogotá",
-      "cases": 48,
+      "cases": 57,
       "lat": 4.6097102,
       "lng": -74.081749
     },
@@ -26,13 +26,13 @@ window.statistics = {
     },
     {
       "name": "Cartagena",
-      "cases": 8,
+      "cases": 9,
       "lat": 10.3997202,
       "lng": -75.5144424
     },
     {
       "name": "Barranquilla",
-      "cases": 3,
+      "cases": 5,
       "lat": 10.9685402,
       "lng": -74.7813187
     },
@@ -44,7 +44,7 @@ window.statistics = {
     },
     {
       "name": "Cucuta",
-      "cases": 3,
+      "cases": 6,
       "lat": 7.8939099,
       "lng": -72.5078201
     },
@@ -56,7 +56,7 @@ window.statistics = {
     },
     {
       "name": "Manizales",
-      "cases": 1,
+      "cases": 2,
       "lat": 5.06889,
       "lng": -75.517383
     },
@@ -68,13 +68,13 @@ window.statistics = {
     },
     {
       "name": "Armenia",
-      "cases": 2,
+      "cases": 3,
       "lat": 4.533889,
       "lng": -75.681111
     },
     {
       "name": "Neiva",
-      "cases": 8,
+      "cases": 9,
       "lat": 2.927299,
       "lng": -75.281885
     },
@@ -89,6 +89,12 @@ window.statistics = {
       "cases": 1,
       "lat": 4.142002,
       "lng": -73.626645
+    },
+    {
+      "name": "Popayán",
+      "cases": 2,
+      "lat": 2.43823,
+      "lng": -76.6131592
     }
   ]
 }

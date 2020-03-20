@@ -8,20 +8,20 @@
 window.summary = {
   "world": {
     "active": {
-      "confirmed": 244805,
-      "recovered": 87407,
-      "deaths": 10030
+      "confirmed": 245834,
+      "recovered": 88441,
+      "deaths": 10046
     }
   },
 
   "country": {
     "active": {
-      "confirmed": 108,
+      "confirmed": 128,
       "recovered": 1,
       "deaths": 0
     },
     "last": {
-      "confirmed": 102,
+      "confirmed": 108,
       "recovered": 1,
       "deaths": 0
     }
