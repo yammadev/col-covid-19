@@ -8,9 +8,9 @@
 window.summary = {
   "world": {
     "active": {
-      "confirmed": 245834,
-      "recovered": 88441,
-      "deaths": 10046
+      "confirmed": 245881,
+      "recovered": 88465,
+      "deaths": 10047
     }
   },
 
