@@ -3,18 +3,27 @@
   <head>
     <meta charset="utf-8">
     <!-- build:process -->
+      <!-- Primary meta tags -->
       <title><%= pkg.name %> | <%= pkg.description %></title>
+      <meta name="title" content="<%= pkg.name %>">
       <meta name="description" content="<%= pkg.description %>">
       <meta name="keywords" content="<%= pkg.keywords %>">
       <meta name="author" content="<%= pkg.author.name %>">
 
-      <!-- Open Graph data -->
-      <meta property="og:title" content="<%= pkg.name %>" />
+      <!-- Open Graph / Facebook -->
       <meta property="og:type" content="Website" />
       <meta property="og:url" content="<%= pkg.website %>" />
-      <meta property="og:image" content="imgs/banner.png" />
+      <meta property="og:title" content="<%= pkg.name %>" />
       <meta property="og:description" content="<%= pkg.description %>" />
-      <!-- /build -->
+      <meta property="og:image" content="imgs/social.png" />
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="<%= pkg.website %>">
+      <meta property="twitter:title" content="<%= pkg.name %>">
+      <meta property="twitter:description" content="<%= pkg.description %>">
+      <meta property="twitter:image" content="imgs/social.png">
+    <!-- /build -->
 
     <!-- Libs -->
     <!--Import Materialize-css -->
