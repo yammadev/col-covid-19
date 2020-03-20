@@ -1,7 +1,7 @@
 ![BANNER](resources/imgs/banner.png)
 
 ## 1. Acerca / About
-###### Seguimiento (Mapa y Estadísticas) del **COVID-19** en **Colombia** / Tracking (Map & Statistics) **COVID-19** in **Colombia**.
+#### Seguimiento (Mapa y Estadísticas) del **COVID-19** en **Colombia** / Tracking (Map & Statistics) **COVID-19** in **Colombia**.
 Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del [Ministerio de Salud y Protección Social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia, diseñado para brindar información sobre la evolución del [COVID-19](https://es.wikipedia.org/wiki/COVID-19) en el país y en sus ciudades / This project shows the state (maps and statistics) almost in real time based on data from the [Ministry of Health and Social Protection](https://www.minsalud.gov.co/Paginas/default.aspx) of Colombia, designed to provide information on the evolution of [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) in the country and its cities.
 
 ### Actualizaciones / Updates
@@ -67,6 +67,10 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [1.2.1] - 2020-03-19
+#### Agregado / Added
+- Pequeñas mejoras / Few improvements. 
 
 ### [1.2.0] - 2020-03-19
 #### Agregado / Added

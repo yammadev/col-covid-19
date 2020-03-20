@@ -7,6 +7,9 @@
   height: 68vh
   background: lighten($color-black, 80%)
 
+  @media only screen and (max-width: 601px)
+    height: 75vh
+
   .icon
     padding: 0px !important
     margin: 0px !important
@@ -72,8 +75,15 @@
     position: relative
     z-index: 1000
 
+    @media only screen and (max-width: 601px)
+      padding-top: 10px !important
+      padding-bottom: 10px !important
+
     h5
       font-size: 32px
+
+    @media only screen and (max-width: 601px)
+      font-size: 20px
 
     span i
       vertical-align: middle
