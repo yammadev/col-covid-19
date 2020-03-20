@@ -1,0 +1,145 @@
+/**
+ * Modules
+ */
+// Map
+#map
+  width: 100%
+  height: 68vh
+  background: lighten($color-black, 80%)
+
+  .icon
+    padding: 0px !important
+    margin: 0px !important
+    border-radius: 50%
+    text-align: center
+    background-color: transparentize($color-pink, 0.3)
+    color: $color-white
+    font-family: $font-family
+    font-weight: $font-weight-regular
+
+    &-small
+      @extend .icon
+      margin-top: -16px !important
+      margin-left: -16px !important
+      width: 32px !important
+      height: 32px !important
+      line-height: 32px !important
+      font-size: 12px !important
+
+    &-large
+      @extend .icon
+      margin-left: -35px !important
+      margin-top: -35px !important
+      width: 70px !important
+      height: 70px !important
+      line-height: 70px !important
+      font-size: 16px !important
+
+  p span
+    font-weight: $font-weight-bold
+
+// stats
+.stats
+  p
+    font-size: 14px
+    color: $color-black
+
+    @media only screen and (max-width: 601px)
+      font-size: 12px !important
+
+  h5
+    color: $color-black
+    font-weight: $font-weight-bold
+
+  h5, p
+    margin: 0px
+
+// Statistics
+#statistics
+  padding: 0px
+
+  span
+    font-size: 12px
+    color: $color-grey
+
+  .stats
+    background: $color-white !important
+    border-radius: 4px
+    padding-top: 20px !important
+    padding-bottom: 20px !important
+    margin-top: -60px
+    margin-bottom: 0px
+    position: relative
+    z-index: 1000
+
+    h5
+      font-size: 32px
+
+    span i
+      vertical-align: middle
+      line-height: inherit
+      font-size: 18px
+      margin-left: -10px
+
+  .report
+    .col
+      padding: 0px !important
+      margin: 0px !important
+
+    a
+      margin-top: 0px
+      color: $color-black
+
+// About
+#about
+  margin-top: 30px
+  padding-bottom: 10px
+
+  h1, h2
+    font-weight: $font-weight-bold
+    margin-bottom: 8px
+
+  h1
+    font-size: 35px
+    margin-top: 0px
+
+  h2
+    font-size: 18px
+    margin-top: 20px
+
+    i
+      vertical-align: middle
+      line-height: inherit
+
+  p
+    margin-top: 5px
+    font-size: 13px
+
+    a
+      font-weight: $font-weight-bold
+
+    span
+      font-weight: $font-weight-bold
+
+  .buttons
+    margin: 25px 0px
+
+    .btn
+      border-radius: 4px !important
+      text-transform: none !important
+      color: $color-white
+
+      &-twitter
+        background-color: $color-twitter !important
+        margin-right: 15px
+
+        @media only screen and (max-width: 433px)
+          margin: 15px 0px !important
+
+      &-github
+        background-color: $color-github !important
+
+  .stats
+    h5
+      color: lighten($color-black, 5%)
+      font-size: 25px

@@ -1,0 +1,67 @@
+/**
+ * Layout
+ */
+// html
+html
+  font-family: $font-family
+  font-weight: $font-weight-regular
+  display: none
+
+body
+  min-height: 100vh
+  margin-bottom: 40px
+
+// Nav
+#nav
+  z-index: 1002 !important
+
+  &, nav
+    height: 64px !important
+    line-height: 64px !important
+
+  nav
+    background: $color-black !important
+
+    i
+      &.flag
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        position: relative
+        display: inline-block
+        line-height: inherit
+        height: inherit
+        width: (4 / 3) * 1em
+
+        &:before
+          content: "\00a0"
+
+        &.country
+          background-image: url("../imgs/country.svg")
+
+    a
+      &.brand-logo
+        @media only screen and (max-width: 601px)
+          font-size: 18px !important
+
+        @media only screen and (max-width: 350px)
+          font-size: 14px !important
+
+// footer
+#footer
+  p
+    margin: 0px
+    font-size: 11px
+
+    a
+      font-weight: $font-weight-bold
+      color: inherit
+
+/**
+ * Formatters
+ */
+.section
+  padding: 0px
+
+.orange-text
+  color: $color-orange !important

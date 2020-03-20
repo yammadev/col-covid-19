@@ -10,10 +10,11 @@ module.exports = function(grunt) {
       dist: {
         options: {
           // sourceMap: true,
-          style: 'expanded'
+          // style: 'expanded'    // expanded (Dev purposes)
+          style: 'compressed'
         },
-        files: {
-          'docs/css/main.css': 'resources/sass/main.sass'   // dest : src
+        files: {        // output : input
+          'docs/css/main.min.css': 'resources/sass/main.sass'
         }
       }
     },
@@ -21,29 +22,32 @@ module.exports = function(grunt) {
     // uglify
     uglify: {
       options: {
-        beautify: true,
-        sourceMap: true,
+        // beautify: true,        // expanded (Dev purposes)
+        sourceMap: true
       },
       build: {
-        src: 'resources/js/main.js',    // src
-        dest: 'docs/js/main.js'         // dest
+        src: [                          // input
+          'resources/data/*.js',
+          'resources/js/main.js'
+        ],
+        dest: 'docs/js/main.min.js'     // output
       }
     },
 
     // Html build
     htmlbuild: {
       dist: {
-        src: 'resources/index.html',    // src
-        dest: 'docs/',                  // dest
+        src: 'resources/index.html',    // source
+        dest: 'docs/',                  // destination
         options: {
-          beautify: true,
-          styles: {
-            main: 'docs/css/main.css'
+          beautify: true,   // expanded
+          styles: {         // scripts passed to template
+            main: 'docs/css/main.min.css'
           },
-          scripts: {
-            main: 'docs/js/main.js'
+          scripts: {        // scripts passed to template
+            main: 'docs/js/main.min.js'
           },
-          data: {
+          data: {           // data passed to template
             updated: '<%= grunt.template.today("dd-mm-yyyy HH:MM:ss TT Z") %>'
           }
         }
@@ -53,20 +57,29 @@ module.exports = function(grunt) {
     // Copy
     copy: {
       main: {
-        files: [{
-          expand: true,
-          cwd: 'resources/imgs',    // src
-          src: '*.svg',
-          dest: 'docs/imgs'         // dest
-        }]
+        files: [
+          {
+            expand: true,
+            cwd: 'resources/imgs',    // source
+            src: '*.svg',             // extension
+            dest: 'docs/imgs'         // destination
+          },
+          {
+            expand: true,
+            cwd: 'resources/fonts',   // source
+            src: '**',                // extension
+            dest: 'docs/fonts'        // destination
+          }
+        ]
       }
     },
 
-    // Watch for changes
+    // Watch for changes (Dev purposes)
     watch: {
       sass: {
         files: [
           'resources/sass/*.sass',
+          'resources/data/*.js',
           'resources/js/*.js',
           'resources/*.html'
         ],

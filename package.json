@@ -1,6 +1,6 @@
 {
   "name": "col-covid-19",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Seguimiento (Mapa y Estadísticas) del COVID-19 en Colombia",
   "main": "Gruntfile.js",
   "scripts": {
@@ -24,13 +24,14 @@
   "author": {
     "name": "Yefferson Marín",
     "email": "yefferson.marin@gmail.com",
+    "user": "yammadev",
     "url": "https://github.com/yammadev"
   },
   "license": "AGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/yammadev/col-covid-19/issues"
   },
-  "homepage": "https://github.com/yammadev/col-covid-19#readme",
+  "homepage": "https://github.com/yammadev/col-covid-19",
   "devDependencies": {
     "grunt": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",

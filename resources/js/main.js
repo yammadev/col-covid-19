@@ -1,45 +1,103 @@
-// When document ready, execute...
+/**
+ * Initialize
+ */
+// When document ready execute
 $(document).ready(function() {
-  // Init
+  init();
+  initMap();
+});
+
+// Init
+function init() {
+  $('html').show();
   $('.scrollspy').scrollSpy();
+  $('.tooltipped').tooltip();
+}
 
-  // Map
-  var mymap = L.map('map').setView([51.505, -0.09], 13);
-
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-      maxZoom: 18,
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      id: 'mapbox/streets-v11',
-      tileSize: 512,
-      zoomOffset: -1
-    }).addTo(mymap);
-
-    L.marker([51.5, -0.09]).addTo(mymap)
-      .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-
-    L.circle([51.508, -0.11], 500, {
-      color: 'red',
-      fillColor: '#f03',
-      fillOpacity: 0.5
-    }).addTo(mymap).bindPopup("I am a circle.");
-
-    L.polygon([
-      [51.509, -0.08],
-      [51.503, -0.06],
-      [51.51, -0.047]
-    ]).addTo(mymap).bindPopup("I am a polygon.");
-
-    var popup = L.popup();
-
-    function onMapClick(e) {
-      popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(mymap);
+// Map
+function initMap() {
+  // Configs
+  var conf = {
+    // Map center
+    center: {
+      lat: statistics.country.lat,
+      lng: statistics.country.lng
+    },
+    // Zoom
+    zoom: {
+      init: 6,
+      min: 5,
+      max: 7
+    },
+    // References
+    ref: {
+      el: '<a href="http://openstreetmap.org">OpenStreetMap</a>',
+      link: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
     }
+  };
 
-    mymap.on('click', onMapClick);
+  // Define map
+  var map = L.map('map', {
+    center: [
+      conf.center.lat,
+      conf.center.lng
+    ],
+    zoom: conf.zoom.init
+  });
 
+  // Add layer
+  L.tileLayer(conf.ref.link, {
+    // attribution: '&copy; ' + conf.ref.el + ' Contributors',
+    attribution: '&copy; ' + conf.ref.el,
+    minZoom: conf.zoom.min,
+    maxZoom: conf.zoom.max
+  }).addTo(map);
+
+  // Count (Dev purpouses)
+  var cases = 0;
+
+  // Append data
+  for(var i = 0; i < statistics.cities.length; i++) {
+    var city = statistics.cities[i];  // Get city
+    var cord = [city.lat, city.lng];  // Get coordinates
+
+    cases += city.cases;    // Count (Dev purpouses)
+
+    // Mark
+    L.marker(cord, {
+      icon: L.divIcon({
+        className: city.cases >= 100 ? 'icon-large' : 'icon-small',
+        html: '<span class="center-align">' + city.cases + '</span>'
+      })
+    }).addTo(map)
+      // Popup
+      .bindPopup('<p class="center-align">' + '<span>' + city.name + '</span>' + '<br>' + city.cases + '</p>');
+  }
+
+  // Show (Dev purpouses)
+  console.log(cases);
+}
+
+/**
+ * Instancias
+ */
+// Statistics
+new Vue({
+  el: '#statistics',
+  data: {
+    country: {
+      active: summary.country.active,
+      last: summary.country.last
+    }
+  }
+});
+
+// About
+new Vue({
+  el: '#about',
+  data: {
+    world: {
+      active: summary.world.active
+    }
+  }
 });
