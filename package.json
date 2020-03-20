@@ -1,6 +1,6 @@
 {
   "name": "col-covid-19",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Seguimiento (Mapa y Estadísticas) del COVID-19 en Colombia",
   "main": "Gruntfile.js",
   "scripts": {
@@ -32,6 +32,7 @@
     "url": "https://github.com/yammadev/col-covid-19/issues"
   },
   "homepage": "https://github.com/yammadev/col-covid-19",
+  "website": "https://yammadev.github.io/col-covid-19/",
   "devDependencies": {
     "grunt": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",

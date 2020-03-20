@@ -61,7 +61,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'resources/imgs',    // source
-            src: '*.svg',             // extension
+            src: '**',                // extension
             dest: 'docs/imgs'         // destination
           },
           {
