@@ -14,87 +14,93 @@ window.statistics = {
   "cities": [
     {
       "name": "Bogotá",
-      "cases": 57,
+      "cases": 56,
       "lat": 4.6097102,
       "lng": -74.081749
     },
     {
-      "name": "Medellín",
-      "cases": 11,
-      "lat": 6.2518401,
-      "lng": -75.563591
+      "name": "Cundinamarca",
+      "cases": 5,
+      "lat": 5.00000,
+      "lng": -74.16667
     },
     {
-      "name": "Cartagena",
+      "name": "Antioquia",
+      "cases": 22,
+      "lat": 7.0000000,
+      "lng": -75.5000000
+    },
+    {
+      "name": "Valle del Cauca",
+      "cases": 15,
+      "lat": 3.4372201,
+      "lng": -76.5224991
+    },
+    {
+      "name": "Bolívar",
       "cases": 9,
       "lat": 10.3997202,
       "lng": -75.5144424
     },
     {
-      "name": "Barranquilla",
+      "name": "Atlántico",
       "cases": 5,
       "lat": 10.9685402,
       "lng": -74.7813187
     },
     {
-      "name": "Cali",
-      "cases": 14,
-      "lat": 3.437222,
-      "lng": -76.5225
-    },
-    {
-      "name": "Cucuta",
+      "name": "Norte de Santander",
       "cases": 6,
       "lat": 7.8939099,
       "lng": -72.5078201
     },
     {
-      "name": "Bucaramanga",
+      "name": "Santander",
       "cases": 2,
       "lat": 7.125393,
       "lng": -73.119804
     },
     {
-      "name": "Manizales",
+      "name": "Cauca",
+      "cases": 2,
+      "lat": 2.43823,
+      "lng": -76.6131592
+    },
+    {
+      "name": "Caldas",
       "cases": 2,
       "lat": 5.06889,
       "lng": -75.517383
     },
     {
-      "name": "Pereira",
-      "cases": 5,
+      "name": "Risaralda",
+      "cases": 6,
       "lat": 4.813333,
       "lng": -75.696111
     },
     {
-      "name": "Armenia",
+      "name": "Quindio",
       "cases": 3,
       "lat": 4.533889,
       "lng": -75.681111
     },
     {
-      "name": "Neiva",
+      "name": "Huila",
       "cases": 9,
       "lat": 2.927299,
       "lng": -75.281885
     },
     {
-      "name": "Ibagué",
+      "name": "Tolima",
       "cases": 2,
-      "lat": 4.438889,
-      "lng": -75.232222
+      "lat": 4.43889,
+      "lng": -75.2322235
     },
     {
-      "name": "Villavicencio",
+      "name": "Meta",
       "cases": 1,
       "lat": 4.142002,
-      "lng": -73.626645
-    },
-    {
-      "name": "Popayán",
-      "cases": 2,
-      "lat": 2.43823,
-      "lng": -76.6131592
+      "lng": -73.6266403
     }
   ]
 }

@@ -68,15 +68,21 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
 
+### [1.2.4] - 2020-03-20
+#### Agregado / Added
+- Reporte (datos) actualizado / Report (data) updated.
+- Ajuste de datos para hacerlo más acertado / Adjustment of data to make it more accurate.
+- Pequeños ajustes en las vistas / Few improvements in front-end.
+
 ### [1.2.3] - 2020-03-20
 #### Agregado / Added
 - Reporte (datos) actualizado / Report (data) updated.
-- Pequeños ajustes en las vistas / Little improvements in front-end.
+- Pequeños ajustes en las vistas / Few improvements in front-end.
 
 ### [1.2.2] - 2020-03-20
 #### Agregado / Added
 - Reporte (datos) actualizado / Report (data) updated.
-- Pequeños ajustes en las vistas / Little improvements in front-end.
+- Pequeños ajustes en las vistas / Few improvements in front-end.
 
 ### [1.2.1] - 2020-03-19
 #### Agregado / Added
