@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       build: {
         src: [                          // input
           'resources/data/*.js',
-          'resources/js/main.js'
+          'resources/js/*.js'
         ],
         dest: 'docs/js/main.min.js'     // output
       }

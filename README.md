@@ -19,7 +19,6 @@ Cualquier ayuda es bien recibida. Este repositorio está diseñado para ser fác
 
 ### Lista de pendientes / To do list
 - Instrucciones para replicar en otro país / Instructions to replicate in other country.
-- Integrar dominio propio (?) / Integrate own domain (?).
 - Automatizar más tareas usando `APIs` / Automate more tasks using `APIs`.
 
 ## 3. Instrucciones / Instructions
@@ -67,6 +66,17 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [1.3.0] - 2020-03-21
+#### Agregado / Added
+- Reporte (datos) actualizado / Report (data) updated.
+- Estadísticas acerca de la edad y el género / New statistics about age and gender.
+- Gráfico `Chart.js` agregado / `Chart.js` chart added.
+- Limpieza del código / Code cleanning.
+- Mejoras en las vistas / Improvements in front-end.
+
+#### Modificado / Modified
+- Modularización de los archivos `.js` / `.js` files were modularized.
 
 ### [1.2.8] - 2020-03-20
 #### Removido / Removed
