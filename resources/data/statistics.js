@@ -14,7 +14,7 @@ window.statistics = {
   cities: [
     {
       name: "Bogotá",
-      cases: 65,
+      cases: 82,
       lat: 4.6097102,
       lng: -74.081749
     },
@@ -32,13 +32,13 @@ window.statistics = {
     },
     {
       name: "Valle del Cauca",
-      cases: 15,
+      cases: 26,
       lat: 3.4372201,
       lng: -76.5224991
     },
     {
       name: "Bolívar",
-      cases: 9,
+      cases: 12,
       lat: 10.3997202,
       lng: -75.5144424
     },
@@ -56,7 +56,7 @@ window.statistics = {
     },
     {
       name: "Norte de Santander",
-      cases: 6,
+      cases: 8,
       lat: 7.8939099,
       lng: -72.5078201
     },
@@ -74,13 +74,13 @@ window.statistics = {
     },
     {
       name: "Caldas",
-      cases: 2,
+      cases: 3,
       lat: 5.06889,
       lng: -75.517383
     },
     {
       name: "Risaralda",
-      cases: 6,
+      cases: 8,
       lat: 4.813333,
       lng: -75.696111
     },
@@ -92,13 +92,13 @@ window.statistics = {
     },
     {
       name: "Huila",
-      cases: 9,
+      cases: 10,
       lat: 2.927299,
       lng: -75.281885
     },
     {
       name: "Tolima",
-      cases: 2,
+      cases: 3,
       lat: 4.43889,
       lng: -75.2322235
     },

@@ -50,7 +50,7 @@ function map() {
    // Mark
    L.marker(cord, {
      icon: L.divIcon({
-       className: city.cases >= 50 ? 'icon-large' : 'icon-small',
+       className: city.cases >= 20 ? 'icon-large' : 'icon-small',   // Change value as it grows
        html: '<span class="center-align">' + city.cases + '</span>'
      })
    }).addTo(map)
