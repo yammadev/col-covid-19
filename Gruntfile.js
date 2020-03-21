@@ -66,12 +66,6 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: 'resources/imgs',    // source
-            src: 'social.png',        // extension
-            dest: 'docs/imgs'         // destination
-          },
-          {
-            expand: true,
             cwd: 'resources/fonts',   // source
             src: '**',                // extension
             dest: 'docs/fonts'        // destination
