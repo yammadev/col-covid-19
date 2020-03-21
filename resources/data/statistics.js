@@ -14,13 +14,13 @@ window.statistics = {
   "cities": [
     {
       "name": "Bogotá",
-      "cases": 56,
+      "cases": 65,
       "lat": 4.6097102,
       "lng": -74.081749
     },
     {
       "name": "Cundinamarca",
-      "cases": 5,
+      "cases": 7,
       "lat": 5.00000,
       "lng": -74.16667
     },
@@ -47,6 +47,12 @@ window.statistics = {
       "cases": 5,
       "lat": 10.9685402,
       "lng": -74.7813187
+    },
+    {
+      "name": "Magdalena",
+      "cases": 2,
+      "lat": 11.2407904,
+      "lng": -74.1990433
     },
     {
       "name": "Norte de Santander",

@@ -16,12 +16,12 @@ window.summary = {
 
   "country": {
     "active": {
-      "confirmed": 145,
+      "confirmed": 158,
       "recovered": 1,
       "deaths": 0
     },
     "last": {
-      "confirmed": 128,
+      "confirmed": 145,
       "recovered": 1,
       "deaths": 0
     }
