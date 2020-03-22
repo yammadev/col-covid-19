@@ -32,7 +32,7 @@ window.statistics = {
     },
     {
       name: "Valle del Cauca",
-      cases: 26,
+      cases: 31,
       lat: 3.4372201,
       lng: -76.5224991
     },
@@ -55,6 +55,12 @@ window.statistics = {
       lng: -74.1990433
     },
     {
+      name: "Cesar",
+      cases: 1,
+      lat: 10.4631395,
+      lng: -73.2532196
+    },
+    {
       name: "Norte de Santander",
       cases: 8,
       lat: 7.8939099,
@@ -62,7 +68,7 @@ window.statistics = {
     },
     {
       name: "Santander",
-      cases: 2,
+      cases: 3,
       lat: 7.125393,
       lng: -73.119804
     },
@@ -74,19 +80,19 @@ window.statistics = {
     },
     {
       name: "Caldas",
-      cases: 3,
+      cases: 6,
       lat: 5.06889,
       lng: -75.517383
     },
     {
       name: "Risaralda",
-      cases: 8,
+      cases: 13,
       lat: 4.813333,
       lng: -75.696111
     },
     {
       name: "Quindio",
-      cases: 3,
+      cases: 6,
       lat: 4.533889,
       lng: -75.681111
     },
@@ -98,7 +104,7 @@ window.statistics = {
     },
     {
       name: "Tolima",
-      cases: 3,
+      cases: 4,
       lat: 4.43889,
       lng: -75.2322235
     },
@@ -107,6 +113,18 @@ window.statistics = {
       cases: 1,
       lat: 4.142002,
       lng: -73.6266403
+    },
+    {
+      name: "Casanare",
+      cases: 1,
+      lat: 5.33775,
+      lng: -72.3958588
+    },
+    {
+      name: "San Andrés y Providencia",
+      cases: 1,
+      lat: 12.5847197,
+      lng: -81.7005615
     }
   ]
 }
