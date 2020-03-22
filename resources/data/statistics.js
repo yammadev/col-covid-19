@@ -14,19 +14,19 @@ window.statistics = {
   cities: [
     {
       name: "Bogotá",
-      cases: 82,
+      cases: 88,
       lat: 4.6097102,
       lng: -74.081749
     },
     {
       name: "Cundinamarca",
-      cases: 7,
+      cases: 8,
       lat: 5.00000,
       lng: -74.16667
     },
     {
       name: "Antioquia",
-      cases: 22,
+      cases: 25,
       lat: 7.0000000,
       lng: -75.5000000
     },
@@ -38,13 +38,13 @@ window.statistics = {
     },
     {
       name: "Bolívar",
-      cases: 12,
+      cases: 14,
       lat: 10.3997202,
       lng: -75.5144424
     },
     {
       name: "Atlántico",
-      cases: 5,
+      cases: 7,
       lat: 10.9685402,
       lng: -74.7813187
     },
