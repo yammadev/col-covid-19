@@ -8,8 +8,8 @@
 // Extras
 window.extras = {
   genders: {
-    males: 118,
-    females: 110
+    males: 119,
+    females: 112
   },
 
   groups: [
@@ -45,18 +45,18 @@ window.extras = {
     },
     {
       ages: "60-69",
-      males: 0,
-      females: 1
+      males: 8,
+      females: 11
     },
     {
       ages: "70-79",
-      males: 8,
-      females: 10
+      males: 7,
+      females: 5
     },
     {
       ages: "80-89",
-      males: 7,
-      females: 5
+      males: 1,
+      females: 2
     }
   ]
 }
