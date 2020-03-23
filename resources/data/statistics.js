@@ -14,7 +14,7 @@ window.statistics = {
   cities: [
     {
       name: "Bogotá",
-      cases: 88,
+      cases: 92,
       lat: 4.6097102,
       lng: -74.081749
     },
