@@ -20,19 +20,19 @@ window.statistics = {
     },
     {
       name: "Cundinamarca",
-      cases: 11,
+      cases: 13,
       lat: 5.00000,
       lng: -74.16667
     },
     {
       name: "Antioquia",
-      cases: 39,
+      cases: 52,
       lat: 7.0000000,
       lng: -75.5000000
     },
     {
       name: "Valle del Cauca",
-      cases: 31,
+      cases: 37,
       lat: 3.4372201,
       lng: -76.5224991
     },
@@ -50,7 +50,7 @@ window.statistics = {
     },
     {
       name: "Magdalena",
-      cases: 2,
+      cases: 3,
       lat: 11.2407904,
       lng: -74.1990433
     },
@@ -68,7 +68,7 @@ window.statistics = {
     },
     {
       name: "Santander",
-      cases: 4,
+      cases: 3,
       lat: 7.125393,
       lng: -73.119804
     },
@@ -80,25 +80,25 @@ window.statistics = {
     },
     {
       name: "Caldas",
-      cases: 6,
+      cases: 7,
       lat: 5.06889,
       lng: -75.517383
     },
     {
       name: "Risaralda",
-      cases: 13,
+      cases: 14,
       lat: 4.813333,
       lng: -75.696111
     },
     {
       name: "Quindio",
-      cases: 6,
+      cases: 7,
       lat: 4.533889,
       lng: -75.681111
     },
     {
       name: "Huila",
-      cases: 10,
+      cases: 11,
       lat: 2.927299,
       lng: -75.281885
     },
@@ -110,7 +110,7 @@ window.statistics = {
     },
     {
       name: "Meta",
-      cases: 1,
+      cases: 5,
       lat: 4.142002,
       lng: -73.6266403
     },
