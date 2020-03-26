@@ -14,7 +14,7 @@ window.statistics = {
   cities: [
     {
       name: "Bogotá",
-      cases: 170,
+      cases: 187,
       lat: 4.6097102,
       lng: -74.081749
     },
@@ -32,7 +32,7 @@ window.statistics = {
     },
     {
       name: "Valle del Cauca",
-      cases: 71,
+      cases: 73,
       lat: 3.4372201,
       lng: -76.5224991
     },
@@ -44,7 +44,7 @@ window.statistics = {
     },
     {
       name: "Atlántico",
-      cases: 12,
+      cases: 13,
       lat: 10.9685402,
       lng: -74.7813187
     },
@@ -134,7 +134,7 @@ window.statistics = {
     },
     {
       name: "Boyacá",
-      cases: 1,
+      cases: 2,
       lat: 5.5352802,
       lng: -73.3677826
     }
