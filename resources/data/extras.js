@@ -8,8 +8,8 @@
 // Extras
 window.extras = {
   genders: {
-    males: 251,
-    females: 240
+    males: 278,
+    females: 261
   },
 
   groups: [
@@ -25,38 +25,38 @@ window.extras = {
     },
     {
       ages: "20-29",
-      males: 62,
-      females: 48
+      males: 67,
+      females: 54
     },
     {
       ages: "30-39",
-      males: 54,
-      females: 48
+      males: 62,
+      females: 53
     },
     {
       ages: "40-49",
-      males: 35,
-      females: 51
+      males: 38,
+      females: 56
     },
     {
       ages: "50-59",
-      males: 51,
-      females: 41
+      males: 55,
+      females: 42
     },
     {
       ages: "60-69",
-      males: 22,
-      females: 23
+      males: 24,
+      females: 24
     },
     {
       ages: "70-79",
-      males: 12,
-      females: 11
+      males: 15,
+      females: 12
     },
     {
       ages: "80-89",
-      males: 4,
-      females: 8
+      males: 6,
+      females: 10
     }
   ]
 }
