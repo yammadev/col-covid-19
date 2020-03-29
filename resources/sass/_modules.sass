@@ -22,12 +22,21 @@
 
     &-small
       @extend .icon
-      margin-top: -16px !important
-      margin-left: -16px !important
-      width: 32px !important
-      height: 32px !important
-      line-height: 32px !important
+      margin-top: -14px !important
+      margin-left: -14px !important
+      width: 28px !important
+      height: 28px !important
+      line-height: 28px !important
       font-size: 12px !important
+
+    &-medium
+      @extend .icon
+      margin-top: -23px !important
+      margin-left: -23px !important
+      width: 46px !important
+      height: 46px !important
+      line-height: 46px !important
+      font-size: 14px !important
 
     &-large
       @extend .icon
@@ -153,5 +162,7 @@
     margin-top: 20px
 
     h5
-      color: lighten($color-black, 5%)
       font-size: 25px
+
+      @media only screen and (max-width: 600px)
+        font-size: 20px

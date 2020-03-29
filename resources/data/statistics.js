@@ -13,8 +13,44 @@ window.statistics = {
 
   cities: [
     {
+      name: "San Andrés y Providencia",
+      cases: 1,
+      lat: 12.5847197,
+      lng: -81.7005615
+    },
+    {
+      name: "Atlántico",
+      cases: 24,
+      lat: 10.9685402,
+      lng: -74.7813187
+    },
+    {
+      name: "Bolívar",
+      cases: 37,
+      lat: 10.3997202,
+      lng: -75.5144424
+    },
+    {
+      name: "Sucre",
+      cases: 1,
+      lat: 8.81136,
+      lng: -74.72084
+    },
+    {
+      name: "Córdoba",
+      cases: 1,
+      lat: 8.7479801,
+      lng: -75.8814316
+    },
+    {
+      name: "Antioquia",
+      cases: 86,
+      lat: 7.0000000,
+      lng: -75.5000000
+    },
+    {
       name: "Bogotá",
-      cases: 264,
+      cases: 297,
       lat: 4.6097102,
       lng: -74.081749
     },
@@ -24,29 +60,12 @@ window.statistics = {
       lat: 5.00000,
       lng: -74.16667
     },
-    {
-      name: "Antioquia",
-      cases: 67,
-      lat: 7.0000000,
-      lng: -75.5000000
-    },
+
     {
       name: "Valle del Cauca",
-      cases: 83,
+      cases: 91,
       lat: 3.4372201,
       lng: -76.5224991
-    },
-    {
-      name: "Bolívar",
-      cases: 28,
-      lat: 10.3997202,
-      lng: -75.5144424
-    },
-    {
-      name: "Atlántico",
-      cases: 20,
-      lat: 10.9685402,
-      lng: -74.7813187
     },
     {
       name: "Magdalena",
@@ -56,7 +75,7 @@ window.statistics = {
     },
     {
       name: "Cesar",
-      cases: 3,
+      cases: 4,
       lat: 10.4631395,
       lng: -73.2532196
     },
@@ -68,7 +87,7 @@ window.statistics = {
     },
     {
       name: "Santander",
-      cases: 4,
+      cases: 8,
       lat: 7.125393,
       lng: -73.119804
     },
@@ -80,13 +99,13 @@ window.statistics = {
     },
     {
       name: "Caldas",
-      cases: 13,
+      cases: 14,
       lat: 5.06889,
       lng: -75.517383
     },
     {
       name: "Risaralda",
-      cases: 19,
+      cases: 29,
       lat: 4.813333,
       lng: -75.696111
     },
@@ -98,7 +117,7 @@ window.statistics = {
     },
     {
       name: "Huila",
-      cases: 14,
+      cases: 16,
       lat: 2.927299,
       lng: -75.281885
     },
@@ -121,12 +140,6 @@ window.statistics = {
       lng: -72.3958588
     },
     {
-      name: "San Andrés y Providencia",
-      cases: 1,
-      lat: 12.5847197,
-      lng: -81.7005615
-    },
-    {
       name: "Nariño",
       cases: 2,
       lat: 1.2136101,
@@ -134,7 +147,7 @@ window.statistics = {
     },
     {
       name: "Boyacá",
-      cases: 2,
+      cases: 3,
       lat: 5.5352802,
       lng: -73.3677826
     }
