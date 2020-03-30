@@ -18,7 +18,7 @@ window.summary = {
     active: {
       confirmed: 798,
       recovered: 15,
-      deaths: 12
+      deaths: 14
     },
     last: {
       confirmed: 702,

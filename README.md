@@ -71,6 +71,10 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 #### Modificado / Modified
 - Reporte (datos) actualizado / Report (data) updated.
 
+### [1.3.6] - 2020-03-30
+#### Modificado / Modified
+- Reporte (datos) actualizado / Report (data) updated.
+
 ### [1.3.6] - 2020-03-29
 #### Agregado / Added
 - Reporte (datos) actualizado / Report (data) updated.
