@@ -20,13 +20,13 @@ window.statistics = {
     },
     {
       name: "Atlántico",
-      cases: 24,
+      cases: 25,
       lat: 10.9685402,
       lng: -74.7813187
     },
     {
       name: "Bolívar",
-      cases: 37,
+      cases: 40,
       lat: 10.3997202,
       lng: -75.5144424
     },
@@ -38,38 +38,38 @@ window.statistics = {
     },
     {
       name: "Córdoba",
-      cases: 1,
+      cases: 2,
       lat: 8.7479801,
       lng: -75.8814316
     },
     {
       name: "Antioquia",
-      cases: 86,
+      cases: 96,
       lat: 7.0000000,
       lng: -75.5000000
     },
     {
       name: "Bogotá",
-      cases: 297,
+      cases: 350,
       lat: 4.6097102,
       lng: -74.081749
     },
     {
       name: "Cundinamarca",
-      cases: 23,
+      cases: 29,
       lat: 5.00000,
       lng: -74.16667
     },
 
     {
       name: "Valle del Cauca",
-      cases: 91,
+      cases: 104,
       lat: 3.4372201,
       lng: -76.5224991
     },
     {
       name: "Magdalena",
-      cases: 7,
+      cases: 8,
       lat: 11.2407904,
       lng: -74.1990433
     },
@@ -81,7 +81,7 @@ window.statistics = {
     },
     {
       name: "Norte de Santander",
-      cases: 15,
+      cases: 16,
       lat: 7.8939099,
       lng: -72.5078201
     },
@@ -99,7 +99,7 @@ window.statistics = {
     },
     {
       name: "Caldas",
-      cases: 14,
+      cases: 15,
       lat: 5.06889,
       lng: -75.517383
     },
@@ -117,7 +117,7 @@ window.statistics = {
     },
     {
       name: "Huila",
-      cases: 16,
+      cases: 21,
       lat: 2.927299,
       lng: -75.281885
     },
@@ -147,7 +147,7 @@ window.statistics = {
     },
     {
       name: "Boyacá",
-      cases: 3,
+      cases: 4,
       lat: 5.5352802,
       lng: -73.3677826
     }
