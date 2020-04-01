@@ -68,6 +68,10 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
 
 ### [1.3.7] - 2020-03-31
+#### Modificado / Modified
+- Reporte (datos) actualizado / Report (data) updated.
+
+### [1.3.7] - 2020-03-31
 #### Agregado / Added
 - Reporte (datos) actualizado / Report (data) updated.
 - Mejoras en las vistas / Improvements in front-end.
