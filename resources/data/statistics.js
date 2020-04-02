@@ -44,13 +44,13 @@ window.statistics = {
     },
     {
       name: "Antioquia",
-      cases: 107,
+      cases: 127,
       lat: 7.0000000,
       lng: -75.5000000
     },
     {
       name: "Bogotá",
-      cases: 472,
+      cases: 542,
       lat: 4.6097102,
       lng: -74.081749
     },
@@ -63,7 +63,7 @@ window.statistics = {
 
     {
       name: "Valle del Cauca",
-      cases: 148,
+      cases: 150,
       lat: 3.4372201,
       lng: -76.5224991
     },
@@ -81,7 +81,7 @@ window.statistics = {
     },
     {
       name: "Norte de Santander",
-      cases: 19,
+      cases: 21,
       lat: 7.8939099,
       lng: -72.5078201
     },
@@ -93,13 +93,13 @@ window.statistics = {
     },
     {
       name: "Cauca",
-      cases: 11,
+      cases: 12,
       lat: 2.43823,
       lng: -76.6131592
     },
     {
       name: "Caldas",
-      cases: 15,
+      cases: 16,
       lat: 5.06889,
       lng: -75.517383
     },
