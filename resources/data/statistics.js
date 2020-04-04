@@ -38,32 +38,32 @@ window.statistics = {
     },
     {
       name: "Córdoba",
-      cases: 2,
+      cases: 3,
       lat: 8.7479801,
       lng: -75.8814316
     },
     {
       name: "Antioquia",
-      cases: 146,
+      cases: 150,
       lat: 7.0000000,
       lng: -75.5000000
     },
     {
       name: "Bogotá",
-      cases: 587,
+      cases: 695,
       lat: 4.6097102,
       lng: -74.081749
     },
     {
       name: "Cundinamarca",
-      cases: 44,
+      cases: 47,
       lat: 5.00000,
       lng: -74.16667
     },
 
     {
       name: "Valle del Cauca",
-      cases: 165,
+      cases: 179,
       lat: 3.4372201,
       lng: -76.5224991
     },
@@ -117,7 +117,7 @@ window.statistics = {
     },
     {
       name: "Huila",
-      cases: 32,
+      cases: 34,
       lat: 2.927299,
       lng: -75.281885
     },
@@ -147,7 +147,7 @@ window.statistics = {
     },
     {
       name: "Boyacá",
-      cases: 6,
+      cases: 13,
       lat: 5.5352802,
       lng: -73.3677826
     },
