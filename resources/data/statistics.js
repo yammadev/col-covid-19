@@ -20,7 +20,7 @@ window.statistics = {
     },
     {
       name: "Atlántico",
-      cases: 47,
+      cases: 51,
       lat: 10.9685402,
       lng: -74.7813187
     },
@@ -44,26 +44,26 @@ window.statistics = {
     },
     {
       name: "Antioquia",
-      cases: 150,
+      cases: 172,
       lat: 7.0000000,
       lng: -75.5000000
     },
     {
       name: "Bogotá",
-      cases: 695,
+      cases: 725,
       lat: 4.6097102,
       lng: -74.081749
     },
     {
       name: "Cundinamarca",
-      cases: 47,
+      cases: 52,
       lat: 5.00000,
       lng: -74.16667
     },
 
     {
       name: "Valle del Cauca",
-      cases: 179,
+      cases: 196,
       lat: 3.4372201,
       lng: -76.5224991
     },
@@ -129,7 +129,7 @@ window.statistics = {
     },
     {
       name: "Meta",
-      cases: 13,
+      cases: 14,
       lat: 4.142002,
       lng: -73.6266403
     },
