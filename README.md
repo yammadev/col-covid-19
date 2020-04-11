@@ -17,10 +17,6 @@ Yefferson Marí­n - ([@yammadev](https://github.com/yammadev))
 ## 2. ¿Cómo contribuír? / How to contribute?
 Cualquier ayuda es bien recibida. Este repositorio está diseñado para ser fácil de replicar para cualquier otro país. / Any help will be good received. This repository is designed to be easy to replicate for any other country.
 
-### Lista de pendientes / To do list
-- Instrucciones para replicar en otro país / Instructions to replicate in other country.
-- Automatizar más tareas usando `APIs` / Automate more tasks using `APIs`.
-
 ## 3. Instrucciones / Instructions
 ### Herramientas y Requerimientos / Tools & Requirements
 - [Git](https://git-scm.com/)
@@ -67,105 +63,25 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
 
-### [1.3.7] - 2020-04-10
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.7] - 2020-04-08
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.7] - 2020-04-08
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.7] - 2020-04-07
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.7] - 2020-04-06
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.7] - 2020-04-05
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.7] - 2020-04-04
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.7] - 2020-04-03
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.7] - 2020-04-02
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.7] - 2020-04-01
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
 ### [1.3.7] - 2020-03-31
 #### Agregado / Added
 - Reporte (datos) actualizado / Report (data) updated.
 - Mejoras en las vistas / Improvements in front-end.
-
-### [1.3.6] - 2020-03-30
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.6] - 2020-03-30
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
 
 ### [1.3.6] - 2020-03-29
 #### Agregado / Added
 - Reporte (datos) actualizado / Report (data) updated.
 - Mejoras en las vistas / Improvements in front-end.
 
-### [1.3.5] - 2020-03-28
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.5] - 2020-03-27
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.5] - 2020-03-26
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
 ### [1.3.5] - 2020-03-25
 #### Agregado / Added
 - Reporte (datos) actualizado / Report (data) updated.
 - Mejoras en las vistas / Improvements in front-end.
 
-### [1.3.4] - 2020-03-24
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.4] - 2020-03-23
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
 ### [1.3.4] - 2020-03-23
 #### Agregado / Added
 - Reporte (datos) actualizado / Report (data) updated.
 - Mejoras en las vistas / Improvements in front-end.
-
-### [1.3.3] - 2020-03-22
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.3] - 2020-03-22
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
-
-### [1.3.3] - 2020-03-22
-#### Modificado / Modified
-- Reporte (datos) actualizado / Report (data) updated.
 
 ### [1.3.3] - 2020-03-21
 #### Agregado / Added
