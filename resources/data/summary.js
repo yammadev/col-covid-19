@@ -16,14 +16,14 @@ window.summary = {
 
   country: {
     active: {
+      confirmed: 2709,
+      recovered: 214,
+      deaths: 100
+    },
+    last: {
       confirmed: 2473,
       recovered: 197,
       deaths: 80
-    },
-    last: {
-      confirmed: 2223,
-      recovered: 174,
-      deaths: 69
     }
   }
 }

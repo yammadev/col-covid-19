@@ -14,19 +14,19 @@ window.statistics = {
   cities: [
     {
       name: "San Andrés y Providencia",
-      cases: 4,
+      cases: 5,
       lat: 12.5847197,
       lng: -81.7005615
     },
     {
       name: "Atlántico",
-      cases: 79,
+      cases: 84,
       lat: 10.9685402,
       lng: -74.7813187
     },
     {
       name: "Bolívar",
-      cases: 109,
+      cases: 117,
       lat: 10.3997202,
       lng: -75.5144424
     },
@@ -38,56 +38,56 @@ window.statistics = {
     },
     {
       name: "Córdoba",
-      cases: 7,
+      cases: 13,
       lat: 8.7479801,
       lng: -75.8814316
     },
     {
       name: "Antioquia",
-      cases: 246,
+      cases: 253,
       lat: 7.0000000,
       lng: -75.5000000
     },
     {
       name: "Bogotá",
-      cases: 1121,
+      cases: 1164,
       lat: 4.6097102,
       lng: -74.081749
     },
     {
       name: "Cundinamarca",
-      cases: 83,
+      cases: 105,
       lat: 5.00000,
       lng: -74.16667
     },
 
     {
       name: "Valle del Cauca",
-      cases: 418,
+      cases: 479,
       lat: 3.4372201,
       lng: -76.5224991
     },
     {
       name: "Magdalena",
-      cases: 42,
+      cases: 57,
       lat: 11.2407904,
       lng: -74.1990433
     },
     {
       name: "Cesar",
-      cases: 20,
+      cases: 32,
       lat: 10.4631395,
       lng: -73.2532196
     },
     {
       name: "Norte de Santander",
-      cases: 40,
+      cases: 41,
       lat: 7.8939099,
       lng: -72.5078201
     },
     {
       name: "Santander",
-      cases: 21,
+      cases: 27,
       lat: 7.125393,
       lng: -73.119804
     },
@@ -99,55 +99,55 @@ window.statistics = {
     },
     {
       name: "Caldas",
-      cases: 25,
+      cases: 33,
       lat: 5.06889,
       lng: -75.517383
     },
     {
       name: "Risaralda",
-      cases: 52,
+      cases: 58,
       lat: 4.813333,
       lng: -75.696111
     },
     {
       name: "Quindio",
-      cases: 44,
+      cases: 47,
       lat: 4.533889,
       lng: -75.681111
     },
     {
       name: "Huila",
-      cases: 41,
+      cases: 52,
       lat: 2.927299,
       lng: -75.281885
     },
     {
       name: "Tolima",
-      cases: 21,
+      cases: 23,
       lat: 4.43889,
       lng: -75.2322235
     },
     {
       name: "Meta",
-      cases: 16,
+      cases: 21,
       lat: 4.142002,
       lng: -73.6266403
     },
     {
       name: "Casanare",
-      cases: 5,
+      cases: 7,
       lat: 5.33775,
       lng: -72.3958588
     },
     {
       name: "Nariño",
-      cases: 31,
+      cases: 38,
       lat: 1.2136101,
       lng: -77.2811127
     },
     {
       name: "Boyacá",
-      cases: 27,
+      cases: 31,
       lat: 5.5352802,
       lng: -73.3677826
     },
@@ -156,6 +156,12 @@ window.statistics = {
       cases: 1,
       lat: 11.5444403,
       lng: -72.9072189
+    },
+    {
+      name: "Chocó",
+      cases: 1,
+      lat: 5.6918802,
+      lng: -76.6583481
     }
   ]
 }
