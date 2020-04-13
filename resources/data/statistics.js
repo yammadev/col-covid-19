@@ -20,13 +20,13 @@ window.statistics = {
     },
     {
       name: "Atlántico",
-      cases: 88,
+      cases: 92,
       lat: 10.9685402,
       lng: -74.7813187
     },
     {
       name: "Bolívar",
-      cases: 123,
+      cases: 134,
       lat: 10.3997202,
       lng: -75.5144424
     },
@@ -44,32 +44,32 @@ window.statistics = {
     },
     {
       name: "Antioquia",
-      cases: 260,
+      cases: 272,
       lat: 7.0000000,
       lng: -75.5000000
     },
     {
       name: "Bogotá",
-      cases: 1186,
+      cases: 1205,
       lat: 4.6097102,
       lng: -74.081749
     },
     {
       name: "Cundinamarca",
-      cases: 112,
+      cases: 115,
       lat: 5.00000,
       lng: -74.16667
     },
 
     {
       name: "Valle del Cauca",
-      cases: 489,
+      cases: 498,
       lat: 3.4372201,
       lng: -76.5224991
     },
     {
       name: "Magdalena",
-      cases: 61,
+      cases: 66,
       lat: 11.2407904,
       lng: -74.1990433
     },
@@ -99,37 +99,37 @@ window.statistics = {
     },
     {
       name: "Caldas",
-      cases: 34,
+      cases: 36,
       lat: 5.06889,
       lng: -75.517383
     },
     {
       name: "Risaralda",
-      cases: 60,
+      cases: 61,
       lat: 4.813333,
       lng: -75.696111
     },
     {
       name: "Quindio",
-      cases: 47,
+      cases: 49,
       lat: 4.533889,
       lng: -75.681111
     },
     {
       name: "Huila",
-      cases: 52,
+      cases: 55,
       lat: 2.927299,
       lng: -75.281885
     },
     {
       name: "Tolima",
-      cases: 23,
+      cases: 25,
       lat: 4.43889,
       lng: -75.2322235
     },
     {
       name: "Meta",
-      cases: 21,
+      cases: 24,
       lat: 4.142002,
       lng: -73.6266403
     },

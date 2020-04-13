@@ -8,22 +8,22 @@
 window.summary = {
   world: {
     active: {
-      confirmed: 1734013,
-      recovered: 411055,
-      deaths: 108306
+      confirmed: 1807308,
+      recovered: 446336,
+      deaths: 113513
     }
   },
 
   country: {
     active: {
+      confirmed: 2852,
+      recovered: 319,
+      deaths: 112
+    },
+    last: {
       confirmed: 2776,
       recovered: 270,
       deaths: 109
-    },
-    last: {
-      confirmed: 2709,
-      recovered: 214,
-      deaths: 100
     }
   }
 }
