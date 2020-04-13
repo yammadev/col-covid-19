@@ -15,52 +15,52 @@ window.extras = {
   groups: [
     {
       ages: "0-9",
-      males: 31,
-      females: 37
+      males: 32,
+      females: 36
     },
     {
       ages: "10-19",
-      males: 55,
-      females: 47
+      males: 59,
+      females: 50
     },
     {
       ages: "20-29",
-      males: 236,
-      females: 259
+      males: 244,
+      females: 262
     },
     {
       ages: "30-39",
-      males: 299,
-      females: 302
+      males: 303,
+      females: 308
     },
     {
       ages: "40-49",
-      males: 215,
-      females: 237
+      males: 219,
+      females: 242
     },
     {
       ages: "50-59",
-      males: 255,
-      females: 204
+      males: 264,
+      females: 210
     },
     {
       ages: "60-69",
-      males: 144,
-      females: 149
+      males: 148,
+      females: 150
     },
     {
       ages: "70-79",
-      males: 96,
-      females: 67
+      males: 100,
+      females: 69
     },
     {
       ages: "80-89",
-      males: 30,
-      females: 31
+      males: 31,
+      females: 33
     },
     {
       ages: "90-99",
-      males: 4,
+      males: 5,
       females: 11
     },
   ]
