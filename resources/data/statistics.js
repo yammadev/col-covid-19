@@ -20,13 +20,13 @@ window.statistics = {
     },
     {
       name: "Atlántico",
-      cases: 92,
+      cases: 94,
       lat: 10.9685402,
       lng: -74.7813187
     },
     {
       name: "Bolívar",
-      cases: 134,
+      cases: 145,
       lat: 10.3997202,
       lng: -75.5144424
     },
@@ -38,32 +38,32 @@ window.statistics = {
     },
     {
       name: "Córdoba",
-      cases: 13,
+      cases: 15,
       lat: 8.7479801,
       lng: -75.8814316
     },
     {
       name: "Antioquia",
-      cases: 272,
+      cases: 289,
       lat: 7.0000000,
       lng: -75.5000000
     },
     {
       name: "Bogotá",
-      cases: 1205,
+      cases: 1242,
       lat: 4.6097102,
       lng: -74.081749
     },
     {
       name: "Cundinamarca",
-      cases: 115,
+      cases: 119,
       lat: 5.00000,
       lng: -74.16667
     },
 
     {
       name: "Valle del Cauca",
-      cases: 498,
+      cases: 514,
       lat: 3.4372201,
       lng: -76.5224991
     },
@@ -81,19 +81,19 @@ window.statistics = {
     },
     {
       name: "Norte de Santander",
-      cases: 43,
+      cases: 50,
       lat: 7.8939099,
       lng: -72.5078201
     },
     {
       name: "Santander",
-      cases: 29,
+      cases: 30,
       lat: 7.125393,
       lng: -73.119804
     },
     {
       name: "Cauca",
-      cases: 19,
+      cases: 20,
       lat: 2.43823,
       lng: -76.6131592
     },
@@ -105,7 +105,7 @@ window.statistics = {
     },
     {
       name: "Risaralda",
-      cases: 61,
+      cases: 69,
       lat: 4.813333,
       lng: -75.696111
     },
@@ -123,25 +123,25 @@ window.statistics = {
     },
     {
       name: "Tolima",
-      cases: 25,
+      cases: 26,
       lat: 4.43889,
       lng: -75.2322235
     },
     {
       name: "Meta",
-      cases: 24,
+      cases: 39,
       lat: 4.142002,
       lng: -73.6266403
     },
     {
       name: "Casanare",
-      cases: 7,
+      cases: 9,
       lat: 5.33775,
       lng: -72.3958588
     },
     {
       name: "Nariño",
-      cases: 38,
+      cases: 41,
       lat: 1.2136101,
       lng: -77.2811127
     },
