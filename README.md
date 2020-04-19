@@ -15,9 +15,9 @@ Yefferson Marí­n - ([@yammadev](https://github.com/yammadev))
 [GNU General Public License v3.0](LICENSE)
 
 ## 2. Datos / Data
-Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) del Gobierno Nacional, publicados por el [Instituto Nacional de Salud](https://www.ins.gov.co) de Colombia / The data used is loaded (once an update is made) from the [Open Data](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID- 19-en-Colombia / gt2j-8ykr) of the National Government, published by the [National Institute of Health](https://www.ins.gov.co) of Colombia.
+Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) del Gobierno Nacional, publicados por el [Instituto Nacional de Salud](https://www.ins.gov.co) de Colombia / The data used is loaded (once an update is made) from the [Open Data](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) of the National Government, published by the [National Institute of Health](https://www.ins.gov.co) of Colombia.
 
-Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formatos `.csv` y `.json` / Formatted data is available in the [data /](data) folder for study and use in `.csv` and` .json` formats:
+Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formatos `.csv` y `.json` / Formatted data is available in the [data/](data) folder for study and use in `.csv` and` .json` formats:
 
 | Archivo / File | Referencia / Reference |
 | :-----: | ---------- |
@@ -95,6 +95,12 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [2.0.1] - 2020-04-19
+#### Modificado / Modified
+- Script.
+- Banner.
+- Readme.
 
 ### [2.0.0] - 2020-04-19
 #### Agregado / Added

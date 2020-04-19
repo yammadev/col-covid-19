@@ -33,8 +33,8 @@ print "Generate new data"
 venv/scripts/python generate.py
 
 # Check
-print "Check"
-read -p ">> Please check generated data and press [ENTER] when ready to continue building. Otherwise press [CTRL^C] "
+echo ""
+read -p ">> Please check generated data and press [ENTER] when ready to continue building. Otherwise press [CTRL+C]"
 
 # -------------------------------
 # [3] Build
