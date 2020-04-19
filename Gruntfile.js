@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: [                          // input
-          'resources/data/*.js',
+          'data/js/*.js',
           'resources/js/*.js'
         ],
         dest: 'docs/js/main.min.js'     // output
@@ -79,7 +79,6 @@ module.exports = function(grunt) {
       sass: {
         files: [
           'resources/sass/*.sass',
-          'resources/data/*.js',
           'resources/js/*.js',
           'resources/*.html'
         ],
@@ -88,24 +87,18 @@ module.exports = function(grunt) {
     }
   });
 
-  // Load plugins
+  // Load
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-html-build');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Register tasks
+  // Register
 
-  // $ grunt build-assets
-  grunt.registerTask('build-assets', ['sass', 'uglify', 'copy']);
+  // grunt build
+  grunt.registerTask('build', ['sass', 'uglify', 'copy', 'htmlbuild']);
 
-    // $ grunt build-html
-  grunt.registerTask('build-html', ['htmlbuild']);
-
-  // $ grunt build
-  grunt.registerTask('build', ['build-assets', 'build-html']);
-
-  // $ grunt | $ grunt default
-  grunt.registerTask('default', ['watch']);
+  // grunt | $ grunt default
+  grunt.registerTask('default', ['build']);
 };

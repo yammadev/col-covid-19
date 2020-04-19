@@ -4,14 +4,14 @@ function map() {
   var conf = {
    // Map center
    center: {
-     lat: statistics.country.lat,
-     lng: statistics.country.lng
+     lat: 4.6097102,
+     lng: -74.081749
    },
    // Zoom
    zoom: {
-     init: 6,
-     min: 5,
-     max: 7
+     init: 8,
+     min: 6,
+     max: 10
    },
    // References
    ref: {
@@ -37,27 +37,26 @@ function map() {
    maxZoom: conf.zoom.max
   }).addTo(map);
 
-  // Count (Dev purpouses)
-  var cases = 0;
+  // Save
+  for(var i in statistics) {
+    // Get city
+    var city = {
+      name: statistics[i].CITY + ', ' + statistics[i].DEPARTAMENT,
+      cases: statistics[i].CASES,
+      coords: [
+        statistics[i].LAT,
+        statistics[i].LNG
+      ]
+    };
 
-  // Append data
-  for(var i = 0; i < statistics.cities.length; i++) {
-   var city = statistics.cities[i];  // Get city
-   var cord = [city.lat, city.lng];  // Get coordinates
-
-   cases += city.cases;    // Count (Dev purpouses)
-
-   // Mark
-   L.marker(cord, {
-     icon: L.divIcon({
-       className: city.cases < 30 ? 'icon-small' : (city.cases < 100 ? 'icon-medium' : 'icon-large'),   // Change value as it grows
-       html: '<span class="center-align">' + city.cases + '</span>'
-     })
-   }).addTo(map)
-     // Popup
-     .bindPopup('<p class="center-align">' + '<span>' + city.name + '</span>' + '<br>' + city.cases + '</p>');
+    // Mark
+    L.marker(city.coords, {
+      icon: L.divIcon({
+        className: city.cases < 50 ? 'icon-small' : (city.cases < 100 ? 'icon-medium' : 'icon-large'),   // Change value as it grows
+        html: '<span class="center-align">' + city.cases + '</span>'  // Number
+      })
+    }).addTo(map)
+      // Popup
+      .bindPopup('<p class="center-align">' + '<span>' + city.name + '</span>' + '<br>' + city.cases + '</p>');
   }
-
-  // Show (Dev purpouses)
-  console.log('Total cases: ' + cases);
 }

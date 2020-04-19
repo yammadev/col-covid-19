@@ -2,7 +2,7 @@
 
 ## 1. Acerca / About
 #### Seguimiento (Mapa y Estadísticas) del **COVID-19** en **Colombia** / Tracking (Map & Statistics) **COVID-19** in **Colombia**.
-Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del [Ministerio de Salud y Protección Social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia, diseñado para brindar información sobre la evolución del [COVID-19](https://es.wikipedia.org/wiki/COVID-19) en el país y en sus ciudades / This project shows the state (maps and statistics) almost in real time based on data from the [Ministry of Health and Social Protection](https://www.minsalud.gov.co/Paginas/default.aspx) of Colombia, designed to provide information on the evolution of [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) in the country and its cities.
+Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del [Instituto Nacional de Salud](https://www.ins.gov.co) de Colombia, diseñado para brindar información sobre la evolución del [COVID-19](https://es.wikipedia.org/wiki/COVID-19) en el país y sus ciudades / This project shows the state (maps and statistics) almost in real time based on data from the [National Institute of Health](https://www.ins.gov.co) of Colombia, designed to provide information on the evolution of the [COVID -19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) in the country and its cities.
 
 ### Actualizaciones / Updates
 - **Twitter** [@ColCovid19](https://twitter.com/ColCovid19)
@@ -14,37 +14,70 @@ Yefferson Marí­n - ([@yammadev](https://github.com/yammadev))
 ### Licencia / Licence
 [GNU General Public License v3.0](LICENSE)
 
-## 2. ¿Cómo contribuír? / How to contribute?
-Cualquier ayuda es bien recibida. Este repositorio está diseñado para ser fácil de replicar para cualquier otro país. / Any help will be good received. This repository is designed to be easy to replicate for any other country.
+## 2. Datos / Data
+Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) del Gobierno Nacional, publicados por el [Instituto Nacional de Salud](https://www.ins.gov.co) de Colombia / The data used is loaded (once an update is made) from the [Open Data](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID- 19-en-Colombia / gt2j-8ykr) of the National Government, published by the [National Institute of Health](https://www.ins.gov.co) of Colombia.
 
-## 3. Instrucciones / Instructions
+Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formatos `.csv` y `.json` / Formatted data is available in the [data /](data) folder for study and use in `.csv` and` .json` formats:
+
+| Archivo / File | Referencia / Reference |
+| :-----: | ---------- |
+| `records` | Lista completa de CASOS con todos sus REGISTROS / Full list of CASES with all its RECORDS
+| `statistics` | Casos por CIUDADES y DEPARTAMENTOS con COORDENADAS / CASES per CITY and DEPARTMENTS with COORDINATES
+| `timeline` | CASOS por FECHAS y ESTADOS / CASES per DATE and STATUS
+| `summary` | Resúmen de CASOS por ESTADO / Summary of CASES per STATUS
+| `cases_per_status` | CASOS por FECHAS y ESTADOS / CASES per STATUS
+| `cases_per_gender` | CASOS por GÉNERO / CASES per GENDER
+
+## 3. Notas de desarrollo / Development notes
 ### Herramientas y Requerimientos / Tools & Requirements
-- [Git](https://git-scm.com/)
+- [Python](https://www.python.org/)
 - [NPM](https://www.npmjs.com/)
-- [Grunt](https://gruntjs.com/)
-- [Sass](https://sass-lang.com/)
 
 ### Construir / Build
 ```sh
   # Instalar dependencias / Install dependencies
-  $ npm install
+  npm install
 
-  # Construir y exportar archivos / Build and export files
-  $ grunt build
+  # Construir exportar archivos / Build and export files
+  npm run build
+
+  # Después de solicitar revisar los archivos generados, será subido
+  # automáticamente. De otro modo, se debe reconstruir y subir manualmente /
+  # After asking to check generated files, it will be pushed automatically.
+  # Otherwise it should be rebuilt and pushed manually.
 
   # Reconstruir / Rebuild
-  $ npm run clean-build
-  $ grunt build
+  npm run rebuild
+
+  # Subir como siempre / Push as usual
 ```
 
-### Desarrollar / Develop
+### Manualmente / Manually
 ```bash
-  # Esperar a hacer cambios y reconstruir / Watch for changes and rebuild
-  $ grunt
+  cd data
 
-  # O / Or
-  # $ grunt default
-  # $ grunt watch
+  # Ambiente virtual / Virtual environment
+  py -m venv venv
+
+  # Activar / Activate
+  venv\scripts\activate
+
+  # Instalar requerimientos / Install requirements
+  (venv) pip install -r requirements.txt
+
+  # Generar datos / Generate data
+  (venv) py generate.py
+
+  # Desactivar / Deactivate
+  (venv) venv\scripts\deactivate
+
+  cd ..
+
+  # Construir exportar archivos / Build and export files
+  npm run build
+
+  # O esperar a hacer cambios y reconstruir / Or watch for changes and rebuild
+  npm run watch
 ```
 
 ## 4. Registro de Cambios / Changelog
@@ -62,6 +95,20 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [2.0.0] - 2020-04-19
+#### Agregado / Added
+- Datos automatizados / Automated data.
+- Datos exportados para uso general en `csv` y `json` / Data exported to general purpose in `csv` and `json`.
+- Más información y más estadísticas / More info and more statistics.
+
+#### Modificado / Modified
+- Mejoras en las vistas / Improvements in front-end.
+- Mejor estructura para mantenener y actualizar con frecuencia / Better structure to maintain and update frequently.
+- Limpieza del código / Code cleanning.
+
+#### Removido / Removed
+- Gráficos `Chart.js` / `Chart.js` charts.
 
 ### [1.3.7] - 2020-03-31
 #### Agregado / Added

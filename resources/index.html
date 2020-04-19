@@ -34,15 +34,6 @@
       integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
       crossorigin=""></script>
 
-    <!-- Import Charts.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
-      integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E="
-      crossorigin="anonymous" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"
-      integrity="sha256-TQq84xX6vkwR0Qs1qH5ADkP+MvH0W+9E7TdHJsoIQiM="
-      crossorigin="anonymous"></script>
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -61,7 +52,6 @@
           <!-- Right menu -->
           <ul class="right hide-on-med-and-down">
             <li><a href="#map">Mapa</a></li>
-            <li><a href="#statistics">Estadísticas</a></li>
             <li><a href="#about">Acerca de</a></li>
           </ul>
         </div>
@@ -71,76 +61,40 @@
     <!-- Map -->
     <div id="map" class="section scrollspy"></div>
 
-    <!-- Statistics -->
-    <div id="statistics" class="section scrollspy center">
+    <!-- Summary -->
+    <div id="summary" class="section scrollspy center">
       <div class="container row">
-        <!-- stats -->
+        <!-- Stats -->
         <div class="col s12 row stats z-depth-1">
           <div class="col s4">
-            <h5 class="orange-text">
-              {{ country.active.confirmed }}
-            </h5>
+            <h5 class="orange-text">{{ cases }}</h5>
             <p>Confirmados</p>
-            <span>
-              <i class="material-icons red-text"
-                v-if="country.active.confirmed - country.last.confirmed > 0">
-                expand_less
-              </i>
-              <i class="material-icons" v-else>
-                unfold_less
-              </i>
-              {{ country.active.confirmed - country.last.confirmed }}
-            </span>
+            <span>{{ cases_pop }}</span>
           </div>
 
           <div class="col s4">
-            <h5 class="green-text">
-              {{ country.active.recovered }}
-            </h5>
+            <h5 class="green-text">{{ recovered }}</h5>
             <p>Recuperados</p>
-            <span>
-              <i class="material-icons green-text"
-                v-if="country.active.recovered - country.last.recovered > 0">
-                expand_less
-              </i>
-              <i class="material-icons" v-else>
-                unfold_less
-              </i>
-              {{ country.active.recovered - country.last.recovered }}
-            </span>
+            <span>{{ recovered_per }}%</span>
           </div>
 
           <div class="col s4">
-            <h5 class="red-text">
-              {{ country.active.deaths }}
-            </h5>
+            <h5 class="red-text">{{ deaths }}</h5>
             <p>Fallecidos</p>
-            <span>
-              <i class="material-icons red-text"
-                v-if="country.active.deaths - country.last.deaths > 0">
-                expand_less
-              </i>
-              <i class="material-icons" v-else>
-                unfold_less
-              </i>
-              {{ country.active.deaths - country.last.deaths }}
-            </span>
+            <span>{{ deaths_per }}%</span>
           </div>
         </div>
 
-        <!-- report -->
-        <div class="col s12 report">
-          <p>
-            Reporte
+        <!-- Report -->
+        <div class="col s12 report" id="report">
+          <p>Reporte
             <!-- build:process -->
               <span><%= updated %></span>
             <!-- /build -->
           </p>
 
-          <a href="#statistics">
-            <i class="material-icons center">
-              expand_more
-            </i>
+          <a href="#report">
+            <i class="material-icons center">expand_more</i>
           </a>
         </div>
       </div>
@@ -149,15 +103,18 @@
     <!-- About -->
     <div id="about" class="section scrollspy container">
       <div class="container">
-        <!-- I -->
+        <!-- [1] -->
         <h1 class="center">
           Seguimiento del COVID-19 en Colombia
         </h1>
         <p>
-          Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado
-          en datos del <a href="https://www.minsalud.gov.co/Paginas/default.aspx" target="_blank">Ministerio de Salud y Protección Social</a>
-          de Colombia, diseñado para brindar información sobre la evolución del <a href="https://es.wikipedia.org/wiki/COVID-19" target="_blank">COVID-19</a>
-          en el país y en sus ciudades.
+          Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del
+          <a href="https://www.ins.gov.co" target="_blank">Instituto Nacional de Salud</a> de Colombia,
+          diseñado para brindar información sobre la evolución del
+          <a href="https://es.wikipedia.org/wiki/COVID-19" target="_blank">COVID-19</a>
+          en el país y sus ciudades. Los datos utilizados son cargados (una vez se realiza una actualización) desde los
+          <a href="https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr" target="_blank">Datos Abiertos</a>
+          del Gobierno Nacional.
         </p>
 
         <div class="center buttons">
@@ -172,70 +129,15 @@
           </a>
           <!-- /build -->
         </div>
-
-        <!-- II -->
-        <h2>
-          <i class="material-icons">fullscreen_exit</i>
-            ¿A qué poblaciones ha afectado en el país?
-        </h2>
-        <p>
-          Según las cifras obtenidas del <a href="https://www.ins.gov.co/Paginas/Inicio.aspx" target="_blank">Instituto Nacional de Salud</a>
-          de Colombia, hasta éste momento se muestran registros de <span>{{ genders.males + genders.females }}</span> pacientes así:
-        </p>
-
-        <!-- Chart -->
-        <canvas id="chart"></canvas>
-
-        <!-- Stats -->
-        <div class="stats container">
-          <div class="center row">
-            <div class="col s6">
-              <h5>{{ genders.males }}</h5>
-              <p>Masculinos</p>
-            </div>
-
-            <div class="col s6">
-              <h5>{{ genders.females }}</h5>
-              <p>Femeninos</p>
-            </div>
-          </div>
-        </div>
-
-          <!-- About III -->
-          <h2>
-            <i class="material-icons">fullscreen</i>
-              ¿Cómo va el virus en el mundo?
-          </h2>
-          <p>
-            El primer caso se registró el <span>31 de diciembre en Wuhan, China</span>.
-            Desde entonces y a la fecha se ha comportado así:
-          </p>
-
-          <div class="stats center row">
-            <div class="col s4">
-              <h5>{{ world.active.confirmed }}</h5>
-              <p>Confirmados</p>
-            </div>
-
-            <div class="col s4">
-              <h5 class="green-text">{{ world.active.recovered }}</h5>
-              <p>Recuperados</p>
-            </div>
-
-            <div class="col s4">
-              <h5 class="red-text">{{ world.active.deaths }}</h5>
-              <p>Fallecidos</p>
-            </div>
-          </div>
       </div>
     </div>
 
     <!-- footer -->
     <div id="footer" class="center">
       <!-- build:process -->
-      <p>&copy; <%= pkg.author.name %> - <a href="<%= pkg.author.url %>" target="_blank"><%= pkg.author.user %></a></p>
-      <p>Licencia <%= pkg.license %> </p>
-      <p>Versión <%= pkg.version %></p>
+        <p>&copy; <%= pkg.author.name %> - <a href="<%= pkg.author.url %>" target="_blank"><%= pkg.author.user %></a></p>
+        <p>Licencia <%= pkg.license %></p>
+        <p>Versión <%= pkg.version %></p>
       <!-- /build -->
     </div>
 
