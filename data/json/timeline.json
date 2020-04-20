@@ -1,6 +1,6 @@
 {
        "0":{
-              "DATE":"2020-03-06",
+              "DATE":"2020-03-02",
               "CASES":1,
               "RECOVERED":1,
               "DEATHS":0,
@@ -9,408 +9,417 @@
               "SUM_DEATHS":0
        },
        "1":{
-              "DATE":"2020-03-09",
-              "CASES":2,
-              "RECOVERED":2,
+              "DATE":"2020-03-06",
+              "CASES":1,
+              "RECOVERED":1,
+              "DEATHS":0,
+              "SUM_CASES":2,
+              "SUM_RECOVERED":2,
+              "SUM_DEATHS":0
+       },
+       "2":{
+              "DATE":"2020-03-07",
+              "CASES":1,
+              "RECOVERED":1,
               "DEATHS":0,
               "SUM_CASES":3,
               "SUM_RECOVERED":3,
               "SUM_DEATHS":0
        },
-       "2":{
-              "DATE":"2020-03-11",
-              "CASES":7,
-              "RECOVERED":7,
+       "3":{
+              "DATE":"2020-03-09",
+              "CASES":3,
+              "RECOVERED":3,
+              "DEATHS":0,
+              "SUM_CASES":6,
+              "SUM_RECOVERED":6,
+              "SUM_DEATHS":0
+       },
+       "4":{
+              "DATE":"2020-03-10",
+              "CASES":4,
+              "RECOVERED":4,
               "DEATHS":0,
               "SUM_CASES":10,
               "SUM_RECOVERED":10,
               "SUM_DEATHS":0
        },
-       "3":{
-              "DATE":"2020-03-12",
-              "CASES":6,
-              "RECOVERED":5,
-              "DEATHS":0,
-              "SUM_CASES":16,
-              "SUM_RECOVERED":15,
-              "SUM_DEATHS":0
-       },
-       "4":{
-              "DATE":"2020-03-13",
-              "CASES":6,
-              "RECOVERED":5,
-              "DEATHS":0,
-              "SUM_CASES":22,
-              "SUM_RECOVERED":20,
-              "SUM_DEATHS":0
-       },
        "5":{
-              "DATE":"2020-03-14",
-              "CASES":20,
-              "RECOVERED":19,
+              "DATE":"2020-03-08",
+              "CASES":2,
+              "RECOVERED":2,
               "DEATHS":0,
-              "SUM_CASES":42,
-              "SUM_RECOVERED":39,
+              "SUM_CASES":12,
+              "SUM_RECOVERED":12,
               "SUM_DEATHS":0
        },
        "6":{
-              "DATE":"2020-03-15",
-              "CASES":20,
-              "RECOVERED":17,
+              "DATE":"2020-03-12",
+              "CASES":12,
+              "RECOVERED":11,
               "DEATHS":0,
-              "SUM_CASES":62,
-              "SUM_RECOVERED":56,
+              "SUM_CASES":24,
+              "SUM_RECOVERED":23,
               "SUM_DEATHS":0
        },
        "7":{
-              "DATE":"2020-03-16",
-              "CASES":16,
-              "RECOVERED":14,
-              "DEATHS":1,
-              "SUM_CASES":78,
-              "SUM_RECOVERED":70,
-              "SUM_DEATHS":1
+              "DATE":"2020-03-11",
+              "CASES":8,
+              "RECOVERED":8,
+              "DEATHS":0,
+              "SUM_CASES":32,
+              "SUM_RECOVERED":31,
+              "SUM_DEATHS":0
        },
        "8":{
-              "DATE":"2020-03-17",
-              "CASES":28,
-              "RECOVERED":19,
-              "DEATHS":0,
-              "SUM_CASES":106,
-              "SUM_RECOVERED":89,
+              "DATE":"2020-03-13",
+              "CASES":13,
+              "RECOVERED":9,
+              "DEATHS":1,
+              "SUM_CASES":45,
+              "SUM_RECOVERED":40,
               "SUM_DEATHS":1
        },
        "9":{
-              "DATE":"2020-03-18",
-              "CASES":20,
-              "RECOVERED":13,
+              "DATE":"2020-03-15",
+              "CASES":18,
+              "RECOVERED":16,
               "DEATHS":0,
-              "SUM_CASES":126,
-              "SUM_RECOVERED":102,
+              "SUM_CASES":63,
+              "SUM_RECOVERED":56,
               "SUM_DEATHS":1
        },
        "10":{
-              "DATE":"2020-03-19",
-              "CASES":34,
-              "RECOVERED":22,
+              "DATE":"2020-03-14",
+              "CASES":22,
+              "RECOVERED":21,
               "DEATHS":0,
-              "SUM_CASES":160,
-              "SUM_RECOVERED":124,
+              "SUM_CASES":85,
+              "SUM_RECOVERED":77,
               "SUM_DEATHS":1
        },
        "11":{
-              "DATE":"2020-03-20",
-              "CASES":64,
-              "RECOVERED":35,
-              "DEATHS":4,
-              "SUM_CASES":224,
-              "SUM_RECOVERED":159,
-              "SUM_DEATHS":5
+              "DATE":"2020-03-16",
+              "CASES":29,
+              "RECOVERED":26,
+              "DEATHS":0,
+              "SUM_CASES":114,
+              "SUM_RECOVERED":103,
+              "SUM_DEATHS":1
        },
        "12":{
-              "DATE":"2020-03-21",
-              "CASES":45,
-              "RECOVERED":28,
+              "DATE":"2020-03-17",
+              "CASES":41,
+              "RECOVERED":27,
               "DEATHS":1,
-              "SUM_CASES":269,
-              "SUM_RECOVERED":187,
-              "SUM_DEATHS":6
+              "SUM_CASES":155,
+              "SUM_RECOVERED":130,
+              "SUM_DEATHS":2
        },
        "13":{
-              "DATE":"2020-03-22",
-              "CASES":65,
-              "RECOVERED":35,
-              "DEATHS":5,
-              "SUM_CASES":334,
-              "SUM_RECOVERED":222,
-              "SUM_DEATHS":11
+              "DATE":"2020-03-18",
+              "CASES":46,
+              "RECOVERED":34,
+              "DEATHS":2,
+              "SUM_CASES":201,
+              "SUM_RECOVERED":164,
+              "SUM_DEATHS":4
        },
        "14":{
-              "DATE":"2020-03-23",
-              "CASES":135,
-              "RECOVERED":74,
-              "DEATHS":8,
-              "SUM_CASES":469,
-              "SUM_RECOVERED":296,
-              "SUM_DEATHS":19
+              "DATE":"2020-03-19",
+              "CASES":69,
+              "RECOVERED":56,
+              "DEATHS":0,
+              "SUM_CASES":270,
+              "SUM_RECOVERED":220,
+              "SUM_DEATHS":4
        },
        "15":{
-              "DATE":"2020-03-24",
-              "CASES":211,
-              "RECOVERED":91,
-              "DEATHS":9,
-              "SUM_CASES":680,
-              "SUM_RECOVERED":387,
-              "SUM_DEATHS":28
+              "DATE":"2020-03-20",
+              "CASES":78,
+              "RECOVERED":49,
+              "DEATHS":5,
+              "SUM_CASES":348,
+              "SUM_RECOVERED":269,
+              "SUM_DEATHS":9
        },
        "16":{
-              "DATE":"2020-03-27",
-              "CASES":158,
-              "RECOVERED":30,
-              "DEATHS":14,
-              "SUM_CASES":838,
-              "SUM_RECOVERED":417,
-              "SUM_DEATHS":42
+              "DATE":"2020-03-21",
+              "CASES":78,
+              "RECOVERED":45,
+              "DEATHS":3,
+              "SUM_CASES":426,
+              "SUM_RECOVERED":314,
+              "SUM_DEATHS":12
        },
        "17":{
-              "DATE":"2020-03-25",
-              "CASES":202,
-              "RECOVERED":92,
-              "DEATHS":7,
-              "SUM_CASES":1040,
-              "SUM_RECOVERED":509,
-              "SUM_DEATHS":49
+              "DATE":"2020-03-22",
+              "CASES":81,
+              "RECOVERED":51,
+              "DEATHS":4,
+              "SUM_CASES":507,
+              "SUM_RECOVERED":365,
+              "SUM_DEATHS":16
        },
        "18":{
-              "DATE":"2020-03-26",
-              "CASES":155,
-              "RECOVERED":45,
-              "DEATHS":10,
-              "SUM_CASES":1195,
-              "SUM_RECOVERED":554,
-              "SUM_DEATHS":59
+              "DATE":"2020-03-23",
+              "CASES":93,
+              "RECOVERED":49,
+              "DEATHS":6,
+              "SUM_CASES":600,
+              "SUM_RECOVERED":414,
+              "SUM_DEATHS":22
        },
        "19":{
-              "DATE":"2020-03-28",
-              "CASES":164,
-              "RECOVERED":46,
-              "DEATHS":10,
-              "SUM_CASES":1359,
-              "SUM_RECOVERED":600,
-              "SUM_DEATHS":69
+              "DATE":"2020-03-24",
+              "CASES":129,
+              "RECOVERED":60,
+              "DEATHS":6,
+              "SUM_CASES":729,
+              "SUM_RECOVERED":474,
+              "SUM_DEATHS":28
        },
        "20":{
-              "DATE":"2020-03-30",
-              "CASES":189,
-              "RECOVERED":21,
-              "DEATHS":11,
-              "SUM_CASES":1548,
-              "SUM_RECOVERED":621,
-              "SUM_DEATHS":80
+              "DATE":"2020-03-27",
+              "CASES":158,
+              "RECOVERED":39,
+              "DEATHS":15,
+              "SUM_CASES":887,
+              "SUM_RECOVERED":513,
+              "SUM_DEATHS":43
        },
        "21":{
-              "DATE":"2020-03-31",
-              "CASES":179,
-              "RECOVERED":12,
-              "DEATHS":10,
-              "SUM_CASES":1727,
-              "SUM_RECOVERED":633,
-              "SUM_DEATHS":90
+              "DATE":"2020-03-25",
+              "CASES":159,
+              "RECOVERED":68,
+              "DEATHS":8,
+              "SUM_CASES":1046,
+              "SUM_RECOVERED":581,
+              "SUM_DEATHS":51
        },
        "22":{
+              "DATE":"2020-03-26",
+              "CASES":147,
+              "RECOVERED":46,
+              "DEATHS":9,
+              "SUM_CASES":1193,
+              "SUM_RECOVERED":627,
+              "SUM_DEATHS":60
+       },
+       "23":{
+              "DATE":"2020-03-28",
+              "CASES":160,
+              "RECOVERED":47,
+              "DEATHS":11,
+              "SUM_CASES":1353,
+              "SUM_RECOVERED":674,
+              "SUM_DEATHS":71
+       },
+       "24":{
+              "DATE":"2020-03-30",
+              "CASES":190,
+              "RECOVERED":25,
+              "DEATHS":11,
+              "SUM_CASES":1543,
+              "SUM_RECOVERED":699,
+              "SUM_DEATHS":82
+       },
+       "25":{
+              "DATE":"2020-03-31",
+              "CASES":179,
+              "RECOVERED":15,
+              "DEATHS":12,
+              "SUM_CASES":1722,
+              "SUM_RECOVERED":714,
+              "SUM_DEATHS":94
+       },
+       "26":{
               "DATE":"2020-03-29",
               "CASES":138,
               "RECOVERED":16,
               "DEATHS":8,
-              "SUM_CASES":1865,
-              "SUM_RECOVERED":649,
-              "SUM_DEATHS":98
-       },
-       "23":{
-              "DATE":"2020-04-03",
-              "CASES":176,
-              "RECOVERED":15,
-              "DEATHS":15,
-              "SUM_CASES":2041,
-              "SUM_RECOVERED":664,
-              "SUM_DEATHS":113
-       },
-       "24":{
-              "DATE":"2020-04-01",
-              "CASES":191,
-              "RECOVERED":17,
-              "DEATHS":6,
-              "SUM_CASES":2232,
-              "SUM_RECOVERED":681,
-              "SUM_DEATHS":119
-       },
-       "25":{
-              "DATE":"2020-04-02",
-              "CASES":143,
-              "RECOVERED":14,
-              "DEATHS":9,
-              "SUM_CASES":2375,
-              "SUM_RECOVERED":695,
-              "SUM_DEATHS":128
-       },
-       "26":{
-              "DATE":"2020-04-04",
-              "CASES":138,
-              "RECOVERED":4,
-              "DEATHS":10,
-              "SUM_CASES":2513,
-              "SUM_RECOVERED":699,
-              "SUM_DEATHS":138
+              "SUM_CASES":1860,
+              "SUM_RECOVERED":730,
+              "SUM_DEATHS":102
        },
        "27":{
+              "DATE":"2020-04-02",
+              "CASES":144,
+              "RECOVERED":15,
+              "DEATHS":9,
+              "SUM_CASES":2004,
+              "SUM_RECOVERED":745,
+              "SUM_DEATHS":111
+       },
+       "28":{
+              "DATE":"2020-04-01",
+              "CASES":193,
+              "RECOVERED":24,
+              "DEATHS":6,
+              "SUM_CASES":2197,
+              "SUM_RECOVERED":769,
+              "SUM_DEATHS":117
+       },
+       "29":{
+              "DATE":"2020-04-03",
+              "CASES":180,
+              "RECOVERED":16,
+              "DEATHS":17,
+              "SUM_CASES":2377,
+              "SUM_RECOVERED":785,
+              "SUM_DEATHS":134
+       },
+       "30":{
+              "DATE":"2020-04-13",
+              "CASES":134,
+              "RECOVERED":0,
+              "DEATHS":5,
+              "SUM_CASES":2511,
+              "SUM_RECOVERED":785,
+              "SUM_DEATHS":139
+       },
+       "31":{
+              "DATE":"2020-04-04",
+              "CASES":138,
+              "RECOVERED":7,
+              "DEATHS":10,
+              "SUM_CASES":2649,
+              "SUM_RECOVERED":792,
+              "SUM_DEATHS":149
+       },
+       "32":{
               "DATE":"2020-04-05",
               "CASES":82,
               "RECOVERED":4,
-              "DEATHS":3,
-              "SUM_CASES":2595,
-              "SUM_RECOVERED":703,
-              "SUM_DEATHS":141
-       },
-       "28":{
-              "DATE":"2020-04-06",
-              "CASES":86,
-              "RECOVERED":1,
-              "DEATHS":3,
-              "SUM_CASES":2681,
-              "SUM_RECOVERED":704,
-              "SUM_DEATHS":144
-       },
-       "29":{
-              "DATE":"2020-04-07",
-              "CASES":84,
-              "RECOVERED":5,
-              "DEATHS":6,
-              "SUM_CASES":2765,
-              "SUM_RECOVERED":709,
-              "SUM_DEATHS":150
-       },
-       "30":{
-              "DATE":"2020-03-03",
-              "CASES":1,
-              "RECOVERED":0,
-              "DEATHS":0,
-              "SUM_CASES":2766,
-              "SUM_RECOVERED":709,
-              "SUM_DEATHS":150
-       },
-       "31":{
-              "DATE":"2020-03-04",
-              "CASES":1,
-              "RECOVERED":0,
-              "DEATHS":1,
-              "SUM_CASES":2767,
-              "SUM_RECOVERED":709,
-              "SUM_DEATHS":151
-       },
-       "32":{
-              "DATE":"2020-04-09",
-              "CASES":124,
-              "RECOVERED":0,
-              "DEATHS":5,
-              "SUM_CASES":2891,
-              "SUM_RECOVERED":709,
-              "SUM_DEATHS":156
+              "DEATHS":4,
+              "SUM_CASES":2731,
+              "SUM_RECOVERED":796,
+              "SUM_DEATHS":153
        },
        "33":{
-              "DATE":"2020-04-08",
-              "CASES":77,
-              "RECOVERED":0,
-              "DEATHS":6,
-              "SUM_CASES":2968,
-              "SUM_RECOVERED":709,
-              "SUM_DEATHS":162
+              "DATE":"2020-04-06",
+              "CASES":109,
+              "RECOVERED":1,
+              "DEATHS":3,
+              "SUM_CASES":2840,
+              "SUM_RECOVERED":797,
+              "SUM_DEATHS":156
        },
        "34":{
+              "DATE":"2020-04-07",
+              "CASES":97,
+              "RECOVERED":5,
+              "DEATHS":6,
+              "SUM_CASES":2937,
+              "SUM_RECOVERED":802,
+              "SUM_DEATHS":162
+       },
+       "35":{
+              "DATE":"2020-04-08",
+              "CASES":83,
+              "RECOVERED":0,
+              "DEATHS":7,
+              "SUM_CASES":3020,
+              "SUM_RECOVERED":802,
+              "SUM_DEATHS":169
+       },
+       "36":{
+              "DATE":"2020-04-09",
+              "CASES":126,
+              "RECOVERED":0,
+              "DEATHS":5,
+              "SUM_CASES":3146,
+              "SUM_RECOVERED":802,
+              "SUM_DEATHS":174
+       },
+       "37":{
               "DATE":"2020-04-10",
               "CASES":112,
               "RECOVERED":1,
               "DEATHS":4,
-              "SUM_CASES":3080,
-              "SUM_RECOVERED":710,
-              "SUM_DEATHS":166
-       },
-       "35":{
-              "DATE":"2020-04-11",
-              "CASES":217,
-              "RECOVERED":1,
-              "DEATHS":2,
-              "SUM_CASES":3297,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":168
-       },
-       "36":{
-              "DATE":"2020-04-13",
-              "CASES":108,
-              "RECOVERED":0,
-              "DEATHS":5,
-              "SUM_CASES":3405,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":173
-       },
-       "37":{
-              "DATE":"2020-04-12",
-              "CASES":129,
-              "RECOVERED":0,
-              "DEATHS":0,
-              "SUM_CASES":3534,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":173
+              "SUM_CASES":3258,
+              "SUM_RECOVERED":803,
+              "SUM_DEATHS":178
        },
        "38":{
-              "DATE":"2020-04-14",
-              "CASES":133,
-              "RECOVERED":0,
-              "DEATHS":3,
-              "SUM_CASES":3667,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":176
+              "DATE":"2020-04-11",
+              "CASES":223,
+              "RECOVERED":1,
+              "DEATHS":2,
+              "SUM_CASES":3481,
+              "SUM_RECOVERED":804,
+              "SUM_DEATHS":180
        },
        "39":{
-              "DATE":"2020-04-15",
-              "CASES":62,
-              "RECOVERED":0,
-              "DEATHS":3,
-              "SUM_CASES":3729,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":179
-       },
-       "40":{
-              "DATE":"2020-04-16",
-              "CASES":44,
+              "DATE":"2020-04-12",
+              "CASES":133,
               "RECOVERED":0,
               "DEATHS":0,
-              "SUM_CASES":3773,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":179
+              "SUM_CASES":3614,
+              "SUM_RECOVERED":804,
+              "SUM_DEATHS":180
+       },
+       "40":{
+              "DATE":"2020-04-14",
+              "CASES":150,
+              "RECOVERED":0,
+              "DEATHS":5,
+              "SUM_CASES":3764,
+              "SUM_RECOVERED":804,
+              "SUM_DEATHS":185
        },
        "41":{
               "DATE":"2020-04-17",
-              "CASES":9,
+              "CASES":33,
               "RECOVERED":0,
               "DEATHS":0,
-              "SUM_CASES":3782,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":179
+              "SUM_CASES":3797,
+              "SUM_RECOVERED":804,
+              "SUM_DEATHS":185
        },
        "42":{
-              "DATE":"2020-04-18",
-              "CASES":5,
+              "DATE":"2020-04-15",
+              "CASES":74,
               "RECOVERED":0,
-              "DEATHS":0,
-              "SUM_CASES":3787,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":179
+              "DEATHS":4,
+              "SUM_CASES":3871,
+              "SUM_RECOVERED":804,
+              "SUM_DEATHS":189
        },
        "43":{
+              "DATE":"2020-04-16",
+              "CASES":78,
+              "RECOVERED":0,
+              "DEATHS":0,
+              "SUM_CASES":3949,
+              "SUM_RECOVERED":804,
+              "SUM_DEATHS":189
+       },
+       "44":{
+              "DATE":"2020-04-18",
+              "CASES":15,
+              "RECOVERED":0,
+              "DEATHS":0,
+              "SUM_CASES":3964,
+              "SUM_RECOVERED":804,
+              "SUM_DEATHS":189
+       },
+       "45":{
               "DATE":"2020-04-19",
+              "CASES":10,
+              "RECOVERED":0,
+              "DEATHS":0,
+              "SUM_CASES":3974,
+              "SUM_RECOVERED":804,
+              "SUM_DEATHS":189
+       },
+       "46":{
+              "DATE":"2020-04-20",
               "CASES":3,
               "RECOVERED":0,
               "DEATHS":0,
-              "SUM_CASES":3790,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":179
-       },
-       "44":{
-              "DATE":"13\/04\/2020",
-              "CASES":1,
-              "RECOVERED":0,
-              "DEATHS":0,
-              "SUM_CASES":3791,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":179
-       },
-       "45":{
-              "DATE":"18\/04\/2020",
-              "CASES":1,
-              "RECOVERED":0,
-              "DEATHS":0,
-              "SUM_CASES":3792,
-              "SUM_RECOVERED":711,
-              "SUM_DEATHS":179
+              "SUM_CASES":3977,
+              "SUM_RECOVERED":804,
+              "SUM_DEATHS":189
        }
 }
