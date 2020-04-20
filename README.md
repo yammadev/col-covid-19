@@ -96,7 +96,11 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
 
-### [2.0.1] - 2020-04-19
+### [2.2.0] - 2020-04-19
+#### Modificado / Modified
+- Dataframe.
+
+### [2.1.0] - 2020-04-19
 #### Modificado / Modified
 - Script.
 - Banner.

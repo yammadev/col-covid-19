@@ -31,14 +31,22 @@ def main():
     data = pd.DataFrame.from_records(results)
 
     # [4] Reset columns
-    data.columns = ['CASE', 'DATE', 'CITY', 'DEPARTAMENT', 'STATUS', 'AGE', 'GENDER', 'KIND', 'ORIGIN', 'RECOVERED_DATE', 'DEATH_DATE', 'SYMPTOMS_DATE']
+    data.columns = ['CASE', 'DATE', 'COD_DIV', 'CITY', 'DEPARTAMENT', 'STATUS', 'AGE', 'GENDER',
+                    'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE',
+                    'REPORT_DATE', 'DEATH_DATE']
 
     # [*] Format
     # TODO: Format appropiate for other date values (wait until consistency in gov's data) - POSIXct
     data['DATE'] = data['DATE'].apply(lambda date : date.split('T')[0])
+    #data['SYMPTOMS_BEGINNING_DATE'] = data['SYMPTOMS_BEGINNING_DATE'].apply(lambda date : date.split('T')[0])
+    #data['DIAGNOSIS_DATE'] = data['DIAGNOSIS_DATE'].apply(lambda date : date.split('T')[0])
+    #data['RECOVERED_DATE'] = data['RECOVERED_DATE'].apply(lambda date : date.split('T')[0])
+    #data['REPORT_DATE'] = data['REPORT_DATE'].apply(lambda date : date.split('T')[0])
+    #data['DEATH_DATE'] = data['DEATH_DATE'].apply(lambda date : date.split('T')[0])
 
     # Uppercase
     data['GENDER'] = data['GENDER'].str.upper()
+    data['STATUS'] = data['STATUS'].str.upper()
 
     # [] Export!
     records(data)
@@ -104,14 +112,15 @@ def statistics(data):
 def timeline(data):
     # [1] Get per DATE and STATUS
     cases = data.groupby(by = 'DATE', sort = False).size().reset_index()
-    recovered = data[(data['STATUS'] == 'Recuperado') | (data['STATUS'] == 'Recuperado (Hospital)')].groupby(by = 'DATE', sort = False).size().reset_index()
-    deaths = data[data['STATUS'] == 'Fallecido'].groupby(by = 'DATE', sort = False).size().reset_index()
+    recovered = data[(data['STATUS'] == 'RECUPERADO') | (data['STATUS'] == 'RECUPERADO (HOSPITAL)')].groupby(by = 'DATE', sort = False).size().reset_index()
+    deaths = data[data['STATUS'] == 'FALLECIDO'].groupby(by = 'DATE', sort = False).size().reset_index()
 
     cases.columns = ['DATE', 'CASES']
     recovered.columns = ['DATE', 'RECOVERED']
     deaths.columns = ['DATE', 'DEATHS'];
 
     # TODO: Update with appropiate date group (wait until consistency in gov's data)
+    # reported = data.groupby(by = 'REPORT_DATE', sort = False).size().reset_index()
     # recovered = data.groupby(by = 'RECOVERED_DATE', sort = False).size().reset_index()
     # deaths = data.groupby(by = 'DEATH_DATE', sort = False).size().reset_index()
 
@@ -158,9 +167,9 @@ def summary(data, timeline):
 
     # [3] SUMMARY of CASES per STATUS
     summary = []
-    summary.append(['Casos', timeline['CASES'].sum()])
-    summary.append(['Recuperados', timeline['RECOVERED'].sum()])
-    summary.append(['Fallecidos', timeline['DEATHS'].sum()])
+    summary.append(['CASOS', timeline['CASES'].sum()])
+    summary.append(['RECUPERADOS', timeline['RECOVERED'].sum()])
+    summary.append(['FALLECIDOS', timeline['DEATHS'].sum()])
     summary = pd.DataFrame(data = summary, columns = ['VALUE', 'TOTAL'])
     # TODO: difference
 
