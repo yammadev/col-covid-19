@@ -25,8 +25,25 @@ Los datos formateados se encuentran disponibles en la carpeta [data/](data) para
 | `statistics` | Casos por CIUDADES y DEPARTAMENTOS con COORDENADAS / CASES per CITY and DEPARTMENTS with COORDINATES
 | `timeline` | CASOS por FECHAS y ESTADOS / CASES per DATE and STATUS
 | `summary` | Resúmen de CASOS por ESTADO / Summary of CASES per STATUS
-| `cases_per_status` | CASOS por FECHAS y ESTADOS / CASES per STATUS
 | `cases_per_gender` | CASOS por GÉNERO / CASES per GENDER
+| `cases_per_status` | CASOS por FECHAS y ESTADOS / CASES per STATUS
+| `cases_per_kind` | CASOS por TIPO / CASES per KIND
+| `cases_per_level` | CASOS por NIVEL / CASES per LEVEL
+| `cases_per_origin` | CASOS por ORIGEN / CASES per ORIGIN
+
+Adicionalmente, las gráficas de las estadísticas en formatos `.img` / Additionally, the graphs of the statistics in `.img` formats.
+
+| Archivo / File | Referencia / Reference |
+| :-----: | ---------- |
+| `cases` | CASOS reportados diariamente / CASES reported dairy
+| `timeline` | Histórico de CASOS en el tiempo / History of CASES over time
+
+> Para mayor información sobre cómo usar los datos, consulte [data/generate.py](data/generate.py) /
+For more information on how to use the data, see [data/generate.py](data/generate.py)
+
+![cases](data/imgs/cases.png)
+
+![timeline](data/imgs/timeline.png)
 
 ## 3. Notas de desarrollo / Development notes
 ### Herramientas y Requerimientos / Tools & Requirements
@@ -95,6 +112,15 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [2.3.0] - 2020-04-21
+#### Agregado / Added
+- Más información y más estadísticas / More info and more statistics.
+- Gráficas / Graphs.
+
+#### Modificado / Modified
+- Dataframe.
+- Limpieza del código / Code cleanning.
 
 ### [2.2.0] - 2020-04-19
 #### Modificado / Modified

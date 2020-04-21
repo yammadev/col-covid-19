@@ -22,7 +22,7 @@ venv/scripts/pip.exe install -U -r requirements.txt
 # Remove old generated data
 print "Remove old generated data"
 
-rm -rf csv/* js/* json/*
+rm -rf csv/* js/* json/* imgs/*
 
 # -------------------------------
 # [2] Generate new data

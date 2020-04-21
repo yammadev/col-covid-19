@@ -4,6 +4,7 @@
 import pandas as pd
 from sodapy import Socrata
 from geopy.geocoders import Nominatim
+import matplotlib.pyplot as plt
 
 # -------------------------------
 # [1] Main
@@ -31,30 +32,26 @@ def main():
     data = pd.DataFrame.from_records(results)
 
     # [4] Reset columns
-    data.columns = ['CASE', 'DATE', 'COD_DIV', 'CITY', 'DEPARTAMENT', 'STATUS', 'AGE', 'GENDER',
+    data.columns = ['CASE', 'NOTIFICATION_DATE', 'COD_DIV', 'CITY', 'DEPARTAMENT', 'STATUS', 'AGE', 'GENDER',
                     'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE',
                     'REPORT_DATE', 'DEATH_DATE']
 
-    # [*] Format
+    # [5] Format - Date
     # TODO: Format appropiate for other date values (wait until consistency in gov's data) - POSIXct
-    data['DATE'] = data['DATE'].apply(lambda date : date.split('T')[0])
-    #data['SYMPTOMS_BEGINNING_DATE'] = data['SYMPTOMS_BEGINNING_DATE'].apply(lambda date : date.split('T')[0])
-    #data['DIAGNOSIS_DATE'] = data['DIAGNOSIS_DATE'].apply(lambda date : date.split('T')[0])
-    #data['RECOVERED_DATE'] = data['RECOVERED_DATE'].apply(lambda date : date.split('T')[0])
-    #data['REPORT_DATE'] = data['REPORT_DATE'].apply(lambda date : date.split('T')[0])
-    #data['DEATH_DATE'] = data['DEATH_DATE'].apply(lambda date : date.split('T')[0])
+    dates = ['NOTIFICATION_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE', 'REPORT_DATE', 'DEATH_DATE']
+    data[dates] = data[dates].apply(pd.to_datetime, infer_datetime_format = True)
 
-    # Uppercase
-    data['GENDER'] = data['GENDER'].str.upper()
-    data['STATUS'] = data['STATUS'].str.upper()
+    # [6] Format - Uppercase
+    strings = ['GENDER', 'STATUS', 'KIND', 'LEVEL', 'ORIGIN']
+    data[strings] = data[strings].apply(lambda x: x.astype(str).str.upper())
 
-    # [] Export!
+    # [7] Export!
     records(data)
     statistics(data)
     timeline(data)
 
 # -------------------------------
-# [] List of CASES
+# [2] List of CASES
 # -------------------------------
 # Full list of CASES with all its RECORDS
 # @arg  {pd.dataFrame} data     -- The dataFrame
@@ -63,107 +60,150 @@ def records(data):
     export(data, 'records');
 
 # -------------------------------
-# [] Statistics
+# [3] Statistics
 # -------------------------------
 # Get CASES per CITY and DEPARTAMENT with COORDINATES
 # @arg  {pd.dataFrame} data     -- The dataFrame
 def statistics(data):
     # [1] Get CASES per CITY and DEPARTAMENT
     statistics = data.groupby(['CITY', 'DEPARTAMENT']).size().reset_index()
+
+    # [2] Reset columns
     statistics.columns = ['CITY', 'DEPARTAMENT', 'CASES']
 
-    # [2] Config geolocator
+    # [3] Config geolocator
     geolocator = Nominatim(user_agent = 'col-covid-19', timeout = None)
 
-    # [3] Query
+    # [4] Query
     statistics['COORDS'] = statistics['CITY'] + ', ' + statistics['DEPARTAMENT'] + ', ' + 'Colombia'
 
-    # [4] Get COORDINATES - 1st try (by CITY + DEPARTAMENT)
+    # [5] Get COORDINATES - 1st try (by CITY + DEPARTAMENT)
     statistics['COORDS'] = statistics['COORDS'].apply(
         lambda coord : geolocator.geocode(coord, country_codes = 'CO')
     )
 
-    # [5] Get COORDINATES - 2nd try (by CITY)
+    # [6] Get COORDINATES - 2nd try (by CITY)
     statistics['COORDS'] = statistics.apply(
         lambda row: geolocator.geocode(row['CITY'], country_codes = 'CO') if pd.isnull(row['COORDS']) else row['COORDS'],
         axis = 1
     )
 
-    # [6] Drop Not found (e.g., misspelled words) and reset index
+    # [7] Drop Not found (e.g., misspelled words) and reset index
     statistics = statistics.dropna()
     statistics = statistics.reset_index(drop = True)
 
-    # [7] Get POINT
+    # [8] Get POINT
     statistics['LAT'] = statistics['COORDS'].apply(lambda coord : coord.latitude if coord else None)
     statistics['LNG'] = statistics['COORDS'].apply(lambda coord : coord.longitude if coord else None)
 
-    # [8] Drop
+    # [9] Drop
     statistics = statistics.drop(columns = ['COORDS'])
 
-    # [9] Export!
+    # [10] Export!
     export(statistics, 'statistics')
     export_JS(statistics, 'statistics')
 
 # -------------------------------
-# [] Per DATE and STATUS
+# [4] Per DATE and STATUS
 # -------------------------------
 # Get CASES per DATE and STATUS
 # @arg  {pd.dataFrame} data     -- The dataFrame
 def timeline(data):
     # [1] Get per DATE and STATUS
-    cases = data.groupby(by = 'DATE', sort = False).size().reset_index()
-    recovered = data[(data['STATUS'] == 'RECUPERADO') | (data['STATUS'] == 'RECUPERADO (HOSPITAL)')].groupby(by = 'DATE', sort = False).size().reset_index()
-    deaths = data[data['STATUS'] == 'FALLECIDO'].groupby(by = 'DATE', sort = False).size().reset_index()
+    cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
+    recovered = data.groupby(by = 'RECOVERED_DATE').size().reset_index()
+    deaths = data.groupby(by = 'DEATH_DATE').size().reset_index()
 
+    # [2] Reset columns
     cases.columns = ['DATE', 'CASES']
     recovered.columns = ['DATE', 'RECOVERED']
     deaths.columns = ['DATE', 'DEATHS'];
 
-    # TODO: Update with appropiate date group (wait until consistency in gov's data)
-    # reported = data.groupby(by = 'REPORT_DATE', sort = False).size().reset_index()
-    # recovered = data.groupby(by = 'RECOVERED_DATE', sort = False).size().reset_index()
-    # deaths = data.groupby(by = 'DEATH_DATE', sort = False).size().reset_index()
-
-    # [2] Merge
+    # [3] Merge
     timeline = pd.merge(cases, recovered, how = 'left', on = 'DATE')
     timeline = pd.merge(timeline, deaths, how = 'left', on = 'DATE')
 
-    # [3] Fill 'NaN' values
+    # [4] Fill 'NaN' values
     timeline.fillna(0, inplace = True)
 
-    # [*] Format
+    # [5] Format
     # Due to Panda's merge issue (https://github.com/pandas-dev/pandas/issues/8596)
     timeline['RECOVERED'] = timeline['RECOVERED'].astype('int64')
     timeline['DEATHS'] = timeline['DEATHS'].astype('int64')
 
-    # [4] Sort index
-    timeline.sort_index(ascending = True)
+    # [6] Sort index
+    timeline.sort_index()
 
-    # [4] Cumulative sum
+    # [7] Cumulative sum
     timeline['SUM_CASES'] = timeline['CASES'].cumsum()
     timeline['SUM_RECOVERED'] = timeline['RECOVERED'].cumsum()
     timeline['SUM_DEATHS'] = timeline['DEATHS'].cumsum()
 
-    # [5] Export!
+    # [8] Export!
     export(timeline, 'timeline')
 
-    # [6]
+    # [9]
     summary(data, timeline);
 
+    # [10] Plot
+    # Dataset [1]
+    dataset = timeline[['DATE', 'CASES']]
+    dataset.set_index('DATE', inplace = True)
+
+    # Axis
+    axis = dataset['CASES'].plot()
+
+    # Plot properties
+    plt.suptitle('Línea de Tiempo / Timeline')
+    plt.title('Casos reportados diariamente / Cases reported dairy', fontsize = 10)
+    plt.xlabel('Fechas / Dates')
+    plt.ylabel('No. de Casos / No. of Cases')
+
+    # Save plot
+    plt.savefig('imgs/cases.png')
+
+    # Close plot
+    plt.close()
+
+    # Dataset [2]
+    dataset = timeline[['DATE', 'SUM_CASES']]
+    dataset.set_index('DATE', inplace = True)
+
+    # Axis
+    axis = dataset['SUM_CASES'].plot()
+
+    # Plot properties
+    plt.suptitle('Línea de Tiempo / Timeline')
+    plt.title('Histórico de casos en el tiempo / History of cases over time', fontsize = 10)
+    plt.xlabel('Fechas / Dates')
+    plt.ylabel('No. de Casos / No. of Cases')
+
+    # Save plot
+    plt.savefig('imgs/timeline.png')
+
+    # Close plot
+    plt.close()
+
 # -------------------------------
-# [] Summary
+# [5] Summary
 # -------------------------------
 # Get important DATA
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {pd.dataFrame} timeline -- The timeline dataFrame
 def summary(data, timeline):
-    # [1] CASES per STATUS
-    per_status = data['STATUS'].value_counts().reset_index()
-    per_status.columns = ['STATUS', 'TOTAL']
-
-    # [2] CASES per GENDER
+    # [1] CASES per GENDER, STATUS, KIND, LEVEL, ORIGIN
     per_gender = data['GENDER'].value_counts().reset_index()
+    per_status = data['STATUS'].value_counts().reset_index()
+    per_kind = data['KIND'].value_counts().reset_index()
+    per_level = data['LEVEL'].value_counts().reset_index()
+    per_origin = data['ORIGIN'].value_counts().reset_index()
+
+    # [2] Reset columns
     per_gender.columns = ['GENDER', 'TOTAL']
+    per_status.columns = ['STATUS', 'TOTAL']
+    per_kind.columns = ['KIND', 'TOTAL']
+    per_level.columns = ['LEVEL', 'TOTAL']
+    per_origin.columns = ['ORIGIN', 'TOTAL']
 
     # [3] SUMMARY of CASES per STATUS
     summary = []
@@ -174,13 +214,16 @@ def summary(data, timeline):
     # TODO: difference
 
     # [4] Export!
-    export(per_status, 'cases_per_status')
     export(per_gender, 'cases_per_gender')
+    export(per_status, 'cases_per_status')
+    export(per_kind, 'cases_per_kind')
+    export(per_level, 'cases_per_level')
+    export(per_origin, 'cases_per_origin')
     export(summary, 'summary')
     export_JS(summary, 'summary')
 
 # -------------------------------
-# [] Export
+# [6] Export
 # -------------------------------
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {string} filename       -- The name of the file
@@ -195,7 +238,7 @@ def export(data, filename):
     data.to_json(f'json/{filename}.json', orient = 'index', indent = data.shape[1])
 
 # -------------------------------
-# [] Export to JS
+# [7] Export to JS
 # -------------------------------
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {string} filename       -- The name of the file
@@ -208,7 +251,7 @@ def export_JS(data, filename):
     js.close()
 
 # -------------------------------
-# [] Main
+# [8] Main
 # -------------------------------
 if __name__ == '__main__':
     main()
