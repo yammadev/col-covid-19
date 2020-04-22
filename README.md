@@ -1,5 +1,7 @@
 ![BANNER](resources/imgs/banner.png)
 
+![SCREENSHOT](resources/imgs/screenshot.png)
+
 ## 1. Acerca / About
 #### Seguimiento (Mapa y Estadísticas) del **COVID-19** en **Colombia** / Tracking (Map & Statistics) **COVID-19** in **Colombia**.
 Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del [Instituto Nacional de Salud](https://www.ins.gov.co) de Colombia, diseñado para brindar información sobre la evolución del [COVID-19](https://es.wikipedia.org/wiki/COVID-19) en el país y sus ciudades / This project shows the state (maps and statistics) almost in real time based on data from the [National Institute of Health](https://www.ins.gov.co) of Colombia, designed to provide information on the evolution of the [COVID -19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) in the country and its cities.
@@ -41,9 +43,9 @@ Adicionalmente, las gráficas de las estadísticas en formatos `.img` / Addition
 > Para mayor información sobre cómo usar los datos, consulte [data/generate.py](data/generate.py) /
 For more information on how to use the data, see [data/generate.py](data/generate.py)
 
-![cases](data/imgs/cases.png)
+![CASES](data/imgs/cases.png)
 
-![timeline](data/imgs/timeline.png)
+![TIMELINE](data/imgs/timeline.png)
 
 ## 3. Notas de desarrollo / Development notes
 ### Herramientas y Requerimientos / Tools & Requirements
@@ -112,6 +114,13 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [2.4.0] - 2020-04-21
+#### Agregado / Added
+- Screenshot.
+
+#### Modificado / Modified
+- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno) / Info related with date (Wait until consistency in gov's data)
 
 ### [2.3.0] - 2020-04-21
 #### Agregado / Added

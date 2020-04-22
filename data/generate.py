@@ -31,14 +31,20 @@ def main():
     # Convert to pandas DataFrame
     data = pd.DataFrame.from_records(results)
 
+    # TODO: Format appropiate for other values (wait until consistency in gov's data)
+    # ['id_de_caso', 'fecha_de_notificaci_n', 'codigo_divipola', 'ciudad_de_ubicaci_n',
+    # 'departamento', 'atenci_n', 'edad', 'sexo', 'tipo', 'estado', 'pa_s_de_procedencia',
+    # 'fis', 'fecha_de_muerte', 'fecha_diagnostico', 'fecha_recuperado']
+
     # [4] Reset columns
-    data.columns = ['CASE', 'NOTIFICATION_DATE', 'COD_DIV', 'CITY', 'DEPARTAMENT', 'STATUS', 'AGE', 'GENDER',
-                    'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE',
-                    'REPORT_DATE', 'DEATH_DATE']
+    data.columns = ['CASE', 'NOTIFICATION_DATE', 'COD_DIV', 'CITY', 'DEPARTAMENT', 'STATUS',
+                    'AGE', 'GENDER', 'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE',
+                    'DEATH_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE']
 
     # [5] Format - Date
     # TODO: Format appropiate for other date values (wait until consistency in gov's data) - POSIXct
-    dates = ['NOTIFICATION_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE', 'REPORT_DATE', 'DEATH_DATE']
+    # dates = ['NOTIFICATION_DATE', 'DEATH_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE']
+    dates = ['DIAGNOSIS_DATE']
     data[dates] = data[dates].apply(pd.to_datetime, infer_datetime_format = True)
 
     # [6] Format - Uppercase
@@ -110,9 +116,14 @@ def statistics(data):
 # @arg  {pd.dataFrame} data     -- The dataFrame
 def timeline(data):
     # [1] Get per DATE and STATUS
-    cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
-    recovered = data.groupby(by = 'RECOVERED_DATE').size().reset_index()
-    deaths = data.groupby(by = 'DEATH_DATE').size().reset_index()
+    cases = data.groupby(by = 'DIAGNOSIS_DATE').size().reset_index()
+    recovered = data[data['STATUS'] == 'RECUPERADO'].groupby(by = 'DIAGNOSIS_DATE').size().reset_index()
+    deaths = data[data['STATUS'] == 'FALLECIDO'].groupby(by = 'DIAGNOSIS_DATE').size().reset_index()
+
+    # TODO: Wait until consistency in gov's data
+    # cases = data.groupby(by = 'DIAGNOSIS_DATE').size().reset_index()
+    # recovered = data.groupby(by = 'RECOVERED_DATE').size().reset_index()
+    # deaths = data.groupby(by = 'DEATH_DATE').size().reset_index()
 
     # [2] Reset columns
     cases.columns = ['DATE', 'CASES']

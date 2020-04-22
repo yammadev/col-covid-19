@@ -34,7 +34,7 @@ venv/scripts/python generate.py
 
 # Check
 echo ""
-read -p ">> Please check generated data and press [ENTER] when ready to continue building. Otherwise press [CTRL+C]"
+read -p ">> Please check generated data and press [ENTER] when ready to continue building. Otherwise press [CTRL+C] "
 
 # -------------------------------
 # [3] Build
@@ -66,7 +66,7 @@ updated=`date "+%d-%m-%Y %H:%M"`
 # -------------------------------
 # Confirm
 print "Push"
-read -p ">>> Please check generated files and press [ENTER] when ready to push. Otherwise press [CTRL^C] "
+read -p ">>> Please check generated files and press [ENTER] when ready to push. Otherwise press [CTRL+C] "
 
 # Commit
 print "Data updated $updated"
