@@ -1,5 +1,3 @@
-![BANNER](resources/imgs/banner.png)
-
 ![SCREENSHOT](resources/imgs/screenshot.png)
 
 ## 1. Acerca / About
@@ -114,6 +112,10 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [2.4.1] - 2020-04-21
+#### Removido / Removed
+- Banner.
 
 ### [2.4.0] - 2020-04-21
 #### Agregado / Added
