@@ -16,7 +16,7 @@ var summary = new Vue({
   // Mounted
   mounted: function() {
     // Update
-    this.cases_pop = (this.cases / 49.65).toFixed(2);
+    this.cases_pop = (this.cases / 50.77).toFixed(2);
     this.recovered_per = (this.recovered * 100 / this.cases).toFixed(2);
     this.deaths_per = (this.deaths * 100 / this.cases).toFixed(2);
   }
