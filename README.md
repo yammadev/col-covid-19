@@ -38,8 +38,7 @@ Adicionalmente, las gráficas de las estadísticas en formatos `.img` / Addition
 | `cases` | CASOS reportados diariamente / CASES reported dairy
 | `timeline` | Histórico de CASOS en el tiempo / History of CASES over time
 
-> Para mayor información sobre cómo usar los datos, consulte [data/generate.py](data/generate.py) /
-For more information on how to use the data, see [data/generate.py](data/generate.py)
+Para mayor información sobre cómo usar los datos, consulte [data/generate.py](data/generate.py) / For more information on how to use the data, see [data/generate.py](data/generate.py)
 
 ![CASES](data/imgs/cases.png)
 
@@ -113,6 +112,11 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
 
+### [2.4.2] - 2020-04-22
+#### Modificado / Modified
+- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno) / Info related with date (Wait until consistency in gov's data).
+- Screenshot.
+
 ### [2.4.1] - 2020-04-21
 #### Removido / Removed
 - Banner.
@@ -122,7 +126,7 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - Screenshot.
 
 #### Modificado / Modified
-- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno) / Info related with date (Wait until consistency in gov's data)
+- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno) / Info related with date (Wait until consistency in gov's data).
 
 ### [2.3.0] - 2020-04-21
 #### Agregado / Added

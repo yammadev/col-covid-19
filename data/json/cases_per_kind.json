@@ -1,14 +1,18 @@
 {
   "0":{
     "KIND":"EN ESTUDIO",
-    "TOTAL":1929
+    "TOTAL":2013
   },
   "1":{
     "KIND":"RELACIONADO",
-    "TOTAL":1428
+    "TOTAL":1537
   },
   "2":{
     "KIND":"IMPORTADO",
-    "TOTAL":792
+    "TOTAL":797
+  },
+  "3":{
+    "KIND":"S.D.",
+    "TOTAL":9
   }
 }
