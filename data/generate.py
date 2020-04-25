@@ -120,19 +120,20 @@ def statistics(data):
 def timeline(data):
     # [*] Format - Date
     # TODO: Format appropiate for other date values (wait until consistency in gov's data) - POSIXct
-    dates = ['DEATH_DATE', 'RECOVERED_DATE', 'REPORT_DATE']
-    data[dates] = data[dates].replace('-   -', pd.NaT)
+    # dates = ['DEATH_DATE', 'RECOVERED_DATE', 'REPORT_DATE']
+    dates = ['REPORT_DATE']
+    # data[dates] = data[dates].replace('-   -', pd.NaT)
     data[dates] = data[dates].apply(pd.to_datetime, infer_datetime_format = True)
 
     # TODO: Wait until consistency in gov's data
-    # cases = data.groupby(by = 'DIAGNOSIS_DATE').size().reset_index()
-    # recovered = data[data['STATUS'] == 'RECUPERADO'].groupby(by = 'DIAGNOSIS_DATE').size().reset_index()
-    # deaths = data[data['STATUS'] == 'FALLECIDO'].groupby(by = 'DIAGNOSIS_DATE').size().reset_index()
+    cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
+    recovered = data[data['STATUS'] == 'RECUPERADO'].groupby(by = 'REPORT_DATE').size().reset_index()
+    deaths = data[data['STATUS'] == 'FALLECIDO'].groupby(by = 'REPORT_DATE').size().reset_index()
 
     # [1] Get per DATE and STATUS
-    cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
-    recovered = data.groupby(by = 'RECOVERED_DATE').size().reset_index()
-    deaths = data.groupby(by = 'DEATH_DATE').size().reset_index()
+    # cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
+    # recovered = data.groupby(by = 'RECOVERED_DATE').size().reset_index()
+    # deaths = data.groupby(by = 'DEATH_DATE').size().reset_index()
 
     # [2] Reset columns
     cases.columns = ['DATE', 'CASES']

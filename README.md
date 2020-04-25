@@ -112,6 +112,10 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
 
+### [2.4.4] - 2020-04-24
+#### Modificado / Modified
+- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno) / Info related with date (Wait until consistency in gov's data).
+
 ### [2.4.3] - 2020-04-23
 #### Modificado / Modified
 - Cambios menores / Minor changes.
