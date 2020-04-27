@@ -164,37 +164,37 @@
        "18":{
               "DATE":1585267200000,
               "CASES":49,
-              "RECOVERED":25,
+              "RECOVERED":26,
               "DEATHS":4,
               "SUM_CASES":539,
-              "SUM_RECOVERED":448,
+              "SUM_RECOVERED":449,
               "SUM_DEATHS":19
        },
        "19":{
               "DATE":1585353600000,
               "CASES":69,
-              "RECOVERED":42,
+              "RECOVERED":43,
               "DEATHS":5,
               "SUM_CASES":608,
-              "SUM_RECOVERED":490,
+              "SUM_RECOVERED":492,
               "SUM_DEATHS":24
        },
        "20":{
               "DATE":1585440000000,
               "CASES":94,
-              "RECOVERED":50,
+              "RECOVERED":51,
               "DEATHS":3,
               "SUM_CASES":702,
-              "SUM_RECOVERED":540,
+              "SUM_RECOVERED":543,
               "SUM_DEATHS":27
        },
        "21":{
               "DATE":1585526400000,
               "CASES":96,
-              "RECOVERED":50,
+              "RECOVERED":52,
               "DEATHS":9,
               "SUM_CASES":798,
-              "SUM_RECOVERED":590,
+              "SUM_RECOVERED":595,
               "SUM_DEATHS":36
        },
        "22":{
@@ -203,43 +203,43 @@
               "RECOVERED":60,
               "DEATHS":6,
               "SUM_CASES":905,
-              "SUM_RECOVERED":650,
+              "SUM_RECOVERED":655,
               "SUM_DEATHS":42
        },
        "23":{
               "DATE":1585699200000,
               "CASES":160,
-              "RECOVERED":76,
+              "RECOVERED":78,
               "DEATHS":12,
               "SUM_CASES":1065,
-              "SUM_RECOVERED":726,
+              "SUM_RECOVERED":733,
               "SUM_DEATHS":54
        },
        "24":{
               "DATE":1585785600000,
               "CASES":96,
-              "RECOVERED":40,
+              "RECOVERED":42,
               "DEATHS":3,
               "SUM_CASES":1161,
-              "SUM_RECOVERED":766,
+              "SUM_RECOVERED":775,
               "SUM_DEATHS":57
        },
        "25":{
               "DATE":1585872000000,
               "CASES":105,
-              "RECOVERED":42,
+              "RECOVERED":44,
               "DEATHS":8,
               "SUM_CASES":1266,
-              "SUM_RECOVERED":808,
+              "SUM_RECOVERED":819,
               "SUM_DEATHS":65
        },
        "26":{
               "DATE":1585958400000,
               "CASES":140,
-              "RECOVERED":30,
+              "RECOVERED":36,
               "DEATHS":11,
               "SUM_CASES":1406,
-              "SUM_RECOVERED":838,
+              "SUM_RECOVERED":855,
               "SUM_DEATHS":76
        },
        "27":{
@@ -248,71 +248,71 @@
               "RECOVERED":23,
               "DEATHS":6,
               "SUM_CASES":1485,
-              "SUM_RECOVERED":861,
+              "SUM_RECOVERED":878,
               "SUM_DEATHS":82
        },
        "28":{
               "DATE":1586131200000,
               "CASES":94,
-              "RECOVERED":24,
-              "DEATHS":8,
+              "RECOVERED":32,
+              "DEATHS":10,
               "SUM_CASES":1579,
-              "SUM_RECOVERED":885,
-              "SUM_DEATHS":90
+              "SUM_RECOVERED":910,
+              "SUM_DEATHS":92
        },
        "29":{
               "DATE":1586217600000,
               "CASES":129,
-              "RECOVERED":31,
+              "RECOVERED":33,
               "DEATHS":6,
               "SUM_CASES":1708,
-              "SUM_RECOVERED":916,
-              "SUM_DEATHS":96
+              "SUM_RECOVERED":943,
+              "SUM_DEATHS":98
        },
        "30":{
               "DATE":1586304000000,
               "CASES":346,
-              "RECOVERED":60,
+              "RECOVERED":72,
               "DEATHS":19,
               "SUM_CASES":2054,
-              "SUM_RECOVERED":976,
-              "SUM_DEATHS":115
+              "SUM_RECOVERED":1015,
+              "SUM_DEATHS":117
        },
        "31":{
               "DATE":1586390400000,
               "CASES":169,
-              "RECOVERED":34,
+              "RECOVERED":37,
               "DEATHS":15,
               "SUM_CASES":2223,
-              "SUM_RECOVERED":1010,
-              "SUM_DEATHS":130
+              "SUM_RECOVERED":1052,
+              "SUM_DEATHS":132
        },
        "32":{
               "DATE":1586476800000,
               "CASES":251,
-              "RECOVERED":22,
+              "RECOVERED":23,
               "DEATHS":15,
               "SUM_CASES":2474,
-              "SUM_RECOVERED":1032,
-              "SUM_DEATHS":145
+              "SUM_RECOVERED":1075,
+              "SUM_DEATHS":147
        },
        "33":{
               "DATE":1586563200000,
               "CASES":235,
-              "RECOVERED":27,
+              "RECOVERED":39,
               "DEATHS":25,
               "SUM_CASES":2709,
-              "SUM_RECOVERED":1059,
-              "SUM_DEATHS":170
+              "SUM_RECOVERED":1114,
+              "SUM_DEATHS":172
        },
        "34":{
               "DATE":1586649600000,
               "CASES":67,
-              "RECOVERED":7,
+              "RECOVERED":12,
               "DEATHS":4,
               "SUM_CASES":2776,
-              "SUM_RECOVERED":1066,
-              "SUM_DEATHS":174
+              "SUM_RECOVERED":1126,
+              "SUM_DEATHS":176
        },
        "35":{
               "DATE":1586736000000,
@@ -320,26 +320,26 @@
               "RECOVERED":0,
               "DEATHS":1,
               "SUM_CASES":2852,
-              "SUM_RECOVERED":1066,
-              "SUM_DEATHS":175
+              "SUM_RECOVERED":1126,
+              "SUM_DEATHS":177
        },
        "36":{
               "DATE":1586822400000,
               "CASES":126,
-              "RECOVERED":0,
-              "DEATHS":3,
+              "RECOVERED":1,
+              "DEATHS":5,
               "SUM_CASES":2978,
-              "SUM_RECOVERED":1066,
-              "SUM_DEATHS":178
+              "SUM_RECOVERED":1127,
+              "SUM_DEATHS":182
        },
        "37":{
               "DATE":1586908800000,
               "CASES":126,
-              "RECOVERED":0,
+              "RECOVERED":4,
               "DEATHS":10,
               "SUM_CASES":3104,
-              "SUM_RECOVERED":1066,
-              "SUM_DEATHS":188
+              "SUM_RECOVERED":1131,
+              "SUM_DEATHS":192
        },
        "38":{
               "DATE":1586995200000,
@@ -347,35 +347,35 @@
               "RECOVERED":0,
               "DEATHS":8,
               "SUM_CASES":3232,
-              "SUM_RECOVERED":1066,
-              "SUM_DEATHS":196
+              "SUM_RECOVERED":1131,
+              "SUM_DEATHS":200
        },
        "39":{
               "DATE":1587081600000,
               "CASES":205,
               "RECOVERED":1,
-              "DEATHS":4,
+              "DEATHS":5,
               "SUM_CASES":3437,
-              "SUM_RECOVERED":1067,
-              "SUM_DEATHS":200
+              "SUM_RECOVERED":1132,
+              "SUM_DEATHS":205
        },
        "40":{
               "DATE":1587168000000,
               "CASES":183,
-              "RECOVERED":0,
+              "RECOVERED":1,
               "DEATHS":7,
               "SUM_CASES":3620,
-              "SUM_RECOVERED":1067,
-              "SUM_DEATHS":207
+              "SUM_RECOVERED":1133,
+              "SUM_DEATHS":212
        },
        "41":{
               "DATE":1587254400000,
               "CASES":174,
               "RECOVERED":0,
-              "DEATHS":1,
+              "DEATHS":2,
               "SUM_CASES":3794,
-              "SUM_RECOVERED":1067,
-              "SUM_DEATHS":208
+              "SUM_RECOVERED":1133,
+              "SUM_DEATHS":214
        },
        "42":{
               "DATE":1587340800000,
@@ -383,17 +383,17 @@
               "RECOVERED":0,
               "DEATHS":5,
               "SUM_CASES":3976,
-              "SUM_RECOVERED":1067,
-              "SUM_DEATHS":213
+              "SUM_RECOVERED":1133,
+              "SUM_DEATHS":219
        },
        "43":{
               "DATE":1587427200000,
               "CASES":172,
               "RECOVERED":0,
-              "DEATHS":5,
+              "DEATHS":6,
               "SUM_CASES":4148,
-              "SUM_RECOVERED":1067,
-              "SUM_DEATHS":218
+              "SUM_RECOVERED":1133,
+              "SUM_DEATHS":225
        },
        "44":{
               "DATE":1587513600000,
@@ -401,17 +401,17 @@
               "RECOVERED":0,
               "DEATHS":2,
               "SUM_CASES":4356,
-              "SUM_RECOVERED":1067,
-              "SUM_DEATHS":220
+              "SUM_RECOVERED":1133,
+              "SUM_DEATHS":227
        },
        "45":{
               "DATE":1587600000000,
               "CASES":203,
               "RECOVERED":0,
-              "DEATHS":4,
+              "DEATHS":5,
               "SUM_CASES":4559,
-              "SUM_RECOVERED":1067,
-              "SUM_DEATHS":224
+              "SUM_RECOVERED":1133,
+              "SUM_DEATHS":232
        },
        "46":{
               "DATE":1587686400000,
@@ -419,16 +419,25 @@
               "RECOVERED":0,
               "DEATHS":4,
               "SUM_CASES":4880,
-              "SUM_RECOVERED":1067,
-              "SUM_DEATHS":228
+              "SUM_RECOVERED":1133,
+              "SUM_DEATHS":236
        },
        "47":{
               "DATE":1587772800000,
               "CASES":262,
               "RECOVERED":0,
-              "DEATHS":5,
+              "DEATHS":6,
               "SUM_CASES":5142,
-              "SUM_RECOVERED":1067,
-              "SUM_DEATHS":233
+              "SUM_RECOVERED":1133,
+              "SUM_DEATHS":242
+       },
+       "48":{
+              "DATE":1587859200000,
+              "CASES":237,
+              "RECOVERED":0,
+              "DEATHS":2,
+              "SUM_CASES":5379,
+              "SUM_RECOVERED":1133,
+              "SUM_DEATHS":244
        }
 }
