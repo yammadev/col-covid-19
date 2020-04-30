@@ -231,8 +231,9 @@ def summary(data, timeline):
     summary.append(['CASOS', timeline['CASES'].sum()])
     summary.append(['RECUPERADOS', timeline['RECOVERED'].sum()])
     summary.append(['FALLECIDOS', timeline['DEATHS'].sum()])
+    summary.append(['ULTIMO REPORTE', timeline['CASES'].tail(1).values[0]])
+    summary.append(['ANTERIOR REPORTE', timeline['CASES'].tail(2).head(1).values[0]])
     summary = pd.DataFrame(data = summary, columns = ['VALUE', 'TOTAL'])
-    # TODO: difference
 
     # [4] Export!
     export(per_gender, 'cases_per_gender')

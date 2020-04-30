@@ -66,7 +66,18 @@
                 <div class="col s4">
                     <h5 class="orange-text">{{ cases }}</h5>
                     <p>Confirmados</p>
-                    <span>{{ cases_pop }}</span>
+                    <span>
+                        <i class="material-icons" v-if="cases_diff > 0">
+                            expand_less
+                        </i>
+                        <i class="material-icons" v-else-if="cases_diff < 0">
+                            expand_more
+                        </i>
+                        <i class="material-icons" v-else>
+                            unfold_less
+                        </i>
+                        {{ cases_today }}
+                    </span>
                 </div>
 
                 <div class="col s4">
@@ -86,7 +97,7 @@
             <div class="col s12 report" id="report">
                 <p>Reporte
 
-                    <span>30-04-2020 00:33:11 AM GMT-0500</span>
+                    <span>30-04-2020 02:22:26 AM GMT-0500</span>
 
                 </p>
 
@@ -134,7 +145,7 @@
 
         <p>&copy; Yefferson Marín - <a href="https://github.com/yammadev" target="_blank">yammadev</a></p>
         <p>Licencia AGPL-3.0-only</p>
-        <p>Versión 2.5.0</p>
+        <p>Versión 2.5.1</p>
 
     </div>
 

@@ -112,7 +112,11 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
 
-### [2.5.0] - 2020-04-25
+### [2.5.1] - 2020-04-30
+#### Modificado / Modified
+- Cambios menores / Minor changes.
+
+### [2.5.0] - 2020-04-30
 #### Modificado / Modified
 - Gráficas / Graphs.
 

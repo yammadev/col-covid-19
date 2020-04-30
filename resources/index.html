@@ -69,7 +69,18 @@
           <div class="col s4">
             <h5 class="orange-text">{{ cases }}</h5>
             <p>Confirmados</p>
-            <span>{{ cases_pop }}</span>
+            <span>
+              <i class="material-icons" v-if="cases_diff > 0">
+                expand_less
+              </i>
+              <i class="material-icons" v-else-if="cases_diff < 0">
+                expand_more
+              </i>
+              <i class="material-icons" v-else>
+                unfold_less
+              </i>
+              {{ cases_today }}
+            </span>
           </div>
 
           <div class="col s4">

@@ -10,5 +10,13 @@ window.summary = {
   "2":{
     "VALUE":"FALLECIDOS",
     "TOTAL":278
+  },
+  "3":{
+    "VALUE":"ULTIMO REPORTE",
+    "TOTAL":262
+  },
+  "4":{
+    "VALUE":"ANTERIOR REPORTE",
+    "TOTAL":353
   }
 }
