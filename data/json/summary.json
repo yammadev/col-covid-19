@@ -1,14 +1,14 @@
 {
   "0":{
     "VALUE":"CASOS",
-    "TOTAL":5949
+    "TOTAL":6211
   },
   "1":{
     "VALUE":"RECUPERADOS",
-    "TOTAL":1269
+    "TOTAL":1411
   },
   "2":{
     "VALUE":"FALLECIDOS",
-    "TOTAL":269
+    "TOTAL":278
   }
 }

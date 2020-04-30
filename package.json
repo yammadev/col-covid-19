@@ -1,6 +1,6 @@
 {
   "name": "col-covid-19",
-  "version": "2.4.4",
+  "version": "2.5.0",
   "description": "Seguimiento (Mapa y Estadísticas) del COVID-19 en Colombia",
   "main": "Gruntfile.js",
   "scripts": {

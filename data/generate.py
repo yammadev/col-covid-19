@@ -120,17 +120,16 @@ def statistics(data):
 def timeline(data):
     # [*] Format - Date
     # TODO: Format appropiate for other date values (wait until consistency in gov's data) - POSIXct
-    # dates = ['DEATH_DATE', 'RECOVERED_DATE', 'REPORT_DATE']
-    dates = ['REPORT_DATE']
-    # data[dates] = data[dates].replace('-   -', pd.NaT)
+    dates = ['DEATH_DATE', 'RECOVERED_DATE', 'REPORT_DATE']
+    data[dates] = data[dates].replace('-   -', pd.NaT)
     data[dates] = data[dates].apply(pd.to_datetime, infer_datetime_format = True)
 
+    # [1] Get per DATE and STATUS
     # TODO: Wait until consistency in gov's data
     cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
     recovered = data[data['STATUS'] == 'RECUPERADO'].groupby(by = 'REPORT_DATE').size().reset_index()
     deaths = data[data['STATUS'] == 'FALLECIDO'].groupby(by = 'REPORT_DATE').size().reset_index()
 
-    # [1] Get per DATE and STATUS
     # cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
     # recovered = data.groupby(by = 'RECOVERED_DATE').size().reset_index()
     # deaths = data.groupby(by = 'DEATH_DATE').size().reset_index()
@@ -166,19 +165,19 @@ def timeline(data):
     # [9]
     summary(data, timeline);
 
-    # [10] Plot
-    # Dataset [1]
+    # [10]
     dataset = timeline[['DATE', 'CASES']]
     dataset.set_index('DATE', inplace = True)
 
     # Axis
-    axis = dataset['CASES'].plot()
+    axis = dataset.plot()
 
     # Plot properties
     plt.suptitle('Línea de Tiempo / Timeline')
     plt.title('Casos reportados diariamente / Cases reported dairy', fontsize = 10)
     plt.xlabel('Fechas / Dates')
     plt.ylabel('No. de Casos / No. of Cases')
+    axis.legend(['Confirmados / Confirmed']);
 
     # Save plot
     plt.savefig('imgs/cases.png')
@@ -187,17 +186,18 @@ def timeline(data):
     plt.close()
 
     # Dataset [2]
-    dataset = timeline[['DATE', 'SUM_CASES']]
+    dataset = timeline[['DATE', 'SUM_CASES', 'SUM_RECOVERED', 'SUM_DEATHS']]
     dataset.set_index('DATE', inplace = True)
 
     # Axis
-    axis = dataset['SUM_CASES'].plot()
+    axis = dataset.plot()
 
     # Plot properties
     plt.suptitle('Línea de Tiempo / Timeline')
     plt.title('Histórico de casos en el tiempo / History of cases over time', fontsize = 10)
     plt.xlabel('Fechas / Dates')
     plt.ylabel('No. de Casos / No. of Cases')
+    axis.legend(['Confirmados / Confirmed', 'Recuperados / Recovered', 'Fallecidos / Deaths']);
 
     # Save plot
     plt.savefig('imgs/timeline.png')
@@ -264,8 +264,7 @@ def export(data, filename):
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {string} filename       -- The name of the file
 def export_JS(data, filename):
-    # [3] TO JS
-    # Could be used as javascript window (static) variable
+    # This could be used as javascript window (static) variable
     js = open(f'js/{filename}.js', 'w+')
     json = data.to_json(orient = 'index', indent = data.shape[1])
     js.write(f'window.{filename} = {json}')
