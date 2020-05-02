@@ -2,7 +2,7 @@
 
 ## 1. Acerca / About
 #### Seguimiento (Mapa y Estadísticas) del **COVID-19** en **Colombia** / Tracking (Map & Statistics) **COVID-19** in **Colombia**.
-Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del [Instituto Nacional de Salud](https://www.ins.gov.co) de Colombia, diseñado para brindar información sobre la evolución del [COVID-19](https://es.wikipedia.org/wiki/COVID-19) en el país y sus ciudades / This project shows the state (maps and statistics) almost in real time based on data from the [National Institute of Health](https://www.ins.gov.co) of Colombia, designed to provide information on the evolution of the [COVID -19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) in the country and its cities.
+Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del [Ministerio de salud y protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia, diseñado para brindar información sobre la evolución del [COVID-19](https://es.wikipedia.org/wiki/COVID-19) en el país y sus ciudades / This project shows the state (maps and statistics) almost in real time based on data from the [Ministry of health and social protection](https://www.minsalud.gov.co/Paginas/default.aspx) of Colombia, designed to provide information on the evolution of the [COVID -19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) in the country and its cities.
 
 ### Actualizaciones / Updates
 - **Twitter** [@ColCovid19](https://twitter.com/ColCovid19)
@@ -15,7 +15,7 @@ Yefferson Marí­n - ([@yammadev](https://github.com/yammadev))
 [GNU General Public License v3.0](LICENSE)
 
 ## 2. Datos / Data
-Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) del Gobierno Nacional, publicados por el [Instituto Nacional de Salud](https://www.ins.gov.co) de Colombia / The data used is loaded (once an update is made) from the [Open Data](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) of the National Government, published by the [National Institute of Health](https://www.ins.gov.co) of Colombia.
+Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) del Gobierno Nacional, publicados por el [Ministerio de salud y protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia / The data used is loaded (once an update is made) from the [Open Data](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) of the National Government, published by the [Ministry of health and social protection](https://www.minsalud.gov.co/Paginas/default.aspx) of Colombia.
 
 Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formatos `.csv` y `.json` / Formatted data is available in the [data/](data) folder for study and use in `.csv` and` .json` formats:
 
@@ -111,6 +111,12 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [2.6.0] - 2020-05-01
+#### Modificado / Modified
+- Cambios menores / Minor changes.
+- Screenshot.
+- Readme.
 
 ### [2.5.1] - 2020-04-30
 #### Modificado / Modified
