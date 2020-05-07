@@ -1,19 +1,19 @@
 {
   "0":{
     "LEVEL":"LEVE",
-    "TOTAL":7546
+    "TOTAL":7877
   },
   "1":{
     "LEVEL":"MODERADO",
-    "TOTAL":558
+    "TOTAL":557
   },
   "2":{
     "LEVEL":"FALLECIDO",
-    "TOTAL":378
+    "TOTAL":397
   },
   "3":{
     "LEVEL":"GRAVE",
-    "TOTAL":126
+    "TOTAL":123
   },
   "4":{
     "LEVEL":"N\/A",

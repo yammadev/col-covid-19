@@ -1,7 +1,7 @@
 {
   "0":{
     "ORIGIN":"COLOMBIA",
-    "TOTAL":7790
+    "TOTAL":8097
   },
   "1":{
     "ORIGIN":"ESPA\u00d1A",
@@ -20,80 +20,80 @@
     "TOTAL":46
   },
   "5":{
+    "ORIGIN":"-   -",
+    "TOTAL":40
+  },
+  "6":{
     "ORIGIN":"PANAM\u00c1",
     "TOTAL":34
   },
-  "6":{
+  "7":{
     "ORIGIN":"BRASIL",
     "TOTAL":30
   },
-  "7":{
+  "8":{
     "ORIGIN":"TURQU\u00cdA",
     "TOTAL":28
-  },
-  "8":{
-    "ORIGIN":"JAMAICA",
-    "TOTAL":16
   },
   "9":{
     "ORIGIN":"FRANCIA",
     "TOTAL":16
   },
   "10":{
+    "ORIGIN":"JAMAICA",
+    "TOTAL":16
+  },
+  "11":{
     "ORIGIN":"REINO UNIDO",
     "TOTAL":14
   },
-  "11":{
+  "12":{
     "ORIGIN":"PUERTO RICO",
     "TOTAL":13
   },
-  "12":{
+  "13":{
     "ORIGIN":"PER\u00da",
     "TOTAL":12
   },
-  "13":{
+  "14":{
     "ORIGIN":"EGIPTO",
     "TOTAL":11
   },
-  "14":{
+  "15":{
     "ORIGIN":"REP\u00daBLICA DOMINICANA",
     "TOTAL":10
   },
-  "15":{
+  "16":{
     "ORIGIN":"ALEMANIA",
     "TOTAL":10
   },
-  "16":{
+  "17":{
     "ORIGIN":"ITALIA",
     "TOTAL":9
   },
-  "17":{
+  "18":{
     "ORIGIN":"SAN MART\u00cdN (FRANCIA)",
     "TOTAL":7
   },
-  "18":{
+  "19":{
     "ORIGIN":"ISRAEL",
     "TOTAL":6
   },
-  "19":{
+  "20":{
     "ORIGIN":"CANAD\u00c1",
     "TOTAL":4
   },
-  "20":{
-    "ORIGIN":"CUBA",
-    "TOTAL":4
-  },
   "21":{
-    "ORIGIN":"CHILE",
-    "TOTAL":4
-  },
-  "22":{
     "ORIGIN":"GRECIA",
     "TOTAL":4
   },
+  "22":{
+    "ORIGIN":"CUBA",
+    "TOTAL":4
+  },
   "23":{
-    "ORIGIN":"ARUBA",
-    "TOTAL":3
+    "ORIGIN":"CHILE",
+    "TOTAL":4
   },
   "24":{
     "ORIGIN":"VENEZUELA",
@@ -104,11 +104,11 @@
     "TOTAL":3
   },
   "26":{
-    "ORIGIN":"MARRUECOS",
-    "TOTAL":2
+    "ORIGIN":"ARUBA",
+    "TOTAL":3
   },
   "27":{
-    "ORIGIN":"EUROPA",
+    "ORIGIN":"EMIRATOS \u00c1RABES UNIDOS",
     "TOTAL":2
   },
   "28":{
@@ -116,35 +116,35 @@
     "TOTAL":2
   },
   "29":{
-    "ORIGIN":"EMIRATOS \u00c1RABES UNIDOS",
+    "ORIGIN":"MARRUECOS",
     "TOTAL":2
   },
   "30":{
-    "ORIGIN":"AUSTRALIA",
-    "TOTAL":1
+    "ORIGIN":"EUROPA",
+    "TOTAL":2
   },
   "31":{
-    "ORIGIN":"ARABIA SAUDITA",
+    "ORIGIN":"IRLANDA",
     "TOTAL":1
   },
   "32":{
-    "ORIGIN":"CROACIA",
-    "TOTAL":1
-  },
-  "33":{
     "ORIGIN":"CURAZAO",
     "TOTAL":1
   },
-  "34":{
-    "ORIGIN":"URUGUAY",
+  "33":{
+    "ORIGIN":"KENIA",
     "TOTAL":1
   },
-  "35":{
+  "34":{
     "ORIGIN":"SUIZA",
     "TOTAL":1
   },
+  "35":{
+    "ORIGIN":"HONDURAS",
+    "TOTAL":1
+  },
   "36":{
-    "ORIGIN":"KENIA",
+    "ORIGIN":"CROACIA",
     "TOTAL":1
   },
   "37":{
@@ -152,19 +152,19 @@
     "TOTAL":1
   },
   "38":{
-    "ORIGIN":"0",
+    "ORIGIN":"GUATEMALA",
     "TOTAL":1
   },
   "39":{
-    "ORIGIN":"HONDURAS",
+    "ORIGIN":"AUSTRALIA",
     "TOTAL":1
   },
   "40":{
-    "ORIGIN":"IRLANDA",
+    "ORIGIN":"ARABIA SAUDITA",
     "TOTAL":1
   },
   "41":{
-    "ORIGIN":"GUATEMALA",
+    "ORIGIN":"URUGUAY",
     "TOTAL":1
   },
   "42":{
