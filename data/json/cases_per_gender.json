@@ -1,10 +1,14 @@
 {
   "0":{
     "GENDER":"M",
-    "TOTAL":4985
+    "TOTAL":4957
   },
   "1":{
     "GENDER":"F",
-    "TOTAL":3974
+    "TOTAL":3962
+  },
+  "2":{
+    "GENDER":"NAN",
+    "TOTAL":537
   }
 }
