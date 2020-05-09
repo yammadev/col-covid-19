@@ -1,26 +1,30 @@
 {
   "0":{
     "LEVEL":"LEVE",
-    "TOTAL":7841
+    "TOTAL":7622
   },
   "1":{
-    "LEVEL":"MODERADO",
-    "TOTAL":553
+    "LEVEL":"ASINTOM\u00c1TICO",
+    "TOTAL":1316
   },
   "2":{
-    "LEVEL":"NAN",
-    "TOTAL":537
+    "LEVEL":"MODERADO",
+    "TOTAL":524
   },
   "3":{
     "LEVEL":"FALLECIDO",
-    "TOTAL":397
+    "TOTAL":428
   },
   "4":{
     "LEVEL":"GRAVE",
-    "TOTAL":123
+    "TOTAL":120
   },
   "5":{
-    "LEVEL":"N\/A",
+    "LEVEL":"-   -",
+    "TOTAL":36
+  },
+  "6":{
+    "LEVEL":"NAN",
     "TOTAL":5
   }
 }
