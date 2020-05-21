@@ -15,7 +15,7 @@ Yefferson Marí­n - ([@yammadev](https://github.com/yammadev))
 [GNU General Public License v3.0](LICENSE)
 
 ## 2. Datos / Data
-Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) del Gobierno Nacional, publicados por el [Ministerio de salud y protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia / The data used is loaded (once an update is made) from the [Open Data](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) of the National Government, published by the [Ministry of health and social protection](https://www.minsalud.gov.co/Paginas/default.aspx) of Colombia.
+Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/) del Gobierno Nacional, sobre los [Casos confirmados](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) y las [Muestras procesadas](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Muestras-procesadas-de-COVID-19-en-Colombia/8835-5baf), publicados por el [Ministerio de salud y Protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia / The data used is uploaded (once an update is made) from the [Open Data](https://www.datos.gov.co/) of the National Government, on [Confirmed cases](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) and the [Processed Samples](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Muestras-procesadas-de-COVID-19-en-Colombia/8835-5baf), published by the [Ministry of Health and Social Protection](https://www.minsalud.gov.co/Paginas/default.aspx) of Colombia.
 
 Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formatos `.csv` y `.json` / Formatted data is available in the [data/](data) folder for study and use in `.csv` and` .json` formats:
 
@@ -25,24 +25,28 @@ Los datos formateados se encuentran disponibles en la carpeta [data/](data) para
 | `statistics` | Casos por CIUDADES y DEPARTAMENTOS con COORDENADAS / CASES per CITY and DEPARTMENTS with COORDINATES
 | `timeline` | CASOS por FECHAS y ESTADOS / CASES per DATE and STATUS
 | `summary` | Resúmen de CASOS por ESTADO / Summary of CASES per STATUS
+| `samples` | Lista completa de MUESTRAS procesadas / Full list of processed SAMPLES
 | `cases_per_gender` | CASOS por GÉNERO / CASES per GENDER
 | `cases_per_status` | CASOS por FECHAS y ESTADOS / CASES per STATUS
 | `cases_per_kind` | CASOS por TIPO / CASES per KIND
 | `cases_per_level` | CASOS por NIVEL / CASES per LEVEL
 | `cases_per_origin` | CASOS por ORIGEN / CASES per ORIGIN
 
-Adicionalmente, las gráficas de las estadísticas en formatos `.img` / Additionally, the graphs of the statistics in `.img` formats.
+Adicionalmente, las gráficas de las estadísticas en formatos `.img` también están disponibles / Additionally, the graphs of the statistics in `.img` formats are also available.
 
 | Archivo / File | Referencia / Reference |
 | :-----: | ---------- |
 | `cases` | CASOS reportados diariamente / CASES reported dairy
 | `timeline` | Histórico de CASOS en el tiempo / History of CASES over time
+| `samples` | Histórico de muestras procesadas y casos en el tiempo / History of processed samples and cases over time
 
 Para mayor información sobre cómo usar los datos, consulte [data/generate.py](data/generate.py) / For more information on how to use the data, see [data/generate.py](data/generate.py)
 
 ![CASES](data/imgs/cases.png)
 
 ![TIMELINE](data/imgs/timeline.png)
+
+![SAMPLES](data/imgs/samples.png)
 
 ## 3. Notas de desarrollo / Development notes
 ### Herramientas y Requerimientos / Tools & Requirements
@@ -111,6 +115,13 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas / **Removed** for removed features.
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+
+### [2.7.0] - 2020-05-20
+#### Agregado / Added
+- Más información y más estadísticas / More info and more statistics.
+
+#### Modificado / Modified
+- Limpieza del código / Code cleanning.
 
 ### [2.6.2] - 2020-05-15
 #### Modificado / Modified

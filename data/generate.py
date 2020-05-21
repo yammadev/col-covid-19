@@ -24,52 +24,96 @@ def main():
     # [2] Results
     # Results returned as JSON from API / converted to Python list of
     # dictionaries by sodapy.
-    results = client.get_all('gt2j-8ykr')
-    # results = client.get('gt2j-8ykr', limit=2000)
+    records, samples = client.get_all('gt2j-8ykr'), client.get_all('8835-5baf')
+    # records, samples = client.get('gt2j-8ykr', limit = 2000), client.get('8835-5baf', limit = 2000)
 
     # [3] Convert
     # Convert to pandas DataFrame
-    data = pd.DataFrame.from_records(results)
+    records, samples = pd.DataFrame.from_records(records), pd.DataFrame.from_records(samples)
 
-    # [*] Format columns
+    # [*] Columns
     # TODO: Format appropiate for other values (wait until consistency in gov's data)
-    # print(data.columns)
+    # print(records.columns)
     # ['id_de_caso', 'fecha_de_notificaci_n', 'codigo_divipola',
     #   'ciudad_de_ubicaci_n', 'departamento', 'atenci_n', 'edad', 'sexo',
     #   'tipo', 'estado', 'pa_s_de_procedencia', 'fis', 'fecha_de_muerte',
     #   'fecha_diagnostico', 'fecha_recuperado', 'fecha_reporte_web']
 
-    # [4] Reset columns
-    data.columns = ['CASE', 'NOTIFICATION_DATE', 'COD_DIVIPOLA', 'CITY', 'DEPARTAMENT', 'STATUS',
+    # print(samples.columns)
+    # ['fecha', 'acumuladas', 'amazonas', 'antioquia', 'arauca', 'atlantico',
+    #   'bogota', 'bolivar', 'boyaca', 'caldas', 'caqueta', 'casanare', 'cauca',
+    #   'cesar', 'choco', 'cordoba', 'cundinamarca', 'guainia', 'guajira',
+    #   'guaviare', 'huila', 'magdalena', 'meta', 'narino',
+    #   'norte_de_santander', 'putumayo', 'quindio', 'risaralda', 'san_andres',
+    #   'santander', 'sucre', 'tolima', 'valle_del_cauca', 'vaupes', 'vichada',
+    #   'procedencia_desconocida']
+
+    # [4] Get desired columns
+    samples = samples[['fecha', 'acumuladas']]
+
+    # [5] Reset columns
+    records.columns = ['CASE', 'NOTIFICATION_DATE', 'COD_DIVIPOLA', 'CITY', 'DEPARTAMENT', 'STATUS',
                     'AGE', 'GENDER', 'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE',
                     'DEATH_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE', 'REPORT_DATE']
+    samples.columns = ['DATE', 'ACCUMULATED']
 
+    # [6] Export!
+    list(records)
+    processed(samples)
+    statistics(records)
+    timeline(records)
+
+    # [7] Plot!
+    plot()
+
+# -------------------------------
+# [2] List of CASES and SAMPLES
+# -------------------------------
+# Full list of CASES with all its RECORDS
+# @arg  {pd.dataFrame} data     -- The dataFrames
+def list(data):
     # [*] Format - Date
     # TODO: Format appropiate for other date values (wait until consistency in gov's data) - POSIXct
     # dates = ['NOTIFICATION_DATE', 'SYMPTOMS_BEGINNING_DATE', 'DEATH_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE', 'REPORT_DATE']
-    # data[dates] = data[dates].replace('-   -', pd.NaT)
-    # data[dates] = data[dates].apply(pd.to_datetime, infer_datetime_format = True)
+    # records[dates] = records[dates].apply(pd.to_datetime, errors = 'coerce', infer_datetime_format = True)
 
-    # [5] Format - Uppercase
+    # [1] Format - Uppercase
     strings = ['GENDER', 'STATUS', 'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE']
     data[strings] = data[strings].apply(lambda x: x.astype(str).str.upper())
 
-    # [6] Export!
-    records(data)
-    statistics(data)
-    timeline(data)
-
-# -------------------------------
-# [2] List of CASES
-# -------------------------------
-# Full list of CASES with all its RECORDS
-# @arg  {pd.dataFrame} data     -- The dataFrame
-def records(data):
-    # [1] Export!
+    # [2] Export!
     export(data, 'records');
 
 # -------------------------------
-# [3] Statistics
+# [3] List of SAMPLES
+# -------------------------------
+# Full list of SAMPLES
+# @arg  {pd.dataFrame} data     -- The dataFrame
+def processed(data):
+    # [1] Format - Date
+    data['DATE'] = data['DATE'].apply(pd.to_datetime, errors = 'coerce', infer_datetime_format = True)
+
+    # [2] Format - Dtype
+    data['ACCUMULATED'] = data['ACCUMULATED'].astype('int64')
+
+    # [4] Count
+    data['PROCESSED'] = data['ACCUMULATED'].diff().fillna(data['ACCUMULATED'])
+
+    # [5] Format - Dtype
+    data['PROCESSED'] = data['PROCESSED'].astype('int64')
+
+    # [6] Drop NaN (e.g., misspelled dates) and reset index
+    data = data.dropna()
+    data = data.reset_index(drop = True)
+
+    # [7] Reorganize
+    data = data[['DATE', 'PROCESSED', 'ACCUMULATED']]
+
+    # [8] Export!
+    export(data, 'samples');
+
+# -------------------------------
+# [4] Statistics
 # -------------------------------
 # Get CASES per CITY and DEPARTAMENT with COORDINATES
 # @arg  {pd.dataFrame} data     -- The dataFrame
@@ -113,18 +157,17 @@ def statistics(data):
     export_JS(statistics, 'statistics')
 
 # -------------------------------
-# [4] Per DATE and STATUS
+# [5] Per DATE and STATUS
 # -------------------------------
 # Get CASES per DATE and STATUS
 # @arg  {pd.dataFrame} data     -- The dataFrame
 def timeline(data):
-    # [*] Format - Date
+    # [1] Format - Date
     # TODO: Format appropiate for other date values (wait until consistency in gov's data) - POSIXct
     dates = ['DEATH_DATE', 'RECOVERED_DATE', 'REPORT_DATE']
-    data[dates] = data[dates].replace('-   -', pd.NaT)
-    data[dates] = data[dates].apply(pd.to_datetime, infer_datetime_format = True)
+    data[dates] = data[dates].apply(pd.to_datetime, errors = 'coerce', infer_datetime_format = True)
 
-    # [1] Get per DATE and STATUS
+    # [2] Get per DATE and STATUS
     # TODO: Wait until consistency in gov's data
     cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
     recovered = data[data['STATUS'] == 'RECUPERADO'].groupby(by = 'REPORT_DATE').size().reset_index()
@@ -134,79 +177,39 @@ def timeline(data):
     # recovered = data.groupby(by = 'RECOVERED_DATE').size().reset_index()
     # deaths = data.groupby(by = 'DEATH_DATE').size().reset_index()
 
-    # [2] Reset columns
+    # [3] Reset columns
     cases.columns = ['DATE', 'CASES']
     recovered.columns = ['DATE', 'RECOVERED']
     deaths.columns = ['DATE', 'DEATHS'];
 
-    # [3] Merge
+    # [4] Merge
     timeline = pd.merge(cases, recovered, how = 'left', on = 'DATE')
     timeline = pd.merge(timeline, deaths, how = 'left', on = 'DATE')
 
-    # [4] Fill 'NaN' values
+    # [5] Fill 'NaN' values
     timeline.fillna(0, inplace = True)
 
-    # [5] Format
+    # [6] Format - Dtype
     # Due to Panda's merge issue (https://github.com/pandas-dev/pandas/issues/8596)
     timeline['RECOVERED'] = timeline['RECOVERED'].astype('int64')
     timeline['DEATHS'] = timeline['DEATHS'].astype('int64')
 
-    # [6] Sort index
+    # [7] Sort index
     timeline.sort_index()
 
-    # [7] Cumulative sum
+    # [8] Cumulative sum
     timeline['SUM_CASES'] = timeline['CASES'].cumsum()
     timeline['SUM_RECOVERED'] = timeline['RECOVERED'].cumsum()
     timeline['SUM_DEATHS'] = timeline['DEATHS'].cumsum()
 
-    # [8] Export!
+    # [9] Export!
     export(timeline, 'timeline')
 
-    # [9]
+    # [10] Summary
     summary(data, timeline);
 
-    # [10]
-    dataset = timeline[['DATE', 'CASES']]
-    dataset.set_index('DATE', inplace = True)
-
-    # Axis
-    axis = dataset.plot()
-
-    # Plot properties
-    plt.suptitle('Línea de Tiempo / Timeline')
-    plt.title('Casos reportados diariamente / Cases reported dairy', fontsize = 10)
-    plt.xlabel('Fechas / Dates')
-    plt.ylabel('No. de Casos / No. of Cases')
-    axis.legend(['Confirmados / Confirmed']);
-
-    # Save plot
-    plt.savefig('imgs/cases.png')
-
-    # Close plot
-    plt.close()
-
-    # Dataset [2]
-    dataset = timeline[['DATE', 'SUM_CASES', 'SUM_RECOVERED', 'SUM_DEATHS']]
-    dataset.set_index('DATE', inplace = True)
-
-    # Axis
-    axis = dataset.plot()
-
-    # Plot properties
-    plt.suptitle('Línea de Tiempo / Timeline')
-    plt.title('Histórico de casos en el tiempo / History of cases over time', fontsize = 10)
-    plt.xlabel('Fechas / Dates')
-    plt.ylabel('No. de Casos / No. of Cases')
-    axis.legend(['Confirmados / Confirmed', 'Recuperados / Recovered', 'Fallecidos / Deaths']);
-
-    # Save plot
-    plt.savefig('imgs/timeline.png')
-
-    # Close plot
-    plt.close()
-
 # -------------------------------
-# [5] Summary
+# [6] Summary
 # -------------------------------
 # Get important DATA
 # @arg  {pd.dataFrame} data     -- The dataFrame
@@ -245,7 +248,80 @@ def summary(data, timeline):
     export_JS(summary, 'summary')
 
 # -------------------------------
-# [6] Export
+# [7] Plot selected Dataframes
+# -------------------------------
+# Plot and export to PNG
+def plot():
+    # [1] Read
+    timeline = pd.read_csv('csv/timeline.csv')
+    samples = pd.read_csv('csv/samples.csv')
+
+    # [2] Plot CASES
+    dataset = timeline[['DATE', 'CASES']]
+    dataset.set_index('DATE', inplace = True)
+
+    # Axis
+    axis = dataset.plot(rot = 10)
+
+    # Plot properties
+    plt.gcf().set_size_inches(8, 5)
+    plt.suptitle('Línea de Tiempo / Timeline')
+    plt.title('Casos reportados diariamente / Cases reported dairy', fontsize = 10)
+    plt.xlabel('Fechas / Dates')
+    plt.ylabel('No. de Casos / No. of Cases')
+    axis.legend(['Confirmados / Confirmed']);
+
+    # Save plot
+    plt.savefig('imgs/cases.png')
+
+    # Close plot
+    plt.close()
+
+    # [3] Plot TIMELINE
+    dataset = timeline[['DATE', 'SUM_CASES', 'SUM_RECOVERED', 'SUM_DEATHS']]
+    dataset.set_index('DATE', inplace = True)
+
+    # Axis
+    axis = dataset.plot(rot = 10)
+
+    # Plot properties
+    plt.gcf().set_size_inches(8, 5)
+    plt.suptitle('Línea de Tiempo / Timeline')
+    plt.title('Histórico de casos en el tiempo / History of cases over time', fontsize = 10)
+    plt.xlabel('Fechas / Dates')
+    plt.ylabel('No. de Casos / No. of Cases')
+    axis.legend(['Confirmados / Confirmed', 'Recuperados / Recovered', 'Fallecidos / Deaths']);
+
+    # Save plot
+    plt.savefig('imgs/timeline.png')
+
+    # Close plot
+    plt.close()
+
+    # [4] Plot CASES vs. SAMPLES
+    dataset = samples[['DATE', 'PROCESSED']]
+    dataset_2 = timeline[['DATE', 'CASES']]
+    dataset.set_index('DATE', inplace = True)
+
+    axis = dataset.plot()
+    dataset_2.plot(ax = axis, rot = 10)
+
+    # Plot properties
+    plt.gcf().set_size_inches(8, 5)
+    plt.suptitle('Línea de Tiempo de Muestras Procesadas y Casos / Timeline of Processed Samples and Cases')
+    plt.title('Histórico de muestras procesadas y casos en el tiempo / History of processed samples and cases over time', fontsize = 10)
+    plt.xlabel('Fechas / Dates')
+    plt.ylabel('No. de Muestras y Casos / No. of Samples and Cases')
+    axis.legend(['Muestras Procesadas / Processed samples', 'Confirmados / Confirmed']);
+
+    # Save plot
+    plt.savefig('imgs/samples.png')
+
+    # Close plot
+    plt.close()
+
+# -------------------------------
+# [8] Export to CSV and JSON
 # -------------------------------
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {string} filename       -- The name of the file
@@ -260,7 +336,7 @@ def export(data, filename):
     data.to_json(f'json/{filename}.json', orient = 'index', indent = data.shape[1])
 
 # -------------------------------
-# [7] Export to JS
+# [9] Export to JS
 # -------------------------------
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {string} filename       -- The name of the file
@@ -272,7 +348,7 @@ def export_JS(data, filename):
     js.close()
 
 # -------------------------------
-# [8] Main
+# [10] Main
 # -------------------------------
 if __name__ == '__main__':
     main()
