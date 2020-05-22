@@ -371,12 +371,12 @@
    },
    "74":{
       "DATE":1589760000000,
-      "PROCESSED":5290,
-      "ACCUMULATED":201707
+      "PROCESSED":5471,
+      "ACCUMULATED":201888
    },
    "75":{
       "DATE":1589846400000,
-      "PROCESSED":6339,
+      "PROCESSED":6158,
       "ACCUMULATED":208046
    },
    "76":{
@@ -388,5 +388,10 @@
       "DATE":1590019200000,
       "PROCESSED":7674,
       "ACCUMULATED":222210
+   },
+   "78":{
+      "DATE":1590105600000,
+      "PROCESSED":13738,
+      "ACCUMULATED":235948
    }
 }
