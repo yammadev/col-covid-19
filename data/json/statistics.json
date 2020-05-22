@@ -65,7 +65,7 @@
      "9":{
           "CITY":"Algeciras",
           "DEPARTAMENT":"Huila",
-          "CASES":3,
+          "CASES":4,
           "LAT":2.5046806,
           "LNG":-75.3039480802
      },
@@ -163,7 +163,7 @@
      "23":{
           "CITY":"Baranoa",
           "DEPARTAMENT":"Atl\u00e1ntico",
-          "CASES":19,
+          "CASES":22,
           "LAT":10.78069155,
           "LNG":-74.9164405687
      },
@@ -191,7 +191,7 @@
      "27":{
           "CITY":"Barranquilla",
           "DEPARTAMENT":"Barranquilla D.E.",
-          "CASES":1040,
+          "CASES":1124,
           "LAT":10.9799669,
           "LNG":-74.8013085
      },
@@ -212,170 +212,170 @@
      "30":{
           "CITY":"Bogot\u00e1 D.C.",
           "DEPARTAMENT":"Bogot\u00e1 D.C.",
-          "CASES":6189,
+          "CASES":6311,
           "LAT":4.6155711,
           "LNG":-74.0684704485
      },
      "31":{
-          "CITY":"Bol\u00edvar",
-          "DEPARTAMENT":"Santander",
-          "CASES":1,
-          "LAT":6.05365975,
-          "LNG":-74.1857349386
-     },
-     "32":{
           "CITY":"Bosconia",
           "DEPARTAMENT":"Cesar",
           "CASES":2,
           "LAT":9.9284449,
           "LNG":-73.8587145292
      },
-     "33":{
+     "32":{
           "CITY":"Bucaramanga",
           "DEPARTAMENT":"Santander",
           "CASES":20,
           "LAT":7.1114611,
           "LNG":-73.1172869
      },
-     "34":{
+     "33":{
           "CITY":"Buenaventura",
           "DEPARTAMENT":"Buenaventura D.E.",
-          "CASES":138,
+          "CASES":155,
           "LAT":3.8899335,
           "LNG":-77.0786047
      },
-     "35":{
+     "34":{
           "CITY":"Buenos Aires",
           "DEPARTAMENT":"Cauca",
           "CASES":1,
           "LAT":2.999925,
           "LNG":-76.640828667
      },
-     "36":{
+     "35":{
           "CITY":"Bugalagrande",
           "DEPARTAMENT":"Valle del Cauca",
           "CASES":1,
           "LAT":4.20102915,
           "LNG":-76.0965637685
      },
-     "37":{
+     "36":{
           "CITY":"Cajic\u00e1",
           "DEPARTAMENT":"Cundinamarca",
-          "CASES":20,
+          "CASES":21,
           "LAT":4.9172215,
           "LNG":-74.0255474
      },
-     "38":{
+     "37":{
           "CITY":"Calamar",
           "DEPARTAMENT":"Bol\u00edvar",
           "CASES":1,
           "LAT":10.23398425,
           "LNG":-74.9348900329
      },
-     "39":{
+     "38":{
           "CITY":"Calarc\u00e1",
           "DEPARTAMENT":"Quind\u00edo",
           "CASES":9,
           "LAT":4.4542787,
           "LNG":-75.6463072674
      },
-     "40":{
+     "39":{
           "CITY":"Caldas",
           "DEPARTAMENT":"Antioquia",
           "CASES":3,
           "LAT":6.05168765,
           "LNG":-75.6303582414
      },
-     "41":{
+     "40":{
           "CITY":"Caldas",
           "DEPARTAMENT":"Boyac\u00e1",
           "CASES":1,
           "LAT":5.57514545,
           "LNG":-73.8829940342
      },
-     "42":{
+     "41":{
           "CITY":"Cali",
           "DEPARTAMENT":"Valle del Cauca",
-          "CASES":1585,
+          "CASES":1635,
           "LAT":3.4517923,
           "LNG":-76.5324943
      },
-     "43":{
+     "42":{
           "CITY":"Calima",
           "DEPARTAMENT":"Valle del Cauca",
           "CASES":1,
           "LAT":3.95565265,
           "LNG":-76.6429339057
      },
-     "44":{
+     "43":{
           "CITY":"Caloto",
           "DEPARTAMENT":"Cauca",
           "CASES":2,
           "LAT":3.04497365,
           "LNG":-76.3685084857
      },
-     "45":{
+     "44":{
           "CITY":"Campoalegre",
           "DEPARTAMENT":"Huila",
           "CASES":1,
           "LAT":2.6454014,
           "LNG":-75.3247179139
      },
-     "46":{
+     "45":{
           "CITY":"Canalete",
           "DEPARTAMENT":"C\u00f3rdoba",
           "CASES":5,
           "LAT":8.7128498,
           "LNG":-76.2520252957
      },
-     "47":{
+     "46":{
           "CITY":"Candelaria",
           "DEPARTAMENT":"Atl\u00e1ntico",
           "CASES":1,
           "LAT":10.4903807,
           "LNG":-74.866837601
      },
-     "48":{
+     "47":{
           "CITY":"Candelaria",
           "DEPARTAMENT":"Valle del Cauca",
           "CASES":10,
           "LAT":3.377435,
           "LNG":-76.3935902546
      },
-     "49":{
+     "48":{
           "CITY":"Cartagena de Indias",
           "DEPARTAMENT":"Cartagena D.T. y C.",
-          "CASES":1543,
+          "CASES":1673,
           "LAT":10.4195841,
           "LNG":-75.5271224
      },
-     "50":{
+     "49":{
           "CITY":"Cartago",
           "DEPARTAMENT":"Valle del Cauca",
           "CASES":14,
           "LAT":4.71133845,
           "LNG":-75.931933089
      },
-     "51":{
+     "50":{
           "CITY":"Caucasia",
           "DEPARTAMENT":"Antioquia",
           "CASES":1,
           "LAT":7.82747905,
           "LNG":-75.0452149149
      },
-     "52":{
+     "51":{
           "CITY":"Ceret\u00e9",
           "DEPARTAMENT":"C\u00f3rdoba",
           "CASES":3,
           "LAT":8.8884178,
           "LNG":-75.8423945657
      },
-     "53":{
+     "52":{
           "CITY":"Chinchin\u00e1",
           "DEPARTAMENT":"Caldas",
           "CASES":6,
           "LAT":5.00215285,
           "LNG":-75.7039890121
+     },
+     "53":{
+          "CITY":"Chin\u00fa",
+          "DEPARTAMENT":"C\u00f3rdoba",
+          "CASES":1,
+          "LAT":9.02310485,
+          "LNG":-75.3866274941
      },
      "54":{
           "CITY":"Chipaque",
@@ -443,7 +443,7 @@
      "63":{
           "CITY":"Ci\u00e9naga",
           "DEPARTAMENT":"Magdalena",
-          "CASES":74,
+          "CASES":78,
           "LAT":10.8567448,
           "LNG":-73.9538368494
      },
@@ -513,7 +513,7 @@
      "73":{
           "CITY":"Cubar\u00e1",
           "DEPARTAMENT":"Boyac\u00e1",
-          "CASES":2,
+          "CASES":3,
           "LAT":7.0007084,
           "LNG":-72.1079562
      },
@@ -618,7 +618,7 @@
      "88":{
           "CITY":"Duitama",
           "DEPARTAMENT":"Boyac\u00e1",
-          "CASES":18,
+          "CASES":23,
           "LAT":5.8277055,
           "LNG":-73.0338939
      },
@@ -632,7 +632,7 @@
      "90":{
           "CITY":"El Banco",
           "DEPARTAMENT":"Magdalena",
-          "CASES":6,
+          "CASES":7,
           "LAT":8.9953753,
           "LNG":-73.9723091
      },
@@ -695,7 +695,7 @@
      "99":{
           "CITY":"Envigado",
           "DEPARTAMENT":"Antioquia",
-          "CASES":27,
+          "CASES":28,
           "LAT":6.1701345,
           "LNG":-75.5874132
      },
@@ -709,7 +709,7 @@
      "101":{
           "CITY":"Facatativ\u00e1",
           "DEPARTAMENT":"Cundinamarca",
-          "CASES":13,
+          "CASES":14,
           "LAT":4.8097329,
           "LNG":-74.3541284
      },
@@ -737,7 +737,7 @@
      "105":{
           "CITY":"Florida",
           "DEPARTAMENT":"Valle del Cauca",
-          "CASES":10,
+          "CASES":11,
           "LAT":3.30080485,
           "LNG":-76.190543283
      },
@@ -800,7 +800,7 @@
      "114":{
           "CITY":"Galapa",
           "DEPARTAMENT":"Atl\u00e1ntico",
-          "CASES":22,
+          "CASES":24,
           "LAT":10.8982834,
           "LNG":-74.8795440928
      },
@@ -835,7 +835,7 @@
      "119":{
           "CITY":"Girardot",
           "DEPARTAMENT":"Cundinamarca",
-          "CASES":3,
+          "CASES":4,
           "LAT":4.306643,
           "LNG":-74.8015665
      },
@@ -919,14 +919,14 @@
      "131":{
           "CITY":"Ibagu\u00e9",
           "DEPARTAMENT":"Tolima",
-          "CASES":145,
+          "CASES":146,
           "LAT":4.4446595,
           "LNG":-75.2430012
      },
      "132":{
           "CITY":"Ipiales",
           "DEPARTAMENT":"Nari\u00f1o",
-          "CASES":115,
+          "CASES":116,
           "LAT":0.8278641,
           "LNG":-77.6402069
      },
@@ -1066,7 +1066,7 @@
      "152":{
           "CITY":"Leticia",
           "DEPARTAMENT":"Amazonas",
-          "CASES":1272,
+          "CASES":1345,
           "LAT":-3.58082345,
           "LNG":-70.0885162871
      },
@@ -1143,7 +1143,7 @@
      "163":{
           "CITY":"Malambo",
           "DEPARTAMENT":"Atl\u00e1ntico",
-          "CASES":152,
+          "CASES":164,
           "LAT":10.85147895,
           "LNG":-74.8041972836
      },
@@ -1199,7 +1199,7 @@
      "171":{
           "CITY":"Medell\u00edn",
           "DEPARTAMENT":"Antioquia",
-          "CASES":373,
+          "CASES":385,
           "LAT":6.2443382,
           "LNG":-75.573553
      },
@@ -1262,7 +1262,7 @@
      "180":{
           "CITY":"Monter\u00eda",
           "DEPARTAMENT":"C\u00f3rdoba",
-          "CASES":46,
+          "CASES":45,
           "LAT":8.7558921,
           "LNG":-75.887029
      },
@@ -1276,7 +1276,7 @@
      "182":{
           "CITY":"Mosquera",
           "DEPARTAMENT":"Cundinamarca",
-          "CASES":21,
+          "CASES":22,
           "LAT":4.6759817,
           "LNG":-74.2302707879
      },
@@ -1297,7 +1297,7 @@
      "185":{
           "CITY":"Neiva",
           "DEPARTAMENT":"Huila",
-          "CASES":132,
+          "CASES":137,
           "LAT":2.9263127,
           "LNG":-75.2891733
      },
@@ -1346,7 +1346,7 @@
      "192":{
           "CITY":"Paicol",
           "DEPARTAMENT":"Huila",
-          "CASES":2,
+          "CASES":3,
           "LAT":2.4041033,
           "LNG":-75.7113527988
      },
@@ -1374,7 +1374,7 @@
      "196":{
           "CITY":"Palmira",
           "DEPARTAMENT":"Valle del Cauca",
-          "CASES":56,
+          "CASES":57,
           "LAT":3.5308373,
           "LNG":-76.2988048
      },
@@ -1409,7 +1409,7 @@
      "201":{
           "CITY":"Pereira",
           "DEPARTAMENT":"Risaralda",
-          "CASES":165,
+          "CASES":166,
           "LAT":4.8142912,
           "LNG":-75.6946451
      },
@@ -1437,7 +1437,7 @@
      "205":{
           "CITY":"Pitalito",
           "DEPARTAMENT":"Huila",
-          "CASES":17,
+          "CASES":18,
           "LAT":1.8171632,
           "LNG":-76.1021362185
      },
@@ -1493,7 +1493,7 @@
      "213":{
           "CITY":"Puebloviejo",
           "DEPARTAMENT":"Magdalena",
-          "CASES":96,
+          "CASES":103,
           "LAT":10.83305295,
           "LNG":-74.3679709249
      },
@@ -1507,7 +1507,7 @@
      "215":{
           "CITY":"Puerto Colombia",
           "DEPARTAMENT":"Atl\u00e1ntico",
-          "CASES":22,
+          "CASES":23,
           "LAT":10.9965589,
           "LNG":-74.9162475334
      },
@@ -1647,14 +1647,14 @@
      "235":{
           "CITY":"Sabanagrande",
           "DEPARTAMENT":"Atl\u00e1ntico",
-          "CASES":72,
+          "CASES":74,
           "LAT":10.8015516,
           "LNG":-74.7747982865
      },
      "236":{
           "CITY":"Sabanalarga",
           "DEPARTAMENT":"Atl\u00e1ntico",
-          "CASES":19,
+          "CASES":22,
           "LAT":10.62165695,
           "LNG":-74.949625188
      },
@@ -1710,14 +1710,14 @@
      "244":{
           "CITY":"San Andr\u00e9s de Tumaco",
           "DEPARTAMENT":"Nari\u00f1o",
-          "CASES":344,
+          "CASES":388,
           "LAT":2.2830077,
           "LNG":-78.5019373
      },
      "245":{
           "CITY":"San Crist\u00f3bal",
           "DEPARTAMENT":"Bol\u00edvar",
-          "CASES":2,
+          "CASES":1,
           "LAT":10.3741973,
           "LNG":-75.0759840184
      },
@@ -1771,11 +1771,11 @@
           "LNG":-73.5597015747
      },
      "253":{
-          "CITY":"San Miguel",
-          "DEPARTAMENT":"Santander",
+          "CITY":"San Miguel de Sema",
+          "DEPARTAMENT":"Boyac\u00e1",
           "CASES":1,
-          "LAT":6.56224795,
-          "LNG":-72.6348963317
+          "LAT":5.5318113,
+          "LNG":-73.7565642504
      },
      "254":{
           "CITY":"San Pedro",
@@ -1815,7 +1815,7 @@
      "259":{
           "CITY":"Santa Marta",
           "DEPARTAMENT":"Santa Marta D.T. y C.",
-          "CASES":250,
+          "CASES":257,
           "LAT":11.2422289,
           "LNG":-74.2055606
      },
@@ -1864,7 +1864,7 @@
      "266":{
           "CITY":"Santander de Quilichao",
           "DEPARTAMENT":"Cauca",
-          "CASES":3,
+          "CASES":4,
           "LAT":3.0075752,
           "LNG":-76.4856531
      },
@@ -1906,7 +1906,7 @@
      "272":{
           "CITY":"Soacha",
           "DEPARTAMENT":"Cundinamarca",
-          "CASES":139,
+          "CASES":142,
           "LAT":4.5821279,
           "LNG":-74.2197205
      },
@@ -1934,7 +1934,7 @@
      "276":{
           "CITY":"Soledad",
           "DEPARTAMENT":"Atl\u00e1ntico",
-          "CASES":610,
+          "CASES":644,
           "LAT":10.90545155,
           "LNG":-74.7740531408
      },
@@ -2081,7 +2081,7 @@
      "297":{
           "CITY":"Tunja",
           "DEPARTAMENT":"Boyac\u00e1",
-          "CASES":22,
+          "CASES":25,
           "LAT":5.5323632,
           "LNG":-73.361362
      },
@@ -2102,7 +2102,7 @@
      "300":{
           "CITY":"Turbo",
           "DEPARTAMENT":"Antioquia",
-          "CASES":2,
+          "CASES":3,
           "LAT":8.0950848,
           "LNG":-76.728545
      },
@@ -2135,153 +2135,160 @@
           "LNG":-74.0622059634
      },
      "305":{
+          "CITY":"Usiacur\u00ed",
+          "DEPARTAMENT":"Atl\u00e1ntico",
+          "CASES":1,
+          "LAT":10.7386503,
+          "LNG":-74.9804049641
+     },
+     "306":{
           "CITY":"Valledupar",
           "DEPARTAMENT":"Cesar",
-          "CASES":57,
+          "CASES":58,
           "LAT":10.4650361,
           "LNG":-73.2528426
      },
-     "306":{
+     "307":{
           "CITY":"Venecia",
           "DEPARTAMENT":"Cundinamarca",
           "CASES":1,
           "LAT":4.0637593,
           "LNG":-74.4515371821
      },
-     "307":{
+     "308":{
           "CITY":"Ventaquemada",
           "DEPARTAMENT":"Boyac\u00e1",
           "CASES":1,
           "LAT":5.384167,
           "LNG":-73.5243193926
      },
-     "308":{
+     "309":{
           "CITY":"Vijes",
           "DEPARTAMENT":"Valle del Cauca",
           "CASES":6,
           "LAT":3.75606075,
           "LNG":-76.488530146
      },
-     "309":{
+     "310":{
           "CITY":"Villa de Leyva",
           "DEPARTAMENT":"Boyac\u00e1",
           "CASES":5,
           "LAT":5.6336805,
           "LNG":-73.523548
      },
-     "310":{
+     "311":{
           "CITY":"Villa del Rosario",
           "DEPARTAMENT":"Norte de Santander",
           "CASES":5,
           "LAT":7.8318933,
           "LNG":-72.4717181
      },
-     "311":{
+     "312":{
           "CITY":"Villa rica",
           "DEPARTAMENT":"Cauca",
           "CASES":1,
           "LAT":3.1818326,
           "LNG":-76.4602123912
      },
-     "312":{
+     "313":{
           "CITY":"Villamar\u00eda",
           "DEPARTAMENT":"Caldas",
           "CASES":8,
           "LAT":4.92729255,
           "LNG":-75.4534734191
      },
-     "313":{
+     "314":{
           "CITY":"Villanueva",
           "DEPARTAMENT":"Bol\u00edvar",
-          "CASES":12,
+          "CASES":14,
           "LAT":10.4444032,
           "LNG":-75.2730468
      },
-     "314":{
+     "315":{
           "CITY":"Villanueva",
           "DEPARTAMENT":"Casanare",
           "CASES":1,
           "LAT":4.6148734,
           "LNG":-72.9252395
      },
-     "315":{
+     "316":{
           "CITY":"Villanueva",
           "DEPARTAMENT":"Santander",
           "CASES":1,
           "LAT":6.68761245,
           "LNG":-73.1524224433
      },
-     "316":{
+     "317":{
           "CITY":"Villapinz\u00f3n",
           "DEPARTAMENT":"Cundinamarca",
           "CASES":6,
           "LAT":5.2443517,
           "LNG":-73.5930211496
      },
-     "317":{
+     "318":{
           "CITY":"Villavicencio",
           "DEPARTAMENT":"Meta",
-          "CASES":930,
+          "CASES":931,
           "LAT":4.1315113,
           "LNG":-73.6206667
      },
-     "318":{
+     "319":{
           "CITY":"Villeta",
           "DEPARTAMENT":"Cundinamarca",
           "CASES":4,
           "LAT":5.00754475,
           "LNG":-74.4849361701
      },
-     "319":{
+     "320":{
           "CITY":"Viracach\u00e1",
           "DEPARTAMENT":"Boyac\u00e1",
           "CASES":1,
           "LAT":5.44749285,
           "LNG":-73.2667174518
      },
-     "320":{
+     "321":{
           "CITY":"Viterbo",
           "DEPARTAMENT":"Caldas",
           "CASES":2,
           "LAT":5.0379416,
           "LNG":-75.8860540142
      },
-     "321":{
+     "322":{
           "CITY":"Yopal",
           "DEPARTAMENT":"Casanare",
           "CASES":24,
           "LAT":5.3356662,
           "LNG":-72.3936931
      },
-     "322":{
+     "323":{
           "CITY":"Yotoco",
           "DEPARTAMENT":"Valle del Cauca",
           "CASES":3,
           "LAT":3.89766105,
           "LNG":-76.3878730499
      },
-     "323":{
+     "324":{
           "CITY":"Yumbo",
           "DEPARTAMENT":"Valle del Cauca",
           "CASES":34,
           "LAT":3.5952779,
           "LNG":-76.5141311599
      },
-     "324":{
+     "325":{
           "CITY":"Zipaquir\u00e1",
           "DEPARTAMENT":"Cundinamarca",
           "CASES":14,
           "LAT":5.0235325,
           "LNG":-74.0039613
      },
-     "325":{
+     "326":{
           "CITY":"Zona Bananera",
           "DEPARTAMENT":"Magdalena",
           "CASES":11,
           "LAT":10.7969213,
           "LNG":-74.180778336
      },
-     "326":{
+     "327":{
           "CITY":"\u00c1brego",
           "DEPARTAMENT":"Norte de Santander",
           "CASES":1,

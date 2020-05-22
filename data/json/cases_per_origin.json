@@ -1,7 +1,7 @@
 {
   "0":{
     "ORIGIN":"COLOMBIA",
-    "TOTAL":16831
+    "TOTAL":17476
   },
   "1":{
     "ORIGIN":"ESPA\u00d1A",
@@ -9,7 +9,7 @@
   },
   "2":{
     "ORIGIN":"ESTADOS UNIDOS DE AM\u00c9RICA",
-    "TOTAL":217
+    "TOTAL":216
   },
   "3":{
     "ORIGIN":"ECUADOR",
@@ -44,23 +44,23 @@
     "TOTAL":14
   },
   "11":{
-    "ORIGIN":"PER\u00da",
+    "ORIGIN":"PUERTO RICO",
     "TOTAL":13
   },
   "12":{
-    "ORIGIN":"PUERTO RICO",
-    "TOTAL":13
+    "ORIGIN":"PER\u00da",
+    "TOTAL":12
   },
   "13":{
     "ORIGIN":"EGIPTO",
     "TOTAL":11
   },
   "14":{
-    "ORIGIN":"REP\u00daBLICA DOMINICANA",
+    "ORIGIN":"ALEMANIA",
     "TOTAL":10
   },
   "15":{
-    "ORIGIN":"ALEMANIA",
+    "ORIGIN":"REP\u00daBLICA DOMINICANA",
     "TOTAL":10
   },
   "16":{
@@ -80,23 +80,23 @@
     "TOTAL":5
   },
   "20":{
-    "ORIGIN":"CHILE",
-    "TOTAL":4
-  },
-  "21":{
-    "ORIGIN":"CUBA",
-    "TOTAL":4
-  },
-  "22":{
     "ORIGIN":"CANAD\u00c1",
     "TOTAL":4
   },
+  "21":{
+    "ORIGIN":"CHILE",
+    "TOTAL":4
+  },
+  "22":{
+    "ORIGIN":"ARGENTINA",
+    "TOTAL":4
+  },
   "23":{
-    "ORIGIN":"GRECIA",
+    "ORIGIN":"CUBA",
     "TOTAL":4
   },
   "24":{
-    "ORIGIN":"ARGENTINA",
+    "ORIGIN":"GRECIA",
     "TOTAL":4
   },
   "25":{
@@ -120,35 +120,35 @@
     "TOTAL":2
   },
   "30":{
-    "ORIGIN":"CROACIA",
+    "ORIGIN":"URUGUAY",
     "TOTAL":1
   },
   "31":{
-    "ORIGIN":"KENIA",
-    "TOTAL":1
-  },
-  "32":{
     "ORIGIN":"B\u00c9LGICA",
     "TOTAL":1
   },
-  "33":{
-    "ORIGIN":"SUECIA",
-    "TOTAL":1
-  },
-  "34":{
+  "32":{
     "ORIGIN":"HONDURAS",
     "TOTAL":1
   },
-  "35":{
-    "ORIGIN":"IRLANDA",
+  "33":{
+    "ORIGIN":"ARABIA SAUDITA",
     "TOTAL":1
   },
-  "36":{
+  "34":{
     "ORIGIN":"SUIZA",
     "TOTAL":1
   },
+  "35":{
+    "ORIGIN":"KENIA",
+    "TOTAL":1
+  },
+  "36":{
+    "ORIGIN":"CURAZAO",
+    "TOTAL":1
+  },
   "37":{
-    "ORIGIN":"ARABIA SAUDITA",
+    "ORIGIN":"CROACIA",
     "TOTAL":1
   },
   "38":{
@@ -156,15 +156,15 @@
     "TOTAL":1
   },
   "39":{
-    "ORIGIN":"URUGUAY",
+    "ORIGIN":"IRLANDA",
     "TOTAL":1
   },
   "40":{
-    "ORIGIN":"AUSTRALIA",
+    "ORIGIN":"SUECIA",
     "TOTAL":1
   },
   "41":{
-    "ORIGIN":"CURAZAO",
+    "ORIGIN":"AUSTRALIA",
     "TOTAL":1
   }
 }
