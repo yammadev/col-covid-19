@@ -1,25 +1,19 @@
-# -------------------------------
+# ----------------------------------
 # [0] Libs
-# -------------------------------
+# ----------------------------------
 import pandas as pd
 from sodapy import Socrata
 from geopy.geocoders import Nominatim
 import matplotlib.pyplot as plt
 
-# -------------------------------
+# ----------------------------------
 # [1] Main
-# -------------------------------
+# ----------------------------------
 def main():
     # [1] Get data
     # Unauthenticated client only works with public data sets. Note 'None'
     # in place of application token, and no username or password:
     client = Socrata('www.datos.gov.co', None)
-
-    # Example authenticated client (needed for non-public datasets):
-    # client = Socrata(www.datos.gov.co,
-    #                  MyAppToken,
-    #                  userame='user@example.com',
-    #                  password='AFakePassword')
 
     # [2] Results
     # Results returned as JSON from API / converted to Python list of
@@ -32,7 +26,6 @@ def main():
     records, samples = pd.DataFrame.from_records(records), pd.DataFrame.from_records(samples)
 
     # [*] Columns
-    # TODO: Format appropiate for other values (wait until consistency in gov's data)
     # print(records.columns)
     # ['id_de_caso', 'fecha_de_notificaci_n', 'codigo_divipola',
     #   'ciudad_de_ubicaci_n', 'departamento', 'atenci_n', 'edad', 'sexo',
@@ -66,9 +59,9 @@ def main():
     # [7] Plot!
     plot()
 
-# -------------------------------
-# [2] List of CASES and SAMPLES
-# -------------------------------
+# ----------------------------------
+# [2] List of CASES
+# ----------------------------------
 # Full list of CASES with all its RECORDS
 # @arg  {pd.dataFrame} data     -- The dataFrames
 def list(data):
@@ -84,9 +77,9 @@ def list(data):
     # [2] Export!
     export(data, 'records');
 
-# -------------------------------
+# ----------------------------------
 # [3] List of SAMPLES
-# -------------------------------
+# ----------------------------------
 # Full list of SAMPLES
 # @arg  {pd.dataFrame} data     -- The dataFrame
 def processed(data):
@@ -112,9 +105,9 @@ def processed(data):
     # [8] Export!
     export(data, 'samples');
 
-# -------------------------------
+# ----------------------------------
 # [4] Statistics
-# -------------------------------
+# ----------------------------------
 # Get CASES per CITY and DEPARTAMENT with COORDINATES
 # @arg  {pd.dataFrame} data     -- The dataFrame
 def statistics(data):
@@ -156,15 +149,14 @@ def statistics(data):
     export(statistics, 'statistics')
     export_JS(statistics, 'statistics')
 
-# -------------------------------
-# [5] Per DATE and STATUS
-# -------------------------------
+# ----------------------------------
+# [5] Timeline per DATE and STATUS
+# ----------------------------------
 # Get CASES per DATE and STATUS
 # @arg  {pd.dataFrame} data     -- The dataFrame
 def timeline(data):
     # [1] Format - Date
-    # TODO: Format appropiate for other date values (wait until consistency in gov's data) - POSIXct
-    dates = ['DEATH_DATE', 'RECOVERED_DATE', 'REPORT_DATE']
+    dates = ['REPORT_DATE', 'RECOVERED_DATE', 'DEATH_DATE']
     data[dates] = data[dates].apply(pd.to_datetime, errors = 'coerce', infer_datetime_format = True)
 
     # [2] Get per DATE and STATUS
@@ -208,9 +200,9 @@ def timeline(data):
     # [10] Summary
     summary(data, timeline);
 
-# -------------------------------
+# ----------------------------------
 # [6] Summary
-# -------------------------------
+# ----------------------------------
 # Get important DATA
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {pd.dataFrame} timeline -- The timeline dataFrame
@@ -247,9 +239,9 @@ def summary(data, timeline):
     export(summary, 'summary')
     export_JS(summary, 'summary')
 
-# -------------------------------
+# ----------------------------------
 # [7] Plot selected Dataframes
-# -------------------------------
+# ----------------------------------
 # Plot and export to PNG
 def plot():
     # [1] Read
@@ -320,9 +312,9 @@ def plot():
     # Close plot
     plt.close()
 
-# -------------------------------
+# ----------------------------------
 # [8] Export to CSV and JSON
-# -------------------------------
+# ----------------------------------
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {string} filename       -- The name of the file
 def export(data, filename):
@@ -335,9 +327,9 @@ def export(data, filename):
     # [2] To JSON
     data.to_json(f'json/{filename}.json', orient = 'index', indent = data.shape[1])
 
-# -------------------------------
+# ----------------------------------
 # [9] Export to JS
-# -------------------------------
+# ----------------------------------
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {string} filename       -- The name of the file
 def export_JS(data, filename):
@@ -347,8 +339,8 @@ def export_JS(data, filename):
     js.write(f'window.{filename} = {json}')
     js.close()
 
-# -------------------------------
+# ----------------------------------
 # [10] Main
-# -------------------------------
+# ----------------------------------
 if __name__ == '__main__':
     main()
