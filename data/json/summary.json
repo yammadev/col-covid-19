@@ -1,22 +1,22 @@
 {
   "0":{
     "VALUE":"CASOS",
-    "TOTAL":21981
+    "TOTAL":23003
   },
   "1":{
     "VALUE":"RECUPERADOS",
-    "TOTAL":5265
+    "TOTAL":5511
   },
   "2":{
     "VALUE":"FALLECIDOS",
-    "TOTAL":750
+    "TOTAL":776
   },
   "3":{
     "VALUE":"ULTIMO REPORTE",
-    "TOTAL":806
+    "TOTAL":1022
   },
   "4":{
     "VALUE":"ANTERIOR REPORTE",
-    "TOTAL":998
+    "TOTAL":806
   }
 }

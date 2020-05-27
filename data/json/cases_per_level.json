@@ -1,23 +1,23 @@
 {
   "0":{
     "LEVEL":"LEVE",
-    "TOTAL":17000
+    "TOTAL":18005
   },
   "1":{
     "LEVEL":"ASINTOM\u00c1TICO",
-    "TOTAL":2716
+    "TOTAL":2785
   },
   "2":{
     "LEVEL":"MODERADO",
-    "TOTAL":1277
+    "TOTAL":1155
   },
   "3":{
     "LEVEL":"FALLECIDO",
-    "TOTAL":750
+    "TOTAL":776
   },
   "4":{
     "LEVEL":"GRAVE",
-    "TOTAL":204
+    "TOTAL":248
   },
   "5":{
     "LEVEL":"NAN",
