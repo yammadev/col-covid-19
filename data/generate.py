@@ -75,7 +75,7 @@ def list(data):
     data[strings] = data[strings].apply(lambda x: x.astype(str).str.upper())
 
     # [2] Export!
-    export(data, 'records');
+    export(data, 'records')
 
 # ----------------------------------
 # [3] List of SAMPLES
@@ -103,7 +103,7 @@ def processed(data):
     data = data[['DATE', 'PROCESSED', 'ACCUMULATED']]
 
     # [8] Export!
-    export(data, 'samples');
+    export(data, 'samples')
 
 # ----------------------------------
 # [4] Statistics
@@ -172,7 +172,7 @@ def timeline(data):
     # [3] Reset columns
     cases.columns = ['DATE', 'CASES']
     recovered.columns = ['DATE', 'RECOVERED']
-    deaths.columns = ['DATE', 'DEATHS'];
+    deaths.columns = ['DATE', 'DEATHS']
 
     # [4] Merge
     timeline = pd.merge(cases, recovered, how = 'left', on = 'DATE')
@@ -198,7 +198,7 @@ def timeline(data):
     export(timeline, 'timeline')
 
     # [10] Summary
-    summary(data, timeline);
+    summary(data, timeline)
 
 # ----------------------------------
 # [6] Summary
@@ -226,8 +226,8 @@ def summary(data, timeline):
     summary.append(['CASOS', timeline['CASES'].sum()])
     summary.append(['RECUPERADOS', timeline['RECOVERED'].sum()])
     summary.append(['FALLECIDOS', timeline['DEATHS'].sum()])
-    summary.append(['ULTIMO REPORTE', timeline['CASES'].tail(1).values[0]])
-    summary.append(['ANTERIOR REPORTE', timeline['CASES'].tail(2).head(1).values[0]])
+    summary.append(['ULTIMO REPORTE', timeline['CASES'].iloc[-1]])
+    summary.append(['ANTERIOR REPORTE', timeline['CASES'].iloc[-2]])
     summary = pd.DataFrame(data = summary, columns = ['VALUE', 'TOTAL'])
 
     # [4] Export!
@@ -261,7 +261,7 @@ def plot():
     plt.title('Casos reportados diariamente / Cases reported dairy', fontsize = 10)
     plt.xlabel('Fechas / Dates')
     plt.ylabel('No. de Casos / No. of Cases')
-    axis.legend(['Confirmados / Confirmed']);
+    axis.legend(['Confirmados / Confirmed'])
 
     # Save plot
     plt.savefig('imgs/cases.png')
@@ -282,7 +282,7 @@ def plot():
     plt.title('Histórico de casos en el tiempo / History of cases over time', fontsize = 10)
     plt.xlabel('Fechas / Dates')
     plt.ylabel('No. de Casos / No. of Cases')
-    axis.legend(['Confirmados / Confirmed', 'Recuperados / Recovered', 'Fallecidos / Deaths']);
+    axis.legend(['Confirmados / Confirmed', 'Recuperados / Recovered', 'Fallecidos / Deaths'])
 
     # Save plot
     plt.savefig('imgs/timeline.png')
@@ -304,7 +304,7 @@ def plot():
     plt.title('Histórico de muestras procesadas y casos en el tiempo / History of processed samples and cases over time', fontsize = 10)
     plt.xlabel('Fechas / Dates')
     plt.ylabel('No. de Muestras y Casos / No. of Samples and Cases')
-    axis.legend(['Muestras Procesadas / Processed samples', 'Confirmados / Confirmed']);
+    axis.legend(['Muestras Procesadas / Processed samples', 'Confirmados / Confirmed'])
 
     # Save plot
     plt.savefig('imgs/samples.png')

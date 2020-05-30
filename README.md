@@ -116,6 +116,11 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
 - **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
 
+### [2.7.2] - 2020-05-30
+#### Modificado / Modified
+- Cambios menores / Minor changes.
+- Limpieza del código / Code cleanning.
+
 ### [2.7.1] - 2020-05-25
 #### Modificado / Modified
 - Cambios menores / Minor changes.
