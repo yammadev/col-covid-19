@@ -4,7 +4,9 @@
 import pandas as pd
 from sodapy import Socrata
 from geopy.geocoders import Nominatim
+
 import matplotlib.pyplot as plt
+plt.rcParams['figure.figsize'] = (9, 5)
 
 # ----------------------------------
 # [1] Main
@@ -28,9 +30,10 @@ def main():
     # [*] Columns
     # print(records.columns)
     # ['id_de_caso', 'fecha_de_notificaci_n', 'codigo_divipola',
-    #   'ciudad_de_ubicaci_n', 'departamento', 'atenci_n', 'edad', 'sexo',
-    #   'tipo', 'estado', 'pa_s_de_procedencia', 'fis', 'fecha_de_muerte',
-    #   'fecha_diagnostico', 'fecha_recuperado', 'fecha_reporte_web']
+    #  'ciudad_de_ubicaci_n', 'departamento', 'atenci_n', 'edad', 'sexo',
+    #   'tipo', 'estado', 'pa_s_de_procedencia', 'fis', 'fecha_diagnostico',
+    #   'fecha_recuperado', 'fecha_reporte_web', 'tipo_recuperaci_n',
+    #   'fecha_de_muerte']
 
     # print(samples.columns)
     # ['fecha', 'acumuladas', 'amazonas', 'antioquia', 'arauca', 'atlantico',
@@ -46,8 +49,8 @@ def main():
 
     # [5] Reset columns
     records.columns = ['CASE', 'NOTIFICATION_DATE', 'COD_DIVIPOLA', 'CITY', 'DEPARTAMENT', 'STATUS',
-                    'AGE', 'GENDER', 'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE',
-                    'DEATH_DATE', 'DIAGNOSIS_DATE', 'RECOVERED_DATE', 'REPORT_DATE']
+                    'AGE', 'GENDER', 'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE', 'DIAGNOSIS_DATE',
+                    'RECOVERED_DATE', 'REPORT_DATE', 'KIND_OF_RECOVERY', 'DEATH_DATE']
     samples.columns = ['DATE', 'ACCUMULATED']
 
     # [6] Export!
@@ -252,16 +255,15 @@ def plot():
     dataset = timeline[['DATE', 'CASES']]
     dataset.set_index('DATE', inplace = True)
 
-    # Axis
-    axis = dataset.plot(rot = 10)
+    # Plot
+    dataset.plot()
 
     # Plot properties
-    plt.gcf().set_size_inches(8, 5)
     plt.suptitle('Línea de Tiempo / Timeline')
     plt.title('Casos reportados diariamente / Cases reported dairy', fontsize = 10)
     plt.xlabel('Fechas / Dates')
     plt.ylabel('No. de Casos / No. of Cases')
-    axis.legend(['Confirmados / Confirmed'])
+    plt.legend(['Confirmados / Confirmed'])
 
     # Save plot
     plt.savefig('imgs/cases.png')
@@ -273,16 +275,15 @@ def plot():
     dataset = timeline[['DATE', 'SUM_CASES', 'SUM_RECOVERED', 'SUM_DEATHS']]
     dataset.set_index('DATE', inplace = True)
 
-    # Axis
-    axis = dataset.plot(rot = 10)
+    # Plot
+    dataset.plot()
 
     # Plot properties
-    plt.gcf().set_size_inches(8, 5)
     plt.suptitle('Línea de Tiempo / Timeline')
     plt.title('Histórico de casos en el tiempo / History of cases over time', fontsize = 10)
     plt.xlabel('Fechas / Dates')
     plt.ylabel('No. de Casos / No. of Cases')
-    axis.legend(['Confirmados / Confirmed', 'Recuperados / Recovered', 'Fallecidos / Deaths'])
+    plt.legend(['Confirmados / Confirmed', 'Recuperados / Recovered', 'Fallecidos / Deaths'])
 
     # Save plot
     plt.savefig('imgs/timeline.png')
@@ -294,17 +295,17 @@ def plot():
     dataset = samples[['DATE', 'PROCESSED']]
     dataset_2 = timeline[['DATE', 'CASES']]
     dataset.set_index('DATE', inplace = True)
+    dataset_2.set_index('DATE', inplace = True)
 
     axis = dataset.plot()
-    dataset_2.plot(ax = axis, rot = 10)
+    dataset_2.plot(ax = axis)
 
     # Plot properties
-    plt.gcf().set_size_inches(8, 5)
     plt.suptitle('Línea de Tiempo de Muestras Procesadas y Casos / Timeline of Processed Samples and Cases')
     plt.title('Histórico de muestras procesadas y casos en el tiempo / History of processed samples and cases over time', fontsize = 10)
     plt.xlabel('Fechas / Dates')
     plt.ylabel('No. de Muestras y Casos / No. of Samples and Cases')
-    axis.legend(['Muestras Procesadas / Processed samples', 'Confirmados / Confirmed'])
+    plt.legend(['Muestras Procesadas / Processed samples', 'Confirmados / Confirmed'])
 
     # Save plot
     plt.savefig('imgs/samples.png')

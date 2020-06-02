@@ -1,46 +1,47 @@
 ![SCREENSHOT](resources/imgs/screenshot.png)
 
-## 1. Acerca / About
-#### Seguimiento (Mapa y Estadísticas) del **COVID-19** en **Colombia** / Tracking (Map & Statistics) **COVID-19** in **Colombia**.
-Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del [Ministerio de salud y protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia, diseñado para brindar información sobre la evolución del [COVID-19](https://es.wikipedia.org/wiki/COVID-19) en el país y sus ciudades / This project shows the state (maps and statistics) almost in real time based on data from the [Ministry of health and social protection](https://www.minsalud.gov.co/Paginas/default.aspx) of Colombia, designed to provide information on the evolution of the [COVID -19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) in the country and its cities.
+## 1. Acerca
+#### Seguimiento (Mapa y Estadísticas) del **COVID-19** en **Colombia**
+Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del [Ministerio de salud y protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia, diseñado para brindar información sobre la evolución del [COVID-19](https://es.wikipedia.org/wiki/COVID-19) en el país y sus ciudades.
 
-### Actualizaciones / Updates
+### Actualizaciones
 - **Twitter** [@ColCovid19](https://twitter.com/ColCovid19)
 - **Github** [col-covid-19](https://github.com/yammadev/col-covid-19.git)
 
-### Autor / Author
+### Autor
 Yefferson Marí­n - ([@yammadev](https://github.com/yammadev))
 
-### Licencia / Licence
+### Licencia
 [GNU General Public License v3.0](LICENSE)
 
-## 2. Datos / Data
-Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/) del Gobierno Nacional, sobre los [Casos confirmados](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) y las [Muestras procesadas](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Muestras-procesadas-de-COVID-19-en-Colombia/8835-5baf), publicados por el [Ministerio de salud y Protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia / The data used is uploaded (once an update is made) from the [Open Data](https://www.datos.gov.co/) of the National Government, on [Confirmed cases](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) and the [Processed Samples](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Muestras-procesadas-de-COVID-19-en-Colombia/8835-5baf), published by the [Ministry of Health and Social Protection](https://www.minsalud.gov.co/Paginas/default.aspx) of Colombia.
+## 2. Análisis
+Se ha realizado un estudio independiente con los datos registrados. Refierase a éste repositorio [col-covid-19-analysis](https://github.com/yammadev/col-covid-19-analysis.git) para más información.
 
-Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formatos `.csv` y `.json` / Formatted data is available in the [data/](data) folder for study and use in `.csv` and` .json` formats:
+## 2. Datos
+Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/) del Gobierno Nacional, sobre los [Casos confirmados](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) y las [Muestras procesadas](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Muestras-procesadas-de-COVID-19-en-Colombia/8835-5baf), publicados por el [Ministerio de salud y Protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia.
 
-| Archivo / File | Referencia / Reference |
+Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formatos `.csv` y `.json`.
+
+| Archivo | Referencia |
 | :-----: | ---------- |
-| `records` | Lista completa de CASOS con todos sus REGISTROS / Full list of CASES with all its RECORDS
-| `statistics` | Casos por CIUDADES y DEPARTAMENTOS con COORDENADAS / CASES per CITY and DEPARTMENTS with COORDINATES
-| `timeline` | CASOS por FECHAS y ESTADOS / CASES per DATE and STATUS
-| `summary` | Resúmen de CASOS por ESTADO / Summary of CASES per STATUS
-| `samples` | Lista completa de MUESTRAS procesadas / Full list of processed SAMPLES
-| `cases_per_gender` | CASOS por GÉNERO / CASES per GENDER
-| `cases_per_status` | CASOS por FECHAS y ESTADOS / CASES per STATUS
-| `cases_per_kind` | CASOS por TIPO / CASES per KIND
-| `cases_per_level` | CASOS por NIVEL / CASES per LEVEL
-| `cases_per_origin` | CASOS por ORIGEN / CASES per ORIGIN
+| `records` | Lista completa de CASOS con todos sus REGISTROS
+| `statistics` | Casos por CIUDADES y DEPARTAMENTOS con COORDENADAS |
+| `timeline` | CASOS por FECHAS y ESTADOS |
+| `summary` | Resúmen de CASOS por ESTADO |
+| `samples` | Lista completa de MUESTRAS procesadas |
+| `cases_per_gender` | CASOS por GÉNERO |
+| `cases_per_status` | CASOS por FECHAS y ESTADOS |
+| `cases_per_kind` | CASOS por TIPO |
+| `cases_per_level` | CASOS por NIVEL |
+| `cases_per_origin` | CASOS por ORIGEN |
 
-Adicionalmente, las gráficas de las estadísticas en formatos `.img` también están disponibles / Additionally, the graphs of the statistics in `.img` formats are also available.
+Adicionalmente, las gráficas de las estadísticas en formatos `.img` también están disponibles. Para mayor información sobre cómo usar los datos, consulte [data/generate.py](data/generate.py).
 
-| Archivo / File | Referencia / Reference |
+| Archivo | Referencia |
 | :-----: | ---------- |
-| `cases` | CASOS reportados diariamente / CASES reported dairy
-| `timeline` | Histórico de CASOS en el tiempo / History of CASES over time
-| `samples` | Histórico de muestras procesadas y casos en el tiempo / History of processed samples and cases over time
-
-Para mayor información sobre cómo usar los datos, consulte [data/generate.py](data/generate.py) / For more information on how to use the data, see [data/generate.py](data/generate.py)
+| `cases` | CASOS reportados diariamente |
+| `timeline` | Histórico de CASOS en el tiempo |
+| `samples` | Histórico de muestras procesadas y casos en el tiempo |
 
 ![CASES](data/imgs/cases.png)
 
@@ -48,308 +49,308 @@ Para mayor información sobre cómo usar los datos, consulte [data/generate.py](
 
 ![SAMPLES](data/imgs/samples.png)
 
-## 3. Notas de desarrollo / Development notes
-### Herramientas y Requerimientos / Tools & Requirements
+## 3. Notas de desarrollo
+### Herramientas y Requerimientos
 - [Python](https://www.python.org/)
+- [PIP](https://pypi.org/project/pip/)
 - [NPM](https://www.npmjs.com/)
 
-### Construir / Build
+### Construir
 ```sh
-  # Instalar dependencias / Install dependencies
+  # Install dependencies
   npm install
 
-  # Construir exportar archivos / Build and export files
+  # Build and export files
   npm run build
 
-  # Después de solicitar revisar los archivos generados, será subido
-  # automáticamente. De otro modo, se debe reconstruir y subir manualmente /
   # After asking to check generated files, it will be pushed automatically.
   # Otherwise it should be rebuilt and pushed manually.
 
-  # Reconstruir / Rebuild
+  # Rebuild
   npm run rebuild
-
-  # Subir como siempre / Push as usual
 ```
 
-### Manualmente / Manually
+### Manualmente
 ```bash
   cd data
 
-  # Ambiente virtual / Virtual environment
+  # Virtual environment
   py -m venv venv
 
-  # Activar / Activate
+  # Activate
   venv\scripts\activate
 
-  # Instalar requerimientos / Install requirements
+  # Install requirements
   (venv) pip install -r requirements.txt
 
-  # Generar datos / Generate data
+  # Generate data
   (venv) py generate.py
 
-  # Desactivar / Deactivate
+  # Deactivate
   (venv) venv\scripts\deactivate
 
   cd ..
 
-  # Construir exportar archivos / Build and export files
+  # Build and export files
   npm run build
 
-  # O esperar a hacer cambios y reconstruir / Or watch for changes and rebuild
+  # Or watch for changes and rebuild
   npm run watch
 ```
 
-## 4. Registro de Cambios / Changelog
-Todos los cambios notables a este proyecto están documentados en esta parte del archivo. El formato está basado en [Keep a Changelog](http://keepachangelog.com/) / All notable changes to this project are documented in this part of the file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
+## 4. Registro de Cambios
+Todos los cambios notables a este proyecto están documentados en esta parte del archivo. El formato está basado en [Keep a Changelog](http://keepachangelog.com/).
 
-#### [x.y.z] - AAAA-MM-DD / YYYY-MM-DD
-- **x** para versiones principales relacionadas con adiciones o cambios importantes / for major release related to major additions or changes.
-- **y** para versiones menores relacionadas con adiciones o cambios menores en la versión principal actual / for minor release related to minor additions or changes in current major release.
-- **z** para versiones menores relacionadas con adiciones o cambios menores en la versión menor actual / for minor release related to minor additions or changes in current minor release.
+#### [x.y.z] - AAAA-MM-DD
+- **x** para versiones principales relacionadas con adiciones o cambios importantes.
+- **y** para versiones menores relacionadas con adiciones o cambios menores en la versión principal actual.
+- **z** para versiones menores relacionadas con adiciones o cambios menores en la versión menor actual.
 
-#### Extras / Extras
-- **Agregado** para nuevas funciones / **Added** for new features.
-- **Modificado** por cambios en la funcionalidad existente / **Modified** for changes in existing functionality.
-- **Obsoleto** para funciones que se eliminarán próximamente / **Deprecated** for soon-to-be removed features.
-- **Removido** para funciones eliminadas / **Removed** for removed features.
-- **Corregido** cualquier corrección de errores / **Fixed for** any bug fixes.
-- **Seguridad** en caso de vulnerabilidades / **Security** in case of vulnerabilities.
+#### Extras
+- **Agregado** para nuevas funciones.
+- **Modificado** por cambios en la funcionalidad existente.
+- **Obsoleto** para funciones que se eliminarán próximamente.
+- **Removido** para funciones eliminadas.
+- **Corregido** cualquier corrección de errores.
+- **Seguridad** en caso de vulnerabilidades.
 
-### [2.7.2] - 2020-05-30
-#### Modificado / Modified
-- Cambios menores / Minor changes.
-- Limpieza del código / Code cleanning.
+### [2.8.0] - 2020-06-02
+#### Agregado
+- Más información y más estadísticas.
+
+#### Modificado
+- Cambios menores.
+- Limpieza del código.
 
 ### [2.7.1] - 2020-05-25
-#### Modificado / Modified
-- Cambios menores / Minor changes.
-- Limpieza del código / Code cleanning.
+#### Modificado
+- Cambios menores.
+- Limpieza del código.
 
 ### [2.7.0] - 2020-05-20
-#### Agregado / Added
-- Más información y más estadísticas / More info and more statistics.
+#### Agregado
+- Más información y más estadísticas.
 
-#### Modificado / Modified
-- Limpieza del código / Code cleanning.
+#### Modificado
+- Limpieza del código.
 
 ### [2.6.2] - 2020-05-15
-#### Modificado / Modified
-- Cambios menores / Minor changes.
+#### Modificado
+- Cambios menores.
 
 ### [2.6.1] - 2020-05-09
-#### Modificado / Modified
-- Cambios menores / Minor changes.
+#### Modificado
+- Cambios menores.
 - Screenshot.
 
 ### [2.6.0] - 2020-05-01
-#### Modificado / Modified
-- Cambios menores / Minor changes.
+#### Modificado
+- Cambios menores.
 - Screenshot.
 - Readme.
 
 ### [2.5.1] - 2020-04-30
-#### Modificado / Modified
-- Cambios menores / Minor changes.
+#### Modificado
+- Cambios menores.
 
 ### [2.5.0] - 2020-04-30
-#### Modificado / Modified
-- Gráficas / Graphs.
+#### Modificado
+- Gráficas.
 
 ### [2.4.4] - 2020-04-24
-#### Modificado / Modified
-- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno) / Info related with date (Wait until consistency in gov's data).
+#### Modificado
+- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno).
 
 ### [2.4.3] - 2020-04-23
-#### Modificado / Modified
-- Cambios menores / Minor changes.
+#### Modificado
+- Cambios menores.
 
 ### [2.4.2] - 2020-04-22
-#### Modificado / Modified
-- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno) / Info related with date (Wait until consistency in gov's data).
+#### Modificado
+- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno).
 - Screenshot.
 
 ### [2.4.1] - 2020-04-21
-#### Removido / Removed
+#### Removido
 - Banner.
 
 ### [2.4.0] - 2020-04-21
-#### Agregado / Added
+#### Agregado
 - Screenshot.
 
-#### Modificado / Modified
-- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno) / Info related with date (Wait until consistency in gov's data).
+#### Modificado
+- Información relacionada con las fechas (Esperar hasta que haya consistencia en los datos del Gobierno).
 
 ### [2.3.0] - 2020-04-21
-#### Agregado / Added
-- Más información y más estadísticas / More info and more statistics.
-- Gráficas / Graphs.
+#### Agregado
+- Más información y más estadísticas.
+- Gráficas.
 
-#### Modificado / Modified
+#### Modificado
 - Dataframe.
-- Limpieza del código / Code cleanning.
+- Limpieza del código.
 
 ### [2.2.0] - 2020-04-19
-#### Modificado / Modified
+#### Modificado
 - Dataframe.
 
 ### [2.1.0] - 2020-04-19
-#### Modificado / Modified
+#### Modificado
 - Script.
 - Banner.
 - Readme.
 
 ### [2.0.0] - 2020-04-19
-#### Agregado / Added
-- Datos automatizados / Automated data.
-- Datos exportados para uso general en `csv` y `json` / Data exported to general purpose in `csv` and `json`.
-- Más información y más estadísticas / More info and more statistics.
+#### Agregado
+- Datos automatizados.
+- Datos exportados para uso general en `csv` y `json`.
+- Más información y más estadísticas.
 
-#### Modificado / Modified
-- Mejoras en las vistas / Improvements in front-end.
-- Mejor estructura para mantenener y actualizar con frecuencia / Better structure to maintain and update frequently.
-- Limpieza del código / Code cleanning.
+#### Modificado
+- Mejoras en las vistas.
+- Mejor estructura para mantenener y actualizar con frecuencia.
+- Limpieza del código.
 
-#### Removido / Removed
-- Gráficos `Chart.js` / `Chart.js` charts.
+#### Removido
+- Gráficos `Chart.js`.
 
 ### [1.3.7] - 2020-03-31
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Mejoras en las vistas / Improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Mejoras en las vistas.
 
 ### [1.3.6] - 2020-03-29
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Mejoras en las vistas / Improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Mejoras en las vistas.
 
 ### [1.3.5] - 2020-03-25
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Mejoras en las vistas / Improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Mejoras en las vistas.
 
 ### [1.3.4] - 2020-03-23
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Mejoras en las vistas / Improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Mejoras en las vistas
 
 ### [1.3.3] - 2020-03-21
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Mejoras en las vistas / Improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Mejoras en las vistas
 
 ### [1.3.2] - 2020-03-21
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
+#### Agregado
+- Reporte (datos) actualizado.
 
 ### [1.3.1] - 2020-03-21
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Mejoras en las vistas / Improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Mejoras en las vistas
 
 ### [1.3.0] - 2020-03-21
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Estadísticas acerca de la edad y el género / New statistics about age and gender.
-- Gráfico `Chart.js` agregado / `Chart.js` chart added.
-- Limpieza del código / Code cleanning.
-- Mejoras en las vistas / Improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Estadísticas acerca de la edad y el género.
+- Gráfico `Chart.js` agregado.
+- Limpieza del código.
+- Mejoras en las vistas.
 
-#### Modificado / Modified
-- Modularización de los archivos `.js` / `.js` files were modularized.
+#### Modificado
+- Modularización de los archivos `.js`.
 
 ### [1.2.8] - 2020-03-20
-#### Removido / Removed
+#### Removido
 - `Open Graph` metadata.
 - Social banner.
 
 ### [1.2.7] - 2020-03-20
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
+#### Agregado
+- Reporte (datos) actualizado.
 
 ### [1.2.6] - 2020-03-20
-#### Agregado / Added
+#### Agregado
 - Social banner.
 
-#### Modificado / Modified
+#### Modificado
 - `Open Graph` metadata.
 
 ### [1.2.5] - 2020-03-20
-#### Agregado / Added
+#### Agregado
 - `Open Graph` metadata.
-- Pequeños ajustes en las vistas / Few improvements in front-end.
+- Pequeños ajustes en las vistas.
 
 ### [1.2.4] - 2020-03-20
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Ajuste de datos para hacerlo más acertado / Adjustment of data to make it more accurate.
-- Pequeños ajustes en las vistas / Few improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Ajuste de datos para hacerlo más acertado.
+- Pequeños ajustes en las vistas.
 
 ### [1.2.3] - 2020-03-20
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Pequeños ajustes en las vistas / Few improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Pequeños ajustes en las vistas.
 
 ### [1.2.2] - 2020-03-20
-#### Agregado / Added
-- Reporte (datos) actualizado / Report (data) updated.
-- Pequeños ajustes en las vistas / Few improvements in front-end.
+#### Agregado
+- Reporte (datos) actualizado.
+- Pequeños ajustes en las vistas.
 
 ### [1.2.1] - 2020-03-19
-#### Agregado / Added
-- Pequeñas mejoras / Few improvements.
+#### Agregado
+- Pequeñas mejoras
 
 ### [1.2.0] - 2020-03-19
-#### Agregado / Added
-- `Vue.js` integrado / `Vue.js` integrated.
+#### Agregado
+- `Vue.js` integrado.
 - `package-lock.json`
-- Lectura de datos / Data reading.
-- Vistas mejoradas / Front-end improved.
+- Lectura de datos.
+- Vistas mejoradas.
 
-#### Modificado / Modified
-- Algunas archivos se reescribieron y se reestructuran para facilitar la reutilización del proyecto / Some files where rewritten and restructured to make reusability of the project easier.
+#### Modificado
+- Algunas archivos se reescribieron y se reestructuran para facilitar la reutilización del proyecto.
 
 ### [1.1.1] - 2020-03-17
-#### Removido / Removed
+#### Removido
 - `package-lock.json`
 
 ### [1.1.0] - 2020-03-17
-#### Agregado / Added
-- `Sourcemaps` en archivos generados / `Sourcemaps` in generated files.
-- Vistas mejoradas / Front-end improved.
-- Mapa `Leaflet` agregado / `Leaflet` map added.
-- Librerías `js` y `css` agregadas / `js` and `css` libraries added.
+#### Agregado
+- `Sourcemaps` en archivos generados.
+- Vistas mejoradas.
+- Mapa `Leaflet` agregado.
+- Librerías `js` y `css` agregadas.
 
-#### Modificado / Modified
-- `Readme` editado / `Readme` edited.
+#### Modificado
+- `Readme` editado.
 
-#### Removido / Removed
-- `Babel` para usar `js` simple / `Babel` to use simple `js`.
+#### Removido
+- `Babel` para usar `js` simple.
 
 ### [1.0.0] - 2020-03-16
-#### Agregado / Added
-- Tareas `Grunt` / `Grunt` Tasks.
-- Archivos base generados con `sass` y `babel` / Base files generated with `sass` & `babel`.
-- Tareas automáticas que generan `css`, `js` y `html` / Automated tasks that generates `css`, `js` & `html`.
-- Arquitectura desde `resources` que exporta a `docs` archivos compilados / Architecture from `resources` that exports to `docs` compiled files.  
-- Comandos `npm` para limpieza de archivos y carpetas / `npm` commands for cleaning folders & files.
-- Mejor estructura para mantenener y actualizar con frecuencia / Better structure to maintain and update frequently.
+#### Agregado
+- Tareas `Grunt`.
+- Archivos base generados con `sass` y `babel`.
+- Tareas automáticas que generan `css`, `js` y `html`.
+- Arquitectura desde `resources` que exporta a `docs` archivos compilados.  
+- Comandos `npm` para limpieza de archivos y carpetas.
+- Mejor estructura para mantenener y actualizar con frecuencia.
 
-#### Modificado / Modified
-- `Readme` editado / `Readme` edited.
+#### Modificado
+- `Readme` editado.
 
 ### [0.3.0] - 2020-03-15
-#### Modificado / Modified
-- Reestructurado para una más simple y rápida solución / Restructured for a simpler and faster solution.
-- `Readme` editado / `Readme` edited.
+#### Modificado
+- Reestructurado para una más simple y rápida solución.
+- `Readme` editado.
 
-#### Removido / Removed
-- Framework `Laravel` / `Laravel` Framework.
+#### Removido
+- Framework `Laravel`.
 
 ### [0.2.0] - 2020-03-15
-#### Agregado / Added
-- Aplicación mínima de `Laravel` / `Laravel` minimal app.
+#### Agregado
+- Aplicación mínima de `Laravel`.
 
 ### [0.1.0] - 2020-03-15
-#### Agregado / Added
-- `Commit` inicial / Initial `commit`.
+#### Agregado
+- `Commit` inicial.
