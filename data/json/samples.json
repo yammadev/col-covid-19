@@ -443,5 +443,10 @@
       "DATE":1590969600001,
       "PROCESSED":9325,
       "ACCUMULATED":341142
+   },
+   "89":{
+      "DATE":1591056000001,
+      "PROCESSED":8981,
+      "ACCUMULATED":350123
    }
 }

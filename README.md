@@ -17,7 +17,7 @@ Yefferson Marí­n - ([@yammadev](https://github.com/yammadev))
 ## 2. Análisis
 Se ha realizado un estudio independiente con los datos registrados. Refierase a éste repositorio [col-covid-19-analysis](https://github.com/yammadev/col-covid-19-analysis.git) para más información.
 
-## 2. Datos
+## 3. Datos
 Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/) del Gobierno Nacional, sobre los [Casos confirmados](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) y las [Muestras procesadas](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Muestras-procesadas-de-COVID-19-en-Colombia/8835-5baf), publicados por el [Ministerio de salud y Protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia.
 
 Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formatos `.csv` y `.json`.
@@ -49,7 +49,7 @@ Adicionalmente, las gráficas de las estadísticas en formatos `.img` también e
 
 ![SAMPLES](data/imgs/samples.png)
 
-## 3. Notas de desarrollo
+## 4. Notas de desarrollo
 ### Herramientas y Requerimientos
 - [Python](https://www.python.org/)
 - [PIP](https://pypi.org/project/pip/)
@@ -98,7 +98,7 @@ Adicionalmente, las gráficas de las estadísticas en formatos `.img` también e
   npm run watch
 ```
 
-## 4. Registro de Cambios
+## 5. Registro de Cambios
 Todos los cambios notables a este proyecto están documentados en esta parte del archivo. El formato está basado en [Keep a Changelog](http://keepachangelog.com/).
 
 #### [x.y.z] - AAAA-MM-DD
@@ -114,6 +114,12 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores.
 - **Seguridad** en caso de vulnerabilidades.
 
+### [2.9.0] - 2020-06-02
+#### Modificado
+- Mejoras en las vistas.
+- Cambios menores.
+- Screenshot.
+
 ### [2.8.0] - 2020-06-02
 #### Agregado
 - Más información y más estadísticas.
@@ -121,6 +127,7 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 #### Modificado
 - Cambios menores.
 - Limpieza del código.
+- Readme.
 
 ### [2.7.1] - 2020-05-25
 #### Modificado
