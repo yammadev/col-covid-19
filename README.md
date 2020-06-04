@@ -1,7 +1,7 @@
 ![SCREENSHOT](resources/imgs/screenshot.png)
 
 ## 1. Acerca
-#### Seguimiento (Mapa y Estadísticas) del **COVID-19** en **Colombia**
+#### Seguimiento (Mapa y Estadísticas) del *COVID-19* en *Colombia*
 Este proyecto muestra el estado (mapas y estadísticas) casi en tiempo real basado en datos del [Ministerio de salud y protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia, diseñado para brindar información sobre la evolución del [COVID-19](https://es.wikipedia.org/wiki/COVID-19) en el país y sus ciudades.
 
 ### Actualizaciones

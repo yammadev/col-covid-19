@@ -1,26 +1,26 @@
 {
   "0":{
     "STATUS":"CASA",
-    "TOTAL":17811
+    "TOTAL":18041
   },
   "1":{
     "STATUS":"RECUPERADO",
-    "TOTAL":11142
+    "TOTAL":12288
   },
   "2":{
     "STATUS":"HOSPITAL",
-    "TOTAL":1518
+    "TOTAL":1591
   },
   "3":{
     "STATUS":"FALLECIDO",
-    "TOTAL":1009
+    "TOTAL":1045
   },
   "4":{
     "STATUS":"HOSPITAL UCI",
-    "TOTAL":305
+    "TOTAL":335
   },
   "5":{
     "STATUS":"N\/A",
-    "TOTAL":48
+    "TOTAL":54
   }
 }
