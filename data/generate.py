@@ -163,14 +163,9 @@ def timeline(data):
     data[dates] = data[dates].apply(pd.to_datetime, errors = 'coerce', infer_datetime_format = True)
 
     # [2] Get per DATE and STATUS
-    # TODO: Wait until consistency in gov's data
     cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
-    recovered = data[data['STATUS'] == 'RECUPERADO'].groupby(by = 'REPORT_DATE').size().reset_index()
-    deaths = data[data['STATUS'] == 'FALLECIDO'].groupby(by = 'REPORT_DATE').size().reset_index()
-
-    # cases = data.groupby(by = 'REPORT_DATE').size().reset_index()
-    # recovered = data.groupby(by = 'RECOVERED_DATE').size().reset_index()
-    # deaths = data.groupby(by = 'DEATH_DATE').size().reset_index()
+    recovered = data[data['STATUS'] == 'RECUPERADO'].groupby(by = 'RECOVERED_DATE').size().reset_index()
+    deaths = data[data['STATUS'] == 'FALLECIDO'].groupby(by = 'DEATH_DATE').size().reset_index()
 
     # [3] Reset columns
     cases.columns = ['DATE', 'CASES']

@@ -114,6 +114,13 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores.
 - **Seguridad** en caso de vulnerabilidades.
 
+### [2.10.0] - 2020-06-07
+#### Modificado
+- Mejoras en las estadísticas.
+
+#### Seguridad
+- Parches en librerías.
+
 ### [2.9.0] - 2020-06-02
 #### Modificado
 - Mejoras en las vistas.
