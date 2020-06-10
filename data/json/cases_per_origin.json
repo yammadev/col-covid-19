@@ -1,7 +1,7 @@
 {
   "0":{
     "ORIGIN":"COLOMBIA",
-    "TOTAL":39847
+    "TOTAL":41206
   },
   "1":{
     "ORIGIN":"ESPA\u00d1A",
@@ -48,11 +48,11 @@
     "TOTAL":14
   },
   "12":{
-    "ORIGIN":"PUERTO RICO",
+    "ORIGIN":"PER\u00da",
     "TOTAL":13
   },
   "13":{
-    "ORIGIN":"PER\u00da",
+    "ORIGIN":"PUERTO RICO",
     "TOTAL":13
   },
   "14":{
@@ -80,19 +80,19 @@
     "TOTAL":6
   },
   "20":{
-    "ORIGIN":"GRECIA",
+    "ORIGIN":"ARGENTINA",
     "TOTAL":4
   },
   "21":{
-    "ORIGIN":"VENEZUELA",
+    "ORIGIN":"GRECIA",
     "TOTAL":4
   },
   "22":{
-    "ORIGIN":"CUBA",
+    "ORIGIN":"VENEZUELA",
     "TOTAL":4
   },
   "23":{
-    "ORIGIN":"ARGENTINA",
+    "ORIGIN":"CUBA",
     "TOTAL":4
   },
   "24":{
@@ -104,59 +104,59 @@
     "TOTAL":3
   },
   "26":{
-    "ORIGIN":"COSTA RICA",
-    "TOTAL":2
-  },
-  "27":{
     "ORIGIN":"EMIRATOS \u00c1RABES UNIDOS",
     "TOTAL":2
   },
-  "28":{
+  "27":{
     "ORIGIN":"MARRUECOS",
     "TOTAL":2
   },
+  "28":{
+    "ORIGIN":"COSTA RICA",
+    "TOTAL":2
+  },
   "29":{
-    "ORIGIN":"AUSTRALIA",
-    "TOTAL":1
-  },
-  "30":{
-    "ORIGIN":"B\u00c9LGICA",
-    "TOTAL":1
-  },
-  "31":{
     "ORIGIN":"CROACIA",
     "TOTAL":1
   },
-  "32":{
-    "ORIGIN":"IRLANDA",
+  "30":{
+    "ORIGIN":"SUECIA",
     "TOTAL":1
   },
-  "33":{
-    "ORIGIN":"GUATEMALA",
-    "TOTAL":1
-  },
-  "34":{
-    "ORIGIN":"HONDURAS",
-    "TOTAL":1
-  },
-  "35":{
-    "ORIGIN":"KENIA",
-    "TOTAL":1
-  },
-  "36":{
+  "31":{
     "ORIGIN":"SUIZA",
     "TOTAL":1
   },
-  "37":{
+  "32":{
+    "ORIGIN":"HONDURAS",
+    "TOTAL":1
+  },
+  "33":{
+    "ORIGIN":"AUSTRALIA",
+    "TOTAL":1
+  },
+  "34":{
     "ORIGIN":"URUGUAY",
     "TOTAL":1
   },
-  "38":{
+  "35":{
     "ORIGIN":"ARABIA SAUDITA",
     "TOTAL":1
   },
+  "36":{
+    "ORIGIN":"B\u00c9LGICA",
+    "TOTAL":1
+  },
+  "37":{
+    "ORIGIN":"GUATEMALA",
+    "TOTAL":1
+  },
+  "38":{
+    "ORIGIN":"IRLANDA",
+    "TOTAL":1
+  },
   "39":{
-    "ORIGIN":"SUECIA",
+    "ORIGIN":"KENIA",
     "TOTAL":1
   }
 }
