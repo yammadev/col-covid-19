@@ -114,6 +114,11 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores.
 - **Seguridad** en caso de vulnerabilidades.
 
+### [3.0.0] - 2020-06-13
+#### Agregado
+- Más información y más estadísticas.
+- Cambios menores.
+
 ### [2.10.0] - 2020-06-07
 #### Modificado
 - Mejoras en las estadísticas.

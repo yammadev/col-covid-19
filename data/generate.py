@@ -29,11 +29,11 @@ def main():
 
     # [*] Columns
     # print(records.columns)
-    # ['id_de_caso', 'fecha_de_notificaci_n', 'codigo_divipola',
-    #  'ciudad_de_ubicaci_n', 'departamento', 'atenci_n', 'edad', 'sexo',
+    # ['id_de_caso', 'fecha_de_notificaci_n', 'c_digo_divipola',
+    #   'ciudad_de_ubicaci_n', 'departamento', 'atenci_n', 'edad', 'sexo',
     #   'tipo', 'estado', 'pa_s_de_procedencia', 'fis', 'fecha_diagnostico',
     #   'fecha_recuperado', 'fecha_reporte_web', 'tipo_recuperaci_n',
-    #   'fecha_de_muerte']
+    #   'codigo_departamento', 'codigo_pais', 'fecha_de_muerte']
 
     # print(samples.columns)
     # ['fecha', 'acumuladas', 'amazonas', 'antioquia', 'arauca', 'atlantico',
@@ -42,7 +42,7 @@ def main():
     #   'guaviare', 'huila', 'magdalena', 'meta', 'narino',
     #   'norte_de_santander', 'putumayo', 'quindio', 'risaralda', 'san_andres',
     #   'santander', 'sucre', 'tolima', 'valle_del_cauca', 'vaupes', 'vichada',
-    #   'procedencia_desconocida']
+    #   'procedencia_desconocida', 'barranquilla', 'cartagena', 'santa_marta']
 
     # [4] Get desired columns
     samples = samples[['fecha', 'acumuladas']]
@@ -50,7 +50,8 @@ def main():
     # [5] Reset columns
     records.columns = ['CASE', 'NOTIFICATION_DATE', 'COD_DIVIPOLA', 'CITY', 'DEPARTAMENT', 'STATUS',
                     'AGE', 'GENDER', 'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE', 'DIAGNOSIS_DATE',
-                    'RECOVERED_DATE', 'REPORT_DATE', 'KIND_OF_RECOVERY', 'DEATH_DATE']
+                    'RECOVERED_DATE', 'REPORT_DATE', 'KIND_OF_RECOVERY', 'DEPARTAMENT_CODE', 'COUNTRY_CODE',
+                    'DEATH_DATE']
     samples.columns = ['DATE', 'ACCUMULATED']
 
     # [6] Export!
@@ -86,10 +87,13 @@ def list(data):
 # Full list of SAMPLES
 # @arg  {pd.dataFrame} data     -- The dataFrame
 def processed(data):
-    # [1] Format - Date
+    # [1] Drop NaN (e.g., misspelled dates)
+    data.dropna(inplace = True)
+
+    # [2] Format - Date
     data['DATE'] = data['DATE'].apply(pd.to_datetime, errors = 'coerce', infer_datetime_format = True)
 
-    # [2] Format - Dtype
+    # [3] Format - Dtype
     data['ACCUMULATED'] = data['ACCUMULATED'].astype('int64')
 
     # [4] Count
@@ -98,8 +102,7 @@ def processed(data):
     # [5] Format - Dtype
     data['PROCESSED'] = data['PROCESSED'].astype('int64')
 
-    # [6] Drop NaN (e.g., misspelled dates) and reset index
-    data = data.dropna()
+    # [6] Reset index
     data = data.reset_index(drop = True)
 
     # [7] Reorganize
