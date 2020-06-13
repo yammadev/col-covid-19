@@ -312,7 +312,7 @@ def plot():
     plt.close()
 
 # ----------------------------------
-# [8] Export to CSV and JSON
+# [8] Export to CSV
 # ----------------------------------
 # @arg  {pd.dataFrame} data     -- The dataFrame
 #       {string} filename       -- The name of the file
@@ -323,9 +323,6 @@ def export(data, filename):
     # [1] To CSV
     data.to_csv(f'csv/{filename}.csv', index = False)
 
-    # [2] To JSON
-    data.to_json(f'json/{filename}.json', orient = 'index', indent = data.shape[1])
-
 # ----------------------------------
 # [9] Export to JS
 # ----------------------------------
@@ -333,7 +330,7 @@ def export(data, filename):
 #       {string} filename       -- The name of the file
 def export_JS(data, filename):
     # This could be used as javascript window (static) variable
-    js = open(f'js/{filename}.js', 'w+')
+    js = open(f'../resources/data/{filename}.js', 'w+')
     json = data.to_json(orient = 'index', indent = data.shape[1])
     js.write(f'window.{filename} = {json}')
     js.close()

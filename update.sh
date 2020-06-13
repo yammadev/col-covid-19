@@ -8,6 +8,12 @@ print () {
 # -------------------------------
 # [1] Configure
 # -------------------------------
+# Remove old generated data
+print "Remove old generated data"
+
+rm -rf data/csv/* daya/imgs/* resources/data/*
+
+# Configure
 print "Configure"
 
 # Move to data
@@ -18,11 +24,6 @@ py -m venv venv
 
 # Install
 venv/scripts/pip.exe install -U -r requirements.txt
-
-# Remove old generated data
-print "Remove old generated data"
-
-rm -rf csv/* js/* json/* imgs/*
 
 # -------------------------------
 # [2] Generate new data

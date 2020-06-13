@@ -20,7 +20,7 @@ Se ha realizado un estudio independiente con los datos registrados. Refierase a 
 ## 3. Datos
 Los datos utilizados son cargados (una vez se realiza una actualización) desde los [Datos Abiertos](https://www.datos.gov.co/) del Gobierno Nacional, sobre los [Casos confirmados](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr) y las [Muestras procesadas](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Muestras-procesadas-de-COVID-19-en-Colombia/8835-5baf), publicados por el [Ministerio de salud y Protección social](https://www.minsalud.gov.co/Paginas/default.aspx) de Colombia.
 
-Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formatos `.csv` y `.json`.
+Los datos formateados se encuentran disponibles en la carpeta [data/](data) para su estudio y uso en formato `.csv`.
 
 | Archivo | Referencia |
 | :-----: | ---------- |
@@ -113,6 +113,14 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Removido** para funciones eliminadas.
 - **Corregido** cualquier corrección de errores.
 - **Seguridad** en caso de vulnerabilidades.
+
+### [3.1.0] - 2020-06-13
+#### Modificado
+- Mejoras en la ejecución de la compilación de archivos.
+
+#### Removido
+- Datos exportados para uso general en `json`.
+- `Large files`.
 
 ### [3.0.0] - 2020-06-13
 #### Agregado
