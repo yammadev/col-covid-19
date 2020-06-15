@@ -114,6 +114,14 @@ Todos los cambios notables a este proyecto están documentados en esta parte del
 - **Corregido** cualquier corrección de errores.
 - **Seguridad** en caso de vulnerabilidades.
 
+### [3.1.1] - 2020-06-15
+#### Agregado
+- `favicon`.
+
+#### Modificado
+- Mejoras en las vistas.
+- Cambios menores.
+
 ### [3.1.0] - 2020-06-13
 #### Modificado
 - Mejoras en la ejecución de la compilación de archivos.

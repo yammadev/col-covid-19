@@ -11,7 +11,7 @@ print () {
 # Remove old generated data
 print "Remove old generated data"
 
-rm -rf data/csv/* daya/imgs/* resources/data/*
+rm -rf data/csv/* data/imgs/* resources/data/*
 
 # Configure
 print "Configure"
