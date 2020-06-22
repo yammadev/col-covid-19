@@ -33,7 +33,8 @@ def main():
     #   'ciudad_de_ubicaci_n', 'departamento', 'atenci_n', 'edad', 'sexo',
     #   'tipo', 'estado', 'pa_s_de_procedencia', 'fis', 'fecha_diagnostico',
     #   'fecha_recuperado', 'fecha_reporte_web', 'tipo_recuperaci_n',
-    #   'codigo_departamento', 'codigo_pais', 'fecha_de_muerte']
+    #   'codigo_departamento', 'codigo_pais', 'pertenencia_etnica',
+    #   'fecha_de_muerte']
 
     # print(samples.columns)
     # ['fecha', 'acumuladas', 'amazonas', 'antioquia', 'arauca', 'atlantico',
@@ -42,7 +43,9 @@ def main():
     #   'guaviare', 'huila', 'magdalena', 'meta', 'narino',
     #   'norte_de_santander', 'putumayo', 'quindio', 'risaralda', 'san_andres',
     #   'santander', 'sucre', 'tolima', 'valle_del_cauca', 'vaupes', 'vichada',
-    #   'procedencia_desconocida', 'barranquilla', 'cartagena', 'santa_marta']
+    #   'procedencia_desconocida', 'positivas_acumuladas',
+    #   'negativas_acumuladas', 'positividad_acumulada', 'indeterminadas',
+    #   'barranquilla', 'cartagena', 'santa_marta']
 
     # [4] Get desired columns
     samples = samples[['fecha', 'acumuladas']]
@@ -51,7 +54,7 @@ def main():
     records.columns = ['CASE', 'NOTIFICATION_DATE', 'COD_DIVIPOLA', 'CITY', 'DEPARTAMENT', 'STATUS',
                     'AGE', 'GENDER', 'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE', 'DIAGNOSIS_DATE',
                     'RECOVERED_DATE', 'REPORT_DATE', 'KIND_OF_RECOVERY', 'DEPARTAMENT_CODE', 'COUNTRY_CODE',
-                    'DEATH_DATE']
+                    'ETHNICITY', 'DEATH_DATE']
     samples.columns = ['DATE', 'ACCUMULATED']
 
     # [6] Export!
