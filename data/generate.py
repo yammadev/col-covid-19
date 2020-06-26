@@ -34,7 +34,7 @@ def main():
     #   'tipo', 'estado', 'pa_s_de_procedencia', 'fis', 'fecha_diagnostico',
     #   'fecha_recuperado', 'fecha_reporte_web', 'tipo_recuperaci_n',
     #   'codigo_departamento', 'codigo_pais', 'pertenencia_etnica',
-    #   'fecha_de_muerte']
+    #   'fecha_de_muerte', 'nombre_grupo_etnico']
 
     # print(samples.columns)
     # ['fecha', 'acumuladas', 'amazonas', 'antioquia', 'arauca', 'atlantico',
@@ -54,7 +54,7 @@ def main():
     records.columns = ['CASE', 'NOTIFICATION_DATE', 'COD_DIVIPOLA', 'CITY', 'DEPARTAMENT', 'STATUS',
                     'AGE', 'GENDER', 'KIND', 'LEVEL', 'ORIGIN', 'SYMPTOMS_BEGINNING_DATE', 'DIAGNOSIS_DATE',
                     'RECOVERED_DATE', 'REPORT_DATE', 'KIND_OF_RECOVERY', 'DEPARTAMENT_CODE', 'COUNTRY_CODE',
-                    'ETHNICITY', 'DEATH_DATE']
+                    'ETHNICITY', 'DEATH_DATE', 'ETHNIC_GROUP_NAME']
     samples.columns = ['DATE', 'ACCUMULATED']
 
     # [6] Export!
