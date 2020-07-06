@@ -1,22 +1,22 @@
 window.summary = {
   "0":{
     "VALUE":"CASOS",
-    "TOTAL":109505
+    "TOTAL":117110
   },
   "1":{
     "VALUE":"RECUPERADOS",
-    "TOTAL":45334
+    "TOTAL":47881
   },
   "2":{
     "VALUE":"FALLECIDOS",
-    "TOTAL":3777
+    "TOTAL":4064
   },
   "3":{
     "VALUE":"ULTIMO REPORTE",
-    "TOTAL":3395
+    "TOTAL":3721
   },
   "4":{
     "VALUE":"ANTERIOR REPORTE",
-    "TOTAL":4101
+    "TOTAL":3884
   }
 }
